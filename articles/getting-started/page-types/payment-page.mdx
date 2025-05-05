@@ -1,0 +1,80 @@
+---
+title: "Payment page"
+description: "Collect one-time and subscription payments via credit card, US bank account, Affirm, and Stripe Link. Choose a dynamic product name and purchase amount, and optionally send a receipt."
+---
+
+## How to add a payment page
+
+Click `+ Add page` and choose `Payment`.
+
+![P1 Web](/images/p1.webp)
+
+<Check>
+  **Good to know:** Payment pages are available on all plans with **no additional fees** charged to use the feature. However, usual Stripe fees such as transaction costs still apply.
+</Check>
+
+Select between the following types:
+
+- **One-time** - for single, non-recurring transactions
+- **Subscriptions** - for recurring transactions usually with a fixed price
+- **Pay what you want** - leave the amount up to the customer
+
+Add the details of your payment page and `Connect to Stripe`. From here you can choose the currency, and make the **price** and **product name** [dynamic](https://www.notion.so/Use-dynamic-data-in-a-form-6199ce222f344b61a324f66139c9c1d8?pvs=21) by clicking the blue `+` icon or typing `@` to reference a specific field.
+
+![P2 Web](/images/p2.webp)
+
+In this example, the product name and price will change per customer depending on their order.
+
+The default payment method in new forms is through a credit **card**. You can give more options to your customers by adding more **Payment methods** through the left-hand panel.
+
+That’s it\! Press `Preview` to try out your form. Payments will only be collected when you `Publish` the form and send its link.
+
+## Add discount codes
+
+`Allow discount codes` in the left-hand panel and click `Manage discount codes in Stripe` to add a code or link an existing one to your form.
+
+You can also choose a URL parameter or field as the **Discount code** when you scroll down to `Pre-fill fields`.
+
+## Create a new Stripe customer
+
+`Collect email` under **Payment**. This will automatically add an **email** field to your payment page and create a new customer on Stripe.
+
+## Pre-fill fields
+
+You can automatically fill out the fields of the payment form by toggling the `Pre-fill fields` switch. Then, select the corresponding fields below.
+
+![P5 Web](/images/p5.webp)
+
+## Reference the payment intent ID in integrations
+
+You can save the Stripe payment ID to the integration of your choice by referencing it. Go to **Integrate** and choose a platform. Under **Mappings**, look for **Stripe Payment ID.**
+
+![P6 Web](/images/p6.webp)
+
+Stripe payment ids will look like pi_3MKECGFiethEjGwr1TWmQ0rN and allow you to tie a form submission to an actual payment in Stripe.
+
+## Send a receipt upon successful purchase
+
+Toggle `Send receipt` in the left-hand panel to automatically send the customer a receipt once they make a purchase.
+
+The receipt will only be sent if you enable the `Collect email` switch as described above. Note that receipts are not sent in Fillout preview mode.
+
+![P8 Web](/images/p8.webp)
+
+## Add a testimonial
+
+You can increase checkout rates by putting a testimonial from a customer. Go to **Appearance i**n the left-hand panel and turn on the `Show testimonial` switch.
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Dynamic payment page" icon="cart-shopping" iconType="regular" color="#FFC738">
+    Make a checkout page where the product section and price automatically update based on the order.
+  </Card>
+  <Card title="Calculations and variables" icon="calculator-simple" iconType="regular" color="#FFC738">
+    Calculate prices for order forms, compute the score of a quiz, and more.
+  </Card>
+  <Card title="Hide fields" icon="eye-slash" iconType="regular" color="#FFC738">
+    Hide or show fields based on prior inputs, URL parameters or external data.
+  </Card>
+</CardGroup>

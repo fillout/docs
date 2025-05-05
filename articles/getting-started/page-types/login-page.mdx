@@ -1,0 +1,70 @@
+---
+title: "Login page"
+description: "Require respondents to verify their email or enter a password. Restrict logins to just your company's domain or a specific list in a database. Optionally limit to 1 submission or let users edit their past responses."
+---
+
+## Add a login page
+
+**Login pages** can be used to secure your form behind a password, or verify that the provided email is valid (and that they own it). Click `+ Add page`, and choose `Login`.
+
+![Login1 Web](/images/login1.webp)
+
+<Note>
+  **Note:** This feature is available on the **Starter** plan and above. Learn more about our pricing plans and advanced features [**here**](https://www.fillout.com/pricing).
+</Note>
+
+## Video overview
+
+https://www.loom.com/share/065be1b4f5bf47d887630111c1ad8a0e?sid=7457db5f-3f9a-462b-bc31-126c7d7f20bc
+
+## Login page types
+
+In the left-hand panel, you can choose between **Email**, **Password**, and **Single Sign-On (SSO)**.
+
+### Email login
+
+This is the default **Verification type**, which requires respondents to enter an email and verify it with a code sent to their inbox.
+
+![Login2 Web](/images/login2.webp)
+
+You can also `Restrict domains` to allow only specific email domains. For instance, you can limit access to emails ending with @[yourcompany.com](http://yourcompany.com).
+
+**Limit respondents to one form submission**
+
+Prevent respondents from submitting your form multiple times by toggling the `Limit to one submission` switch under **Limit submissions**.
+
+**Use databases to restrict logins**
+
+If your form is integrated to a database like Airtable, you can limit logins to respondents listed in that database and retrieve their records for use in the form. In the left-hand panel, under **Integration**, toggle the `Connect to database`switch and select your **Base**, **Users table**, and **User email field**.
+
+### **Password login**
+
+Change the **Verification type** to `Password` and enter your preferred single passcode. You can edit this later on.
+
+![Login3 Web](/images/login3.webp)
+
+Remember to `Publish` your form after entering or changing the password, otherwise respondents will not be able to access your form.
+
+### Single Sign-On login (SSO)
+
+You can also opt for `SSO`. Add Microsoft, OneLogin, Google Workspaces, Okta and other types of SSO login to your form. Learn more [here](https://www.notion.so/Single-sign-on-SSO-form-login-22274833f0e045d390c62811187e2e6d?pvs=21).
+
+## Allow respondents to edit past submissions
+
+Some forms may need to be updated or edited after submitting them. Under **Basics** in the left-hand panel, toggle the `Can edit existing responses`.
+
+![Login4 Web](/images/login4.webp)
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Partial submissions" icon="circle-half-stroke" iconType="regular" color="#FFC738">
+    Automatically save respondents' progress so they can resume later on the same device.
+  </Card>
+  <Card title="Let users edit responses" icon="file-signature" iconType="regular" color="#FFC738">
+    Enable response editing to ensure you have the most updated information.
+  </Card>
+  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738">
+    Make new or update existing Airtable bases with a customizable Fillout form you can embed anywhere.
+  </Card>
+</CardGroup>

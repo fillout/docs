@@ -1,0 +1,41 @@
+---
+title: "Choice matrix"
+description: "Collect a grid or table of selections from respondents for corresponding rows and columns with radio buttons or checkboxes."
+---
+
+## Overview
+
+The **choice matrix** field type can be used to collect data organized in a grid or table, where users need to select one or multiple options per row. Some common use cases include:
+
+- Selecting dates and corresponding slots or appointment times
+- Ranking multiple options in a grid on a likert scale (e.g. unlikely to likely)
+
+## Add a choice matrix field to your form
+
+Simply drag and drop the `Choice matrix` field from the left-hand panel.
+
+![Cm1 Web](/images/cm1.webp)
+
+### Add titles for the rows and columns
+
+The rows of your matrix will typically the define the options or questions you want to have choices chosen for. In the example above, we’ve added appointment dates for the rows, and corresponding slots to be chosen for those dates as the columns.
+
+### Turn radio buttons into checkboxes
+
+You can configure the choice matrix to allow single or multiple selections. Click the choice matrix followed by its `settings` icon, and toggle **Can select multiple?** in the right-hand panel.
+
+![Cm2 Web](/images/cm2.webp)
+
+## Connect a choice matrix to integrations
+
+When integrating the choice matrix (e.g., with Airtable, Notion, or HubSpot), you can map each row to different fields or properties separately. Click **Integrate** in the top menu and choose an integration. [Connect your integration](https://www.notion.so/Integrations-ff23eebebba04d728aecd4744d814b81?pvs=21), if you haven’t done so already.
+
+Then, look for the question followed by a row in your choice matrix to the fields in your chosen integration.
+
+![Cm3 Web](/images/cm3.webp)
+
+Repeat this process for any of the other rows you need to send to your integration. That’s it\! `Publish` and share your form link. Now your integration is set up to receive answers from your choice matrix.
+
+<Check>
+  **Important:** If your choice matrix is set to **select** **multiple**, you should make sure to pick a property/field in your integration which expects multiple answers.
+</Check>

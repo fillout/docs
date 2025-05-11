@@ -34,7 +34,8 @@
                   "page-types/login-page",
                   "page-types/scheduling-page"
                 ]
-              }
+              },
+              "responses"
             ]
           },
           {

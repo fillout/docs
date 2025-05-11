@@ -17,10 +17,28 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["docs"]
+            "pages": [
+              "index",
+              "make-a-form",
+
+              {
+                "group": "Page Types",
+                "icon": "square-question",
+
+                "pages": [
+                  "page-types/cover-page",
+                  "page-types/form-page",
+                  "page-types/ending-page",
+                  "page-types/review-page",
+                  "page-types/payment-page",
+                  "page-types/login-page",
+                  "page-types/scheduling-page"
+                ]
+              }
+            ]
           },
           {
-            "group": "Essentials",
+            "group": "Styling & Branding",
             "pages": ["essentials/markdown"]
           }
         ]
@@ -37,16 +55,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "href": "https://fillout.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/images/logo/light.svg",
@@ -67,7 +76,7 @@
     }
   },
   "contextual": {
-    "options": ["copy", "chatgpt", "claude"]
+    "options": ["chatgpt", "claude"]
   },
   "footer": {
     "links": [

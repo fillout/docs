@@ -1,0 +1,45 @@
+---
+title: "Send form submissions to a webhook"
+description: "Send responses to automation tools (like Make or Zapier), or any other Webhook endpoint you may have."
+---
+
+## What is a webhook
+
+A **webhook** is a way for one system (like **Fillout**) to send real-time data to another system (like the 3rd party tools you use) as soon as an event occurs. Under the hood, a webhook is an **HTTP callback** and can be a GET, PUT, POST or DELETE request.
+
+## Connect your form to a webhook
+
+### 1. **Link your Fillout form to** a webhook
+
+Go to **Integrate**, and click `Webhook`.
+
+![Screenshot2025 02 10at12 49 44PM Pn](/images/Screenshot2025-02-10at12.49.44PM.png)
+
+Enter your **Webhook URL**, and `Test` it. When you're good with it, click `Finish setup`.
+
+![Screenshot2025 02 10at12 51 28PM Pn](/images/Screenshot2025-02-10at12.51.28PM.png)
+
+### 2. Publish and share your form
+
+Thats it\! You have all you need to configure a webhook when the form submits. `Publish` it and share the link.
+
+## Available webhook options
+
+Toggle the `Advanced view` switch to set up your webhook with any of the parameters or arguments you need.
+
+![Screenshot2025 02 10at12 52 00PM Pn](/images/Screenshot2025-02-10at12.52.00PM.png)
+
+For these examples, let's assume your URL is something like:
+
+https://hooks.zapier.com/hooks/catch/12475312/abc/
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Zapier" icon="circle-z" iconType="regular" color="#FFC738">
+    Add automations to your form by connecting Fillout to hundreds of other apps with this integration.
+  </Card>
+  <Card title="Populate dropdowns with a webhook" icon="list-dropdown" iconType="regular" color="#FFC738">
+    Dynamically populate options from a REST API endpoint of your choice.
+  </Card>
+</CardGroup>

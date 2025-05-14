@@ -1,0 +1,61 @@
+---
+title: "Use dynamic data in a form"
+description: "Fetch data from tools like Airtable, Notion or any service with an API. Display dynamic content in your form and use it to hide, validate and pre-fill fields."
+---
+
+## **Get the data you need**
+
+To display dynamic data, you first need to get the data from Airtable, Notion or another source into your form.
+
+There are several options for doing this, depending on your use case:
+
+- Use a [login page](https://www.notion.so/Login-page-7c96895e91714b839a6556712f1bc49e?pvs=21). This will automatically give you access to the entire user record who logs in.
+- Use [URL parameters](https://www.notion.so/URL-Parameters-Hidden-fields-f11c3b56de8e4c7d9cccf47825ccf3c4?pvs=21) to pass any arbitrary information to your form, e.g. from Stacker, [Softr](https://www.notion.so/Embed-Fillout-forms-on-Softr-0839ef49b8df4ad080dbb30bca98a39a?pvs=21), or other portals.
+- Use a **Record picker** field type. You'll then be able to access any field in the record that is chosen. Note that you can also pre-fill record pickers.
+- Use the [Pre-fetch records](https://www.notion.so/Pre-fetch-dynamic-data-for-your-form-dbd94e6dcfc84cb1aea746cbebb04895?pvs=21) feature to fetch information from Airtable or Notion before your form loads.
+
+## **Reference the data in your form**
+
+In Fillout, you can **display data almost anywhere**: in labels for questions, in alerts, in logic for hiding or validating questions, and more. In this example, we'll use a Text field type, which lets us display uneditable, formatted text.
+
+### 1. Add a **Heading** field
+
+First, drag and drop the Heading field from the left-hand panel to your form. In this example, we have a record picker (Choose a manufacturer) that we want to display more information from.
+
+![Screenshot2025 02 13at2 38 50PM Pn](/images/Screenshot2025-02-13at2.38.50PM.png)
+
+### 2. Reference a field
+
+Type `@` in the heading field (in the center of the form), to open a menu for picking references to previous form inputs. In the reference picker, navigate to the field you want to display.
+
+![Screenshot2025 02 13at2 42 15PM Pn](/images/Screenshot2025-02-13at2.42.15PM.png)
+
+### 3. Publish and share your form
+
+That's it\! The blue bubbles in the center indicate the fields we are referencing. This text will now automatically change whenever you pick a new value in the record picker. Test your form in `Preview` mode to see it in action. `Publish` it once all is set.
+
+![Sfml Pn](/images/sfml.png)
+
+![Sfml Pn](/images/sfml.png)
+
+## **Other places to reference data**
+
+You can also reference the result of the integration step in [show/hide](https://www.notion.so/Conditionally-hide-fields-dc375019d2cc42b18b96f9280c607f21?pvs=21) and [validation](https://www.notion.so/Form-validation-07e6d42045e14454a37a542d5aa26996?pvs=21) conditions to customize your form and prevent input errors. For example, show a warning when a field is missing in a record.
+
+![Screenshot2025 02 13at2 46 55PM Pn](/images/Screenshot2025-02-13at2.46.55PM.png)
+
+Reference data in the **Default value** to pre-fill fields. More info [here](https://www.notion.so/Pre-fill-fields-d10c479c53c24d0e8f6922cf6bbf785c?pvs=21).
+
+## **Other similar integrations**
+
+<CardGroup cols={3}>
+  <Card title="Login page" icon="key" iconType="regular" color="#FFC738">
+    Require respondents to verify their email, enter a password, or use Single Sign-On login (SSO).
+  </Card>
+  <Card title="URL Parameters" icon="brackets-curly" iconType="regular" color="#FFC738">
+    Pass information to a Fillout form to support pre-filling and personalizing of the form.
+  </Card>
+  <Card title="Pre-fetch dynamic data" icon="arrow-down-right" iconType="regular" color="#FFC738">
+    Fetch information from Airtable, Notion or any service before your form loads.
+  </Card>
+</CardGroup>

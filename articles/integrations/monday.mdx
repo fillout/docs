@@ -1,0 +1,81 @@
+---
+title: "Sync form responses to Monday"
+description: "Create leads, orders, projects and custom objects in Monday with the Fillout form builder."
+---
+
+## What is Monday
+
+[Monday.com](http://Monday.com) is a user-friendly work management platform that helps teams streamline their tasks, projects, and collaborations.
+
+## Video tutorial
+
+https://youtu.be/wEnbsSVG0WQ
+
+## How it works
+
+### 1. Link your Fillout form to Monday
+
+Open the Fillout form you want to connect with Monday, then go to **Integrate** and click `Monday`.
+
+![Screenshot2025 02 11at12 24 45PM Pn](/images/Screenshot2025-02-11at12.24.45PM.png)
+
+<Note>
+  **Note:** When creating your form, make sure to set necessary fields you would like to link to your Monday columns to **required**.
+</Note>
+
+Enter a `Name` for your Monday connection and your Monday `API Key`. Follow the instructions below to locate your **API Key**.
+
+Choose the **Workspace** and **Board** you would like to sync responses to.
+
+![Screenshot2025 02 10at1 22 21PM Pn](/images/Screenshot2025-02-10at1.22.21PM.png)
+
+### 2. Map your form fields on **Fillout**
+
+Under **Mappings**, `+ Add new`. Match the fields in your Fillout form to the corresponding columns in your Monday table.
+
+Select the column you want to map in the `Monday field` dropdown. In the example below, we will link the name of the referrer to the respective column.
+
+![Screenshot2025 02 10at1 34 06PM Pn](/images/Screenshot2025-02-10at1.34.06PM.png)
+
+<Tip>
+  **Tip:** You can click the **refresh** icon on the right side to have the most recent changes reflect in **Mappings**.
+</Tip>
+
+### 3. Publish and share
+
+`Publish` your form. Now, answers to matched fields will appear in the columns of your table on Monday.
+
+## How to integrate without mapping
+
+### 1. Link your Fillout form to Monday
+
+Follow the same steps above to connect your **Fillout** form to a Monday table until you have chosen a **Workspace** and **Board**.
+
+### 2. Drag and drop synced column fields
+
+`Edit` your form and go to the **existing** **page** where you asked for input you want to be synced to your table or create a new page. In our example, we'll edit the Referral's Details page.
+
+On the left-hand panel, you will see `Monday columns` synced from your chosen table.
+
+![Screenshot2025 02 10at1 42 57PM Pn](/images/Screenshot2025-02-10at1.42.57PM.png)
+
+Drag and drop the necessary **column fields** to your page. For example, we'll remove the Name field and replace it with the Applicant column field. You can edit the text as you see fit.
+
+<Note>
+  **Note:** You can only use a **column field** once. For example, if you used column field A in page 2, you can no longer use it in other pages.
+</Note>
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Update existing Monday items" icon="recycle" iconType="regular" color="#FFC738">
+    Update existing items and pre-fills fields with data from your columns.
+  </Card>
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738">
+    Perform an integration only when a certain condition is met.
+  </Card>
+</CardGroup>

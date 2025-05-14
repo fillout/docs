@@ -1,0 +1,48 @@
+---
+title: "Map Fillout fields to integrations"
+description: "Configure form fields and values to send to Notion, Airtable, and other database integrations."
+---
+
+One of the most important parts of connecting to a database is connecting your form fields to actually be sent to your database when the form is submitted.
+
+## How to map fields
+
+### 1. Connect a database
+
+Head to **Integrate** and connect your form to [Airtable](https://www.notion.so/How-to-create-an-Airtable-form-016c5cbe122d4739bc34eb3deda81846?pvs=21), [Notion](https://www.notion.so/How-to-create-a-Notion-form-19d937988136410197c059b30afcfa0c?pvs=21), [HubSpot](https://www.notion.so/How-to-create-a-HubSpot-form-436c18b12bd948819995e711f548c44d?pvs=21), or [other databases](https://www.notion.so/Integrations-ff23eebebba04d728aecd4744d814b81?pvs=21).
+
+### 2. Drag and drop synced columns
+
+Go back to **Edit** in the top menu. In the left-hand panel, you'll see columns from your database automatically synced. Drag and drop these to your form.
+
+![Screenshot2025 02 14at12 04 48PM Pn](/images/Screenshot2025-02-14at12.04.48PM.png)
+
+## Mappings
+
+You might want to send additional information to Airtable, Notion or other databases when a respondent submits your form, other than your form fields. For example, you might want to save:
+
+- [URL parameters](https://www.notion.so/URL-Parameters-Hidden-fields-f11c3b56de8e4c7d9cccf47825ccf3c4?pvs=21)
+- [Static values](https://www.notion.so/Write-a-static-value-to-an-integration-8a1dcb55fb2a4d0a9e0a9d019ad25e93?pvs=21)
+- Submission date
+- [Fields from the record returned after logging in](https://www.notion.so/Login-page-7c96895e91714b839a6556712f1bc49e?pvs=21)
+- [Fields from a pre-fetched record](https://www.notion.so/Pre-fetch-dynamic-data-for-your-form-dbd94e6dcfc84cb1aea746cbebb04895?pvs=21)
+
+You can create a field, [pre-fill](https://www.notion.so/Pre-fill-fields-d10c479c53c24d0e8f6922cf6bbf785c?pvs=21) it with a value, and connect it to Airtable or Notion through the **Connected** menu in the right-hand panel.
+
+**Mappings** in the **Integrate** page also lets you do this directly. For example, let's connect a URL parameter. `+ Add new`and pick a field in Airtable, and then any referenceable value in **Fillout**\!
+
+![Screenshot2025 02 14at12 08 30PM Pn](/images/Screenshot2025-02-14at12.08.30PM.png)
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Pre-fill fields" icon="fill" iconType="regular" color="#FFC738">
+    Set a default value to pre-populate form fields based on previous inputs, URL parameters, and more.
+  </Card>
+  <Card title="Login page" icon="key" iconType="regular" color="#FFC738">
+    Require respondents to verify their email, enter a password, or use Single Sign-On login (SSO).
+  </Card>
+  <Card title="Pre-fetch dynamic data" icon="arrow-down-right" iconType="regular" color="#FFC738">
+    Fetch information from Airtable, Notion or any service before your form loads.
+  </Card>
+</CardGroup>

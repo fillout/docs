@@ -1,0 +1,96 @@
+---
+title: "How to create an Airtable form"
+description: "Use a Fillout form to create or update your Airtable tables. Embed your forms or share them anywhere."
+---
+
+## What is Airtable
+
+[**Airtable**](https://airtable.com/) is a cloud-based collaborative database and project management platform that combines the simplicity of a spreadsheet with the power of a database.
+
+## Video tutorial
+
+Check out this tutorial on using **Fillout** to create or update an Airtable base.
+
+https://youtu.be/m1vsI_99pgs
+
+## How it works
+
+### 1. Create your database in Airtable
+
+<Note>
+  **Note:** If you already have your base created in Airtable, you can skip this step.
+</Note>
+
+Log in to [Airtable](https://airtable.com/), and click `Add a base`.
+
+![Base Pn](/images/base.png)
+
+Give your base a **name**, and create the **fields** you need. You’ll need one field for every question in your form (eg. Single line text for a short answer, Single select for radio buttons, Multi-select, etc).
+
+![Ats Pn](/images/ats.png)
+
+If you are using the Select and Multi-select properties, make sure to type in the options you’d like people to choose from.
+
+Once you’ve added a **field** (and options, when needed) for every response field in your form, 90% of your work is now done.
+
+![Ats2 Pn](/images/ats2.png)
+
+Nice work\! Now you’re ready to sync it easily with a new or existing Fillout form.
+
+### 2. Connect your database to your form
+
+In your [Fillout](https://build.fillout.com/home) dashboard, click `+ Make a Fillout` followed by `Connect` and choose Airtable.
+
+![Screenshot2025 02 11at1 14 21PM Pn](/images/Screenshot2025-02-11at1.14.21PM.png)
+
+Select your theme (don’t worry, you can always change this later). Then, enter your **Account name** and `Connect to Airtable`.
+
+<Note>
+  **Note:** After connecting, you can switch to use [personal access tokens](https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens), as well, on the dashboard integrations tab.
+</Note>
+
+After making the selections, click `+ Create form`.
+
+![Screenshot2025 02 11at1 38 54PM Pn](/images/Screenshot2025-02-11at1.38.54PM.png)
+
+<Note>
+  **Troubleshooting:** Don’t see your table in the dropdown list? Check you have connected to the correct base, and try refreshing the page or hitting the refresh icon.
+</Note>
+
+### 3. Map your questions
+
+Fillout pulls questions and answer options from your Airtable base. Your `Airtable fields` now appear in the left sidebar. Simply drag & drop to build your form.
+
+![Airtable Ezgif Com Video To Gif Converter Gi](/images/Airtable-ezgif.com-video-to-gif-converter.gif)
+
+To connect a new question to your Airtable database, or check an existing connection, go to the dropdown menu inside **Connected \> Column to connect to** in the right sidebar.
+
+<Tip>
+  **Tip:** If you make changes in your Airtable base that you want to reflect in your Fillout form, hit the Refresh icon 🔄 , or refresh the Fillout page
+</Tip>
+
+### 4. Publish & Share
+
+Once you’ve finished creating your form, you’re ready to go\! Simply `Publish` and share. Form responses will now automatically populate inside your Airtable database.
+
+<Check>
+  **Good to know:** Fillout has many powerful features like [branching](https://www.fillout.com/help/page-logic) and [conditional hide/appear logic](https://www.fillout.com/help/conditional-hiding). No matter how complex your needs are, there’s a way to build it in Fillout.
+</Check>
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## Airtable specific guides
+
+<CardGroup cols={3}>
+  <Card title="Update existing Airtable records" icon="recycle" iconType="regular" color="#FFC738">
+    Edit existing records from Airtable and pre-fill fields with data from the record.
+  </Card>
+  <Card title="Create new linked records" icon="files-medical" iconType="regular" color="#FFC738">
+    Let users create new Airtable records from a record picker in your form.
+  </Card>
+  <Card title="Prevent duplicate submissions" icon="brake-warning" iconType="regular" color="#FFC738">
+    Stop duplicate form submissions from being saved to Airtable.
+  </Card>
+</CardGroup>

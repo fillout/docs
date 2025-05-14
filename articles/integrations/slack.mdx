@@ -1,0 +1,68 @@
+---
+title: "Connect your form to Slack"
+description: "Get a Slack notification whenever your form is submitted, with each question automatically formatted or with a custom message of your choosing."
+---
+
+## What is Slack
+
+[**Slack**](https://slack.com/) is a communication platform designed for teams to collaborate and work together more effectively. It offers messaging, file sharing, and other features to help teams stay connected and productive.
+
+## Video tutorial
+
+https://www.loom.com/embed/a619078ed5ec4d31bb9ee3d99fb62314?hideEmbedTopBar=true
+
+## How it works
+
+### **1. Link your Fillout form to Slack**
+
+Open your form in Fillout and head to the **Integrate** tab, then click `Slack`.
+
+![Screenshot2025 02 12at3 33 50PM Pn](/images/Screenshot2025-02-12at3.33.50PM.png)
+
+Choose a unique name for your Slack integration and click `Connect to Slack`. The name you choose doesn’t matter, it’s just for identifying which Slack workspace you connected to in case you reuse the connection on other forms.
+
+### 2. Enter the channel name
+
+Type the name of the channel from your workspace you want to send notifications to, e.g. #random or #general.
+
+![Screenshot2025 02 12at3 34 04PM Pn](/images/Screenshot2025-02-12at3.34.04PM.png)
+
+That's it\! You will now receive notifications on the Slack channel whenever a respondent completes your form.
+
+### Send all fields to Slack (recommended)
+
+Choose the first option, `Send all fields`, to get form responses in a nicely formatted message in your channel. You’ll see responses like this in Slack:
+
+![Screenshot2025 05 09at4 13 36PM Pn](/images/Screenshot2025-05-09at4.13.36PM.png)
+
+<Tip>
+  **Tip**: We recommend this option, since Fillout handles ordering the questions properly and you won’t need to make changes if you add more questions to your form.
+</Tip>
+
+### Send a custom message to Slack
+
+Choose the second option, `Custom message`, if you want to specify the exact information that gets sent to Slack. Press the `+` plus button or type `@` to reference questions in your form.
+
+![Screenshot2025 02 12at3 35 29PM Pn](/images/Screenshot2025-02-12at3.35.29PM.png)
+
+<Tip>
+  **Tip**: You can format Slack messages using [Slack’s formatting markdown language](https://slack.com/help/articles/202288908-Format-your-messages).
+</Tip>
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## **Other similar integrations**
+
+<CardGroup cols={3}>
+  <Card title="Send Microsoft Teams notifications" icon="users" iconType="regular" color="#FFC738">
+    View a summary of responses within the Teams app.
+  </Card>
+  <Card title="Send Discord messages" icon="discord" iconType="regular" color="#FFC738">
+    See an overview of form responses or choose a custom message.
+  </Card>
+  <Card title="Send submissions to a webhook" icon="webhook" iconType="regular" color="#FFC738">
+    Send responses to automation tools or any other Webhook endpoint.
+  </Card>
+</CardGroup>

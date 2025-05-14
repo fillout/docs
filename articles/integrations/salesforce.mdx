@@ -1,0 +1,76 @@
+---
+title: "How to create a Salesforce form"
+description: "Add or update your Salesforce records with a Fillout form. Embed your forms or share them anywhere via link or QR code."
+---
+
+## What is Salesforce
+
+[Salesforce](https://www.salesforce.com/ap/?ref=filloutforms-helparticle) is a cloud-based platform that provides customer relationship management (CRM) software solutions to help businesses manage and analyze customer interactions and improve sales and marketing efforts.
+
+## Video tutorial
+
+https://www.loom.com/share/c9e1d9e4470446fb97501d31b843c472
+
+## How it works
+
+### 1. Connect your form to Salesforce
+
+`+ Make a Fillout` or open an existing form. Navigate to **Integrate** page and look for `Salesforce`.
+
+![Screenshot2025 02 12at5 11 15PM Pn](/images/Screenshot2025-02-12at5.11.15PM.png)
+
+Click `Connect to Salesforce` to sign in with your Salesforce account. Then, choose an **object** where you would like to store responses to.
+
+### 2. Map your form fields
+
+Under **Mappings**, match the Salesforce fields on the left with the corresponding questions in your Fillout form using the dropdowns on the right.
+
+![Screenshot2025 02 12at5 13 12PM Pn](/images/Screenshot2025-02-12at5.13.12PM.png)
+
+Alternatively, you may choose to create a blank page, and drag and drop `Salesforce fields` in the left sidebar to your form.
+
+![Screenshot2025 02 12at5 14 20PM Pn](/images/Screenshot2025-02-12at5.14.20PM.png)
+
+<Check>
+  **Good to know:** These fields are automatically [mapped](https://www.fillout.com/help/additional-integration-mappings) to their corresponding columns on Salesforce.
+</Check>
+
+### 3. Publish and share
+
+That's it\! Click `Publish` in the upper right corner and share your link. Form responses will now automatically populate inside your Salesforce database.
+
+## Connect to a salesforce sandbox
+
+After selecting `Salesforce` in the **Integrate** page, tick the `Connect to a sandbox organization` checkbox. Then, click `Connect to Salesforce`.
+
+![Screenshot2025 05 09at4 39 55PM Pn](/images/Screenshot2025-05-09at4.39.55PM.png)
+
+## IPs to whitelist
+
+If your Salesforce organization restricts IP addresses for 3rd party app connections, you’ll want to whitelist the following IPs:
+
+```
+35.160.120.126
+44.233.151.27
+34.211.200.85
+```
+
+## Updating records from a form
+
+You can create a form that pre-fills with Salesforce data and updates an existing record when submitted:
+
+[Update existing Salesforce records with a form](https://www.notion.so/Update-existing-Salesforce-records-with-a-form-b7438f985c234b1c820dcce2eee92c78?pvs=21)
+
+## **Other similar integrations**
+
+<CardGroup cols={3}>
+  <Card title="Sync responses to Monday" icon="columns-3" iconType="regular" color="#FFC738">
+    Create leads, orders, projects and custom objects in Monday.
+  </Card>
+  <Card title="Create a HubSpot form" icon="hubspot" iconType="regular" color="#FFC738">
+    Create or update existing HubSpot contacts and embed your forms anywhere.
+  </Card>
+  <Card title="Sync deals and leads to Pipedrive" icon="handshake" iconType="regular" color="#FFC738">
+    Make deals, people, and organizations in Pipedrive with a Fillout form.
+  </Card>
+</CardGroup>

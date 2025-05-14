@@ -1,0 +1,82 @@
+---
+title: "Generate PDFs with form responses"
+description: "Autofill and sign PDFs + documents with form submissions. Attach completed documents to email notifications, allow immediate download in the form or upload to 3rd party apps."
+---
+
+## Video tutorial
+
+https://youtu.be/417PJJ8DJHU?si=cVGIb_Dm9hIurZwo
+
+## How it works
+
+### 1. Create an autofill PDF or document
+
+Open the form you would like to link with a PDF or document and head over to the **Integrate** tab. Look for `Generate PDF`.
+
+![Screenshot2025 02 10at1 05 02PM Pn](/images/Screenshot2025-02-10at1.05.02PM.png)
+
+Drag and drop your PDF or document file. You can **generate multiple documents** if needed.
+
+### 2. Map fields to your document
+
+If your PDF has recognizable form fields, Fillout will automatically detect them and add fields to the document, in amber color. If not, click `+ Add field` and drag/resize fields as necessary wherever you would like to insert text on your PDF.
+
+Choose any **field** to open the right-hand panel and choose the appropriate **Connected fields**.
+
+![Screenshot2025 02 10at1 00 00PM Pn](/images/Screenshot2025-02-10at1.00.00PM.png)
+
+You can also change the **Font settings** used for respondent input.
+
+![Screenshot2025 02 10at1 00 55PM Pn](/images/Screenshot2025-02-10at1.00.55PM.png)
+
+For **Choice** fields or questions, click `+ Add option` to insert multiple fields corresponding to each possible form option.
+
+![Screenshot2025 02 10at1 02 44PM Pn](/images/Screenshot2025-02-10at1.02.44PM.png)
+
+### 3. Preview and publish your document
+
+Click `Preview` to generate a document using your mappings and the latest submission from your form. Once you’re happy with the result, click `Publish` in the upper right corner to finalize the document.
+
+### 4. Set up your preferred workflow
+
+Now that your document mappings are configured, there are several ways to use your generated document.
+
+![Untitled Pn](/images/Untitled.png)
+
+By default, every time a new form submission is received, you can download the latest document in the **Results** tab. Look for the **Generated documents** column.
+
+## Send autofilled PDFs to respondents
+
+Go to your form's **Settings**, and turn on the `Respondent notifications` switch. Next, toggle the switch to `Attach generated documents or PDFs`. Alternatively, you can also do this with [custom emails](https://www.notion.so/Respondent-notification-email-b63d309e89e7465b91b195a44ccf2788?pvs=21) as well.
+
+## **Upload filled PDFs to 3rd party apps**
+
+You can upload generated documents to 3rd party apps, like Airtable, Notion, SmartSuite, GoogleSheets, Dropbox, and more. Connect your form to your preferred app under **Integrate**.
+
+In your integration **Mappings**, map a file upload field (from your 3rd party app) to the appropriate `Document` you created.
+
+![Screenshot2025 02 10at1 11 40PM Pn](/images/Screenshot2025-02-10at1.11.40PM.png)
+
+When you receive a submission, you will see an **integration link** in your form's **Results** page that will take you to the uploaded file in your chosen app.
+
+![Screenshot2025 02 10at1 13 41PM Pn](/images/Screenshot2025-02-10at1.13.41PM.png)
+
+## Let users download the PDF upon form completion
+
+Lastly, you can add a `Download PDF` button from the left-hand panel to any [ending page](https://www.notion.so/Ending-page-c472321e634e4ac5bd3b08104407619b?pvs=21) to let your respondents download the generated document once they complete a form.
+
+![Screenshot2025 02 10at1 14 35PM Pn](/images/Screenshot2025-02-10at1.14.35PM.png)
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Respondent notification email" icon="bell" iconType="regular" color="#FFC738">
+    Automatically email respondents a copy of their answers that can be edited.
+  </Card>
+  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738">
+    Make new or update existing Airtable bases with a customizable Fillout form you can embed anywhere.
+  </Card>
+  <Card title="Ending page" icon="party-bell" iconType="regular" color="#FFC738">
+    Show users a thank you page, redirect them to another site or form, or let them fill the form out again.
+  </Card>
+</CardGroup>

@@ -1,0 +1,26 @@
+---
+title: "Write a static value to an integration"
+description: "Send a fixed value to Airtable, Notion or another integration for any field, using static values. "
+---
+
+In certain cases, you may want to save a fixed value to an integration instead of letting your respondents input answers to a field. For example, you might have a **single select** field in Airtable or Notion that should always be marked as completed when submitted.
+
+## How to use static values (recommended approach)
+
+### 1. Select your integration
+
+First, navigate to the **Integrate** tab and click Airtable or Notion.
+
+### 2. **Map your form fields on Fillout**
+
+Go to the **Mappings** section and define a new mapping for the field you want to save to. In this case, we will choose the Status field. Then, select `write` icon and type a value you would like to use. We'll type Finished for this example.
+
+That’s it\! Your form is good to go.
+
+## Prevent respondents from editing the default value
+
+Another option is to go back to **Edit** from the top menu. Click the field or question followed by its `settings icon`. In the right-hand panel, under **Logic**, toggle `Hide always`. Now, the Status question containing the answer, Finished, will no longer be visible to respondents.
+
+<Check>
+  **Important:** If you’re creating an **update** form, you’ll need to use the **static value** approach described above instead.
+</Check>

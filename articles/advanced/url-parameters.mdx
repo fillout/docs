@@ -1,0 +1,79 @@
+---
+title: "URL Parameters/Hidden fields"
+description: "URL parameters are a powerful way to pass information to a Fillout form to support pre-filling and personalizing the form."
+---
+
+## Overview
+
+**URL parameters**, also known as “hidden fields”, can be used to customize your form with information you already know when you’re sharing it with respondents. For example:
+
+- Pre-filling fields with the email of the respondent
+- Recording where your form was shared via a **utm_source** parameter (e.g. Facebook, Google, Instagram, etc.)
+- Displaying the respondent's name in the form to welcome them
+
+## How to add a URL parameter or hidden field
+
+### 1. **Register a new parameter**
+
+Go to **Settings** and click `URL parameters`. Then, click `+ Add new`
+
+![Screenshot2025 02 05at2 33 53PM Pn](/images/Screenshot2025-02-05at2.33.53PM.png)
+
+Enter a **Parameter name**. Here, we can tell Fillout to expect a URL Parameter with a certain name.
+
+<Note>
+  Note that you can optionally provide a sample value for the parameter, if you’d like to see what your form looks like with that value being used (e.g. if you have some [hide/show logic](https://www.notion.so/Conditionally-hide-fields-dc375019d2cc42b18b96f9280c607f21?pvs=21) based on it).
+</Note>
+
+### 2. Use the parameter in your form
+
+You’re all set to start using your new URL parameter now\! We can now use it to:
+
+- [Pre-fill a field](https://www.notion.so/Pre-fill-fields-d10c479c53c24d0e8f6922cf6bbf785c?pvs=21), by pressing the `+` icon on a **Default value** property of any field
+- Write to any integration, by heading to the **Integrations** at the top and creating a new connection or editing an existing one, and mapping this URL Parameter to some field like in Airtable or Notion.
+- Display in plaintext in the form
+
+### 3. Share your form link
+
+To make the URL parameter active in your form, you need to set its value in the form link you share with respondents. For example, if we have a parameter called **name** registered, the default link would look like: https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx
+
+Say we know that the respondent's name that we’re sending our form to, Jane. We'll type her name at the end of the link like this: https://forms.fillout.com/t/9ofaEF4d54us?name=jane
+
+<Check>
+   **Important:** When you have multiple URL parameters for one form, you’ll need to separate them using an ampersand (&), like so: https://forms.fillout.com/t/your_form_id?\*\*email=jane@gmail.com&name=jane\*\*
+</Check>
+
+## Sample use cases
+
+### Personalize a form with URL parameters
+
+Type `@` in any question or field to reference information from your form. Click the `link` icon on the left side of the pop-up followed by the parameter.
+
+![Screenshot2024 06 26at6 10 16PM Pn](/images/Screenshot2024-06-26at6.10.16PM.png)
+
+`Publish` your form and share it to your respondents.
+
+![Screen Shot2023 11 14at3 31 07PM Pn](/images/ScreenShot2023-11-14at3.31.07PM.png)
+
+### **Recording URL parameters in submissions**
+
+You may want to track URL parameters in form submissions, like links shared on Facebook, Instagram, or LinkedIn to compare traffic. Fillout stores these by default on the Results page.
+
+If you're using an integration, and want to write your URL parameters there as well, you can either:
+
+a. Create a **Fillout** field and pre-fill it with a URL parameter under **Default value**. Then, set it to `Hide always` through the right-hand settings panel. If this field is synced to an integration already, then it will automatically write to your integration without it ever being visible to the respondent:
+
+![Screenshot2025 02 05at2 40 28PM Pn](/images/Screenshot2025-02-05at2.40.28PM.png)
+
+b. Head to your integration settings, and map the URL parameter directly. E.g. for Airtable, there is a **Mappings** section which you can use for this purpose. See [this article](https://www.notion.so/Map-Fillout-fields-to-integrations-abc240edf1c1404c8c7b4b182545ea10?pvs=21) for more information.
+
+## Other advanced features
+
+<CardGroup cols={3}>
+  <Card title="Pre-fill fields" icon="fill" iconType="regular" color="#FFC738">
+Set a default value to pre-populate form fields based on previous inputs, URL parameters, and more.
+  </Card>
+ <Card title="Answer piping" icon="wand-magic-sparkles" iconType="regular" color="#FFC738">
+Insert respondents' previous answers into form fields or text fields for a personalized experience.
+  </Card>
+</CardGroup>

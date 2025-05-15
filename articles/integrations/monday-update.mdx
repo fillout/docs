@@ -1,0 +1,56 @@
+---
+title: "Update existing items on Monday with a form"
+description: "Create forms that update existing items from Monday, and pre-fills fields with data from your Monday columns."
+---
+
+## How it works
+
+### 1. Switch your form to update mode
+
+Open an existing form. Select `Monday` from the **Integrate** tab in the top menu.
+
+![Screenshot2025 02 10at1 45 55PM Pn](/images/Screenshot2025-02-10at1.45.55PM.png)
+
+Then, click `Update item`.
+
+![Screenshot2025 02 10at1 46 22PM Pn](/images/Screenshot2025-02-10at1.46.22PM.png)
+
+### 2. Use a formula to specify the record to update
+
+In your Monday table, click `+` to add an `Item ID` column. Add another column, and select `Formula` this time. Copy and paste the formula provided on the Fillout integrations page, then click `Set formula`.
+
+![Screenshot2025 02 10at1 47 12PM Pn](/images/Screenshot2025-02-10at1.47.12PM.png)
+
+You'll now get a formula that defines a **unique link** for every item in your table.
+
+### 3. Publish and share your form
+
+That's it\! Click `Update` on the upper right corner. Then, `Publish` your form and **share** the link.
+
+Your form is automatically pre-filled for whichever record it is updating. Go to `Preview` and select a **Record to update** on the top right of your form.
+
+![Screenshot2025 02 11at12 44 09PM Pn](/images/Screenshot2025-02-11at12.44.09PM.png)
+
+## Use a custom link to update an item
+
+By default, items get updated by their unique ID. By toggling the `Custom link` switch, you will be able to choose another way to update your columns on Monday with [URL parameters](https://www.notion.so/URL-Parameters-Hidden-fields-f11c3b56de8e4c7d9cccf47825ccf3c4?pvs=21). For example, through Email input.
+
+![Screenshot2025 02 11at1 03 13PM Pn](/images/Screenshot2025-02-11at1.03.13PM.png)
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Sync responses to Monday" icon="columns-3" iconType="regular" color="#FFC738">
+Create leads, orders, projects and custom objects in Monday.
+  </Card>
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738">
+Perform an integration only when a certain condition is met.
+  </Card>
+ <Card title="URL Parameters" icon="brackets-curly" iconType="regular" color="#FFC738">
+Pass information to a Fillout form to support pre-filling and personalizing of the form.
+  </Card>
+</CardGroup>

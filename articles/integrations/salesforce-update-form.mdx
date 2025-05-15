@@ -1,0 +1,67 @@
+---
+title: "Update existing Salesforce records with a form"
+description: "Make a form that lets users edits existing records from Salesforce, and pre-fills fields with data from the record."
+---
+
+## How it works
+
+### **1. Set your form to update mode**
+
+First, navigate to the **Integrate** tab and select `Salesforce`.
+
+![Screenshot2025 02 12at5 22 38PM Pn](/images/Screenshot2025-02-12at5.22.38PM.png)
+
+Then, click `Update record`.
+
+![Sfra Pn](/images/sfra.png)
+
+### **2. Create a custom update link per record**
+
+You'll now get a formula that defines a unique link for every record in your object. Add this new formula to your Salesforce object.
+
+![Sfra2 Pn](/images/sfra2.png)
+
+Go to your Salesforce dashboard and click the `settings icon` on the upper right side followed by `Open Advanced Setup`.
+
+![Sfra3 Pn](/images/sfra3.png)
+
+Using **Quick Find** on the left-panel, search for `Object Manager`. Click your `object`. In our example, we used Contact.
+
+![Screen Shot2024 04 15at3 42 34PM Pn](/images/ScreenShot2024-04-15at3.42.34PM.png)
+
+Go to `Fields & Relationships` and create a `New` field.
+
+![Screenshot2025 02 12at5 38 18PM Pn](/images/Screenshot2025-02-12at5.38.18PM.png)
+
+Select **Formula** from the list. Then, copy and paste the formula from your Fillout form into Salesforce.
+
+### **3. Preview your form**
+
+Complete your setup by clicking `Finish setup`. You can test your form in `Preview` mode or use one of the unique links to update a record once your form is live.
+
+Your form will **automatically pre-fill** the data for the record it is updating.
+
+<Note>
+  **Note:** If you don’t provide an **id** in the unique URL, the form will create a new record instead.
+</Note>
+
+## **Advanced next steps (optional)**
+
+You can also enhance your update forms by integrating them with platforms like Salesforce App Builder or Lightning Experience. Instead of the formula in Step 3, you might consider using a `Button` field.
+
+This button can then be embedded within Salesforce interfaces for users to easily manage records.
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Create a Salesforce form" icon="cloud" iconType="solid" color="#FFC738">
+Add or update your Salesforce records with a Fillout form.
+  </Card>
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738">
+Perform an integration only when a certain condition is met.
+  </Card>
+</CardGroup>

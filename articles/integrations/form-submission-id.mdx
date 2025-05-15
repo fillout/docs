@@ -1,0 +1,50 @@
+---
+title: "Working with form submission IDs"
+description: "Link submissions back to Fillout by referencing its Submission ID. Search for a particular submission on the results page."
+---
+
+A unique **Submission ID** is generated whenever someone begins to complete your form. Submission ID’s are randomly generated, like 6bcedd3a-fe26-4bcb-9ce9-d3850e38d42c.
+
+## Send the submission ID to your integration
+
+### **1. Select your integration**
+
+First, navigate to **Integrate** tab \*\*\*\*located on the top menu, and choose the app or service you would like to use.
+
+### 2. Map Submission ID on your Fillout form
+
+Under **Mappings**, `+ Add new`. Then, choose what field you want to save the Submission ID to and select `Submission ID`from the dropdown on the right-hand side.
+
+![Screenshot2025 02 14at12 40 33PM Pn](/images/Screenshot2025-02-14at12.40.33PM.png)
+
+In this example, we’re going to save the Submission ID to a field called Fillout Submission ID in our Airtable base. Click `Finish setup` in the upper right corner. That’s it\! The Submission ID will now be saved to your integration.
+
+<Note>
+  **Note: **If you’re using Zapier or Make, you’ll also see the option to reference the Submission ID.
+</Note>
+
+## Finding a submission on the results page
+
+Go to **Results** from the top menu. Click `Filter` and look for `Submission ID` in the dropdown. Then, enter the ID number.
+
+![Screenshot2025 02 14at12 43 38PM Pn](/images/Screenshot2025-02-14at12.43.38PM.png)
+
+## Find the Submission ID for a particular result
+
+Press the `expand` button on the result you are interested in. You’ll see the **submission ID** at the bottom of the window in the right side.
+
+![Screenshot2025 02 14at12 44 42PM Pn](/images/Screenshot2025-02-14at12.44.42PM.png)
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738">
+Make new or update existing Airtable bases with a customizable Fillout form you can embed anywhere.
+  </Card>
+  <Card title="Create a Notion form" icon="cube" iconType="regular" color="#FFC738">
+Create or update existing Notion databases and embed your forms anywhere.
+  </Card>
+  <Card title="Responses" icon="square-poll-vertical" iconType="regular" color="#FFC738">
+View all submissions to your form. Use filtering and sorting to find a specific response or export to CSV.
+  </Card>
+</CardGroup>

@@ -1,0 +1,67 @@
+---
+title: "How to create a Google Sheets form"
+description: "Sync responses from your Fillout form to a Google Sheet in under 30 seconds."
+---
+
+## What Google Sheets is
+
+[**Google Sheets**](https://www.google.com/sheets/about/) offers users a collaborative platform to create, edit, and store spreadsheets online. It provides a wide range of features for data analysis, visualization, and sharing, making it a versatile tool for businesses, educators, and individuals.
+
+## Video Tutorial
+
+https://youtu.be/lD4h82s0LeE?feature=shared
+
+## How it works
+
+### 1. Start with a form synced to Google Sheets
+
+In the **homepage**, `+ Make a Fillout` followed by `Connect` and choose Google Sheets.
+
+![Image Pn](/images/image.png)
+
+Choose your theme (don’t worry, you can always change this later). `Sign in with Google` to connect your account.
+
+If you already have an existing form, simply go to the **Integrate** page and look for Google Sheets.
+
+### 2. View the spreadsheet
+
+A new sheet will automatically be created that will receive form responses. Click `this sheet` to open the sheet linked to your form.
+
+![Screenshot2025 02 14at2 35 10PM Pn](/images/Screenshot2025-02-14at2.35.10PM.png)
+
+Every question or field you add to your form will automatically become a column in your sheet.
+
+![Sheetstodo Pn](/images/sheetstodo.png)
+
+<Check>
+  **Good to know:** Fillout has many powerful features like [**branching**](https://www.fillout.com/help/page-logic) and [conditional hide/appear logic](https://www.fillout.com/help/conditional-hiding). No matter how complex your needs are, there’s a way to build it in Fillout.
+</Check>
+
+## Working with different field/question types in Fillout
+
+**Date times**
+
+- Note that all date timestamps that are sent to your Google Sheet (using the `Date time picker` field in Fillout) are written in UTC.
+- To display times in a local timezone, you can add an extra formula column to do so.
+
+**Address field**
+
+- By default, each part of the address field is added to separate columns in your Google Sheet. This makes it easy to filter responses by city or state, or simply hide the columns you don’t need.
+
+## Specify a condition
+
+You can run your integration only when a specific condition is met. Check out this [guide](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21).
+
+## **Other spreadsheet integrations**
+
+<CardGroup cols={3}>
+  <Card title="Sync form responses to Microsoft Excel" icon="file-excel" iconType="regular" color="#FFC738">
+    Enable automatic syncing of form responses to an Excel sheet online.
+  </Card>
+  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738">
+    Make new or update existing Airtable bases with a customizable Fillout form you can embed anywhere.
+  </Card>
+  <Card title="Create a SmartSuite form" icon="table-list" iconType="regular" color="#FFC738">
+    Automatically send responses from your form to a SmartSuite solution.
+  </Card>
+</CardGroup>

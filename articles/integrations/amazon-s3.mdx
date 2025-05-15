@@ -1,0 +1,63 @@
+---
+title: "Sync file uploads to Amazon S3"
+description: "Upload file submissions automatically to an Amazon S3 bucket with your Fillout form. Optionally set a dynamic file path to categorize submissions into nested buckets."
+---
+
+## What is Amazon S3
+
+[Amazon S3](https://aws.amazon.com/s3/) (Simple Storage Service) is a scalable cloud storage solution provided by AWS, designed to store and retrieve any amount of data with high availability and security. Ideal for businesses and developers, S3 offers cost-effective, reliable data storage for applications, backups, and content distribution, making it a top choice for cloud storage needs.
+
+## How it works
+
+### 1. Link your Fillout form to Amazon S3
+
+Go to **Integrate**, and click `S3`. If you don’t already have an access key to AWS, you can create one under `Security Credentials`. More details [here](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey).
+
+![Screenshot2025 05 15at4 54 45PM Pn](/images/Screenshot2025-05-15at4.54.45PM.png)
+
+<Note>
+  **Note: **The Amazon S3 integration is available on the **Enterprise** plan. [Learn more here](https://www.fillout.com/enterprise).
+</Note>
+
+
+### 2. Map your form fields on **Fillout**
+
+Choose which **Bucket** you would like to store the files in. Under **Upload fields**, click `+ Add new`.
+
+![S3 Pn](/images/s3.png)
+
+<Check>
+  **Important:** This integration is only applicable to **file uploads**. When creating your form, make sure you have at least one file upload field.
+</Check>
+
+### 3. **Publish and share**
+
+Once everything is set, click `Finish setup` on the upper right corner. That's it\! Your form's good to go. Simply `Publish`and share the link.
+
+## Add a dynamic folder path
+
+You can set a dynamic file path to categorize file uploads into folders, based on respondent input. Toggle the `Custom subfolder and file name?` switch, then enter a name for your **Folder path fragment** or type `@` to reference a field in your form.
+
+![Screenshot2025 02 17at11 55 51AM Pn](/images/Screenshot2025-02-17at11.55.51AM.png)
+
+You can also add a subfolder by typing `/` followed by the subfolder name of your choice.
+
+## Enter a personalized filename prefix
+
+You can also add a **Filename prefix**. enter text or type `@` to reference a field in your form.
+
+![S32 Pn](/images/s32.png)
+
+## Other similar integrations
+
+<CardGroup cols={3}>
+ <Card title="Sync uploads to Dropbox" icon="box-open" iconType="regular" color="#FFC738">
+Upload file submissions automatically to a Dropbox folder with your form.
+  </Card>
+  <Card title="Upload files to Google Drive" icon="google-drive" iconType="regular" color="#FFC738">
+Automatically upload files in a Google Drive folder through a Fillout form.
+  </Card>
+  <Card title="Sync files to OneDrive" icon="cloud-arrow-up" iconType="regular" color="#FFC738">
+Let respondents upload files to your Microsoft OneDrive folder using a Fillout form.
+  </Card>
+</CardGroup>

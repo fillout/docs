@@ -1,0 +1,54 @@
+---
+title: "Choose a record to update"
+description: "Let users choose the record they want to update in Fillout and update it with a custom form."
+---
+
+## Overview
+
+Fillout lets you [create update forms](https://www.notion.so/Update-existing-Airtable-records-with-a-form-50fe9fbbd8a7474594d094ae1aa97c14?pvs=21) to update existing records in Airtable, SmartSuite, Notion and other databases. By default, however, Fillout requires you to pass in the record ID to update in the URL. With the approach described below, you can have your users `choose which record they would like to update`.
+
+## How it works
+
+### 1. Create an “update” form
+
+Follow the steps [here](https://www.notion.so/Update-existing-Airtable-records-with-a-form-50fe9fbbd8a7474594d094ae1aa97c14?pvs=21) to create an “update” form. Make sure to select `Update record` on the integration and to publish the form.
+
+![Screenshot2025 05 16at3 14 57PM Pn](/images/Screenshot2025-05-16at3.14.57PM.png)
+
+### 2. Create another form to choose the record
+
+Create another form. This is the main form you will send your respondents to so that they can choose the record to update.
+
+In the form, add a linked record picker that links to the Airtable you would like to update. For example, if your first form updates a Product Inventory table, create this form tied to a different table that has a linked relation with Product Inventory. In this form, add a record picker to choose from those products:
+
+![Screenshot2025 05 16at3 15 06PM Pn](/images/Screenshot2025-05-16at3.15.06PM.png)
+
+### 3. Connect the forms together
+
+Navigate to the [ending page](https://www.notion.so/Ending-page-c472321e634e4ac5bd3b08104407619b?pvs=21) of your record chooser form and set your update form as the **New form to redirect to**.
+
+![Screenshot2025 05 16at3 15 30PM Pn](/images/Screenshot2025-05-16at3.15.30PM.png)
+
+Finally, pass the record ID to update the update form. Click `Set URL parameters` to choose the `ID` parameter of your update form and map it to your record picker field’s `Record ID`.
+
+![Screenshot2025 05 16at3 15 39PM Pn](/images/Screenshot2025-05-16at3.15.39PM.png)
+
+<Tip>
+  **Tip:** If you don’t want to create records in your first form, you can always [set a condition](https://www.notion.so/Conditional-integration-logic-180148986f5d47b981b5de5580b00169?pvs=21) for when the integration is run (set a condition that is never true).
+</Tip>
+
+That’s it\! You can now send respondents to your picker form to choose a record. Once they submit that form, they’ll be automatically redirected to the update form, which will be pre-filled with the record they chose.
+
+## Airtable specific guides
+
+<CardGroup cols={3}>
+  <Card title="Create new linked records" icon="files-medical" iconType="regular" color="#FFC738">
+    Let users create new Airtable records from a record picker in your form.
+  </Card>
+  <Card title="Select Airtable records in a dropdown" icon="square-caret-down" iconType="regular" color="#FFC738">
+    Make a linked record picker in Fillout and filter records based on prior input.
+  </Card>
+  <Card title="Create multiple records" icon="cabinet-filing" iconType="regular" color="#FFC738">
+    Make a Fillout form that creates multiple Airtable records at once, in different tables.
+  </Card>
+</CardGroup>

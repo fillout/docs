@@ -9,24 +9,44 @@ description: "Make a form that edits existing pages from Notion, and pre-fills f
 
 First, choose `Notion` in the **Integrate** page.
 
+![Screenshot2025 02 12at4 40 20PM Pn](/images/Screenshot2025-02-12at4.40.20PM.png)
+
 Then specify that you want to `Update page`.
+
+![Notionupdate Pn](/images/notionupdate.png)
 
 ### 2. Use a formula to specify the page to update
 
-You'll now get a formula in Fillout that defines a **unique link** for every page in your table. Create a new `formula`\*\*\*\*property in Notion and copy the formula provided by Fillout.
+You'll now get a formula in Fillout that defines a **unique link** for every page in your table. Create a new `formula`property in Notion and copy the formula provided by Fillout.
+
+![Notionupdate2 Pn](/images/notionupdate2.png)
 
 Adding a formula property is mostly for your convenience. If you already know the page ID of the page that you want to update, you can pass it into the URL yourself\!
 
-\<aside\> 📝 **Note:** If you don’t provide an **id** in the unique URL, the form will create a new page instead.
-
-\</aside\>
+<Note>
+  **Note:** If you don’t provide an **id** in the unique URL, the form will create a new page instead.
+</Note>
 
 ### 3. Preview your form
 
 That's it\! Click `Finish setup`. Preview your form or use a unique link to update a page. The form auto-fills for the page it's updating, and you can select the **Record to update** in the top left.
 
-Note: selecting the record to update is provided as a convenience while in “preview” mode.
+![Notionupdate3 Pn](/images/notionupdate3.png)
 
-\<aside\> 📝 **Note:** In Notion, the formulas with the links to update the records are most easily clickable when using a Table view.
+<Note>
+  **Note:** In Notion, the formulas with the links to update the records are most easily clickable when using a Table view.
+</Note>
 
-\</aside\>
+## Notion specific guides
+
+<CardGroup cols={3}>
+  <Card title="Create a Notion form" icon="cube" iconType="regular" color="#FFC738">
+Create or update existing Notion databases and embed your forms anywhere.
+  </Card>
+  <Card title="Add content to a Notion page" icon="file-waveform" iconType="regular" color="#FFC738">
+Use a Fillout form to add styled content to the body of a Notion page.
+  </Card>
+  <Card title="Embed forms on Notion" icon="memo" iconType="regular" color="#FFC738">
+Include surveys, questionnaires, and other forms within your workspace.
+  </Card>
+</CardGroup>

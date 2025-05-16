@@ -1,0 +1,70 @@
+---
+title: "Collect payments with Stripe and Airtable"
+description: "Create new records in Airtable every time a customer or client makes a purchase. Use Fillout forms to make a Stripe payment page and connect it to Airtable."
+---
+
+## Video tutorial
+
+https://www.youtube.com/watch?v=Izty_dqvn3M
+
+## How it works
+
+### 1. Create a payment form
+
+Click `Make a Fillout` on your home page followed by `Payment`. Next, `Connect to Stripe`.
+
+![Screenshot2025 05 16at3 23 32PM Pn](/images/Screenshot2025-05-16at3.23.32PM.png)
+
+Alternatively, you may create a `Form`, and add a `Payment` page in it. See [this guide](https://www.fillout.com/help/payment-page) for more information.
+
+### 2. Edit the product details
+
+Click `Edit product`, and fill in the details as you see fit.
+
+![Screenshot2025 05 16at3 30 27PM Pn](/images/Screenshot2025-05-16at3.30.27PM.png)
+
+You can also click the blue `+` icon to reference a selection field in your form where you asked customers to pick a product.
+
+![Screenshot2025 05 16at3 27 10PM Pn](/images/Screenshot2025-05-16at3.27.10PM.png)
+
+### 3. Update payment settings
+
+Switch payment type, add discount codes, collect email, pre-fill fields, choose payment methods, and more through the left-hand panel settings. Check [this article](https://www.fillout.com/help/payment-page) to learn more.
+
+![Psa3 Pn](/images/psa3.png)
+
+<Tip>
+  **Tip:** You can toggle the test mode switch on the upper right side of your Stripe account to preview the payment form without needing to make a payment.
+</Tip>
+
+### 4. Connect the form to an Airtable
+
+Go to **Integrate** in the top menu and click `Airtable`. Next, connect to your Airtable account and choose a [base and table](/016c5cbe122d4739bc34eb3deda81846?pvs=25#0249a46d7b524466a0fe3ef89a14c05b).
+
+### 5. Map Airtable columns to form payment fields
+
+Under **Mappings**, click `+ Add new`. Then, click `Pick reference` to check the payment fields. Go to your Airtable base, and create one column per payment field.
+
+![Psa5 Pn](/images/psa5.png)
+
+Click `↺` or the refresh icon. Then reference your new Airtable columns to their corresponding payment field in Fillout.
+
+![Psa6 Pn](/images/psa6.png)
+
+### 6. Publish and share your form
+
+That’s it\! Click `Publish` and share the link or embed it on your website. You’ll now get a new row filled out every time someone completes a purchase.
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Payment page" icon="credit-card" iconType="regular" color="#FFC738">
+Collect one-time and subscription payments via credit card, US bank account, Affirm, and Stripe.
+  </Card>
+  <Card title="Dynamic payment page" icon="cart-shopping" iconType="regular" color="#FFC738">
+Make a checkout page where the product section and price automatically update based on the order.
+  </Card>
+  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738">
+Make new or update existing Airtable bases with a customizable Fillout form you can embed anywhere.
+  </Card>
+</CardGroup>

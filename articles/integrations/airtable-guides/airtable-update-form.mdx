@@ -15,15 +15,19 @@ https://www.youtube.com/watch?v=mvDQBif-sbE&ab_channel=GAPConsulting
 
 First, choose `Airtable` on the **Integrate** tab.
 
-![Screenshot2025 05 15at8 22 38PM Pn](/images/Screenshot2025-05-15at8.22.38PM.png)
+![Screenshot2025 02 11at4 24 42PM Pn](/images/Screenshot2025-02-11at4.24.42PM.png)
 
 Then specify that you want to `Update record`.
+
+![Updateairtableinventory Pn](/images/updateairtableinventory.png)
 
 ## 2. Use a formula to specify the record to update
 
 You'll now get a formula that defines a **unique link** for every record in your table.
 
-Create a new `formula` \*\*\*\*field and copy the formula Fillout provides on the Integrate page.
+Create a new `formula` field and copy the formula Fillout provides on the **Integrate** page.
+
+![Uat2 Pn](/images/uat2.png)
 
 ## 3. Preview your form
 
@@ -31,11 +35,11 @@ That's it\! `Finish setup`. Try out your form in `Preview` mode, or click one of
 
 Your form is **automatically pre-filled** for whichever record it is updating. This can be changed in the top left area.
 
-Note: selecting the record to update is provided as a convenience while in “preview” mode.
+![Uat3 Pn](/images/uat3.png)
 
-\<aside\> 📝 **Note:** If you don’t provide an **id** in the unique URL, the form will create a new record instead.
-
-\</aside\>
+<Note>
+  **Note:** If you don’t provide an **id** in the unique URL, the form will create a new record instead.
+</Note>
 
 ## Let users choose a record to update
 
@@ -43,6 +47,24 @@ Use [this approach](https://www.notion.so/Choose-a-record-to-update-eb677830903b
 
 ## Advanced next steps (optional)
 
-You can use update forms in combination with products like Airtable interfaces, Softr, or Stacker. For example, instead of adding a formula in Step 2 above, we could add a `Button` field
+You can use update forms in combination with products like Airtable interfaces, Softr, or Stacker. For example, instead of adding a formula in Step 2 above, we could add a `Button` field.
+
+![Uat4 Pn](/images/uat4.png)
 
 Then, we can display this button in an Airtable interface, for users to easily edit the record.
+
+![Uat5 Pn](/images/uat5.png)
+
+## Airtable specific guides
+
+<CardGroup cols={3}>
+  <Card title="Create new linked records" icon="files-medical" iconType="regular" color="#FFC738">
+    Let users create new Airtable records from a record picker in your form.
+  </Card>
+  <Card title="Choose a record to update" icon="files" iconType="regular" color="#FFC738">
+    Let users choose the record they want to update in a custom Fillout form.
+  </Card>
+  <Card title="Create multiple records" icon="cabinet-filing" iconType="regular" color="#FFC738">
+    Make a Fillout form that creates multiple Airtable records at once, in different tables.
+  </Card>
+</CardGroup>

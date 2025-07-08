@@ -494,11 +494,14 @@
                 ]
               }
             ]
+          },
+          {
+            "group": "Zite"
           }
         ]
       },
       {
-        "tab": "What's New",
+        "tab": "What's new",
         "icon": "list-timeline",
         "groups": [
           {

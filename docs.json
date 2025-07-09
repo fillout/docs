@@ -496,7 +496,18 @@
             ]
           },
           {
-            "group": "Zite"
+            "group": "Zite",
+            "pages": ["zite"]
+          }
+        ]
+      },
+      {
+        "tab": "Zite",
+        "icon": "list-timeline",
+        "groups": [
+          {
+            "group": " ",
+            "pages": ["whats-new"]
           }
         ]
       },

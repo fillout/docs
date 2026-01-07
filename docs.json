@@ -174,7 +174,11 @@
                   {
                     "group": "Salesforce",
                     "icon": "salesforce",
-                    "pages": ["salesforce", "salesforce-update-form","salesforce-linked-records"]
+                    "pages": [
+                      "salesforce",
+                      "salesforce-update-form",
+                      "salesforce-linked-records"
+                    ]
                   },
                   {
                     "group": "Notion",
@@ -584,7 +588,10 @@
           },
           {
             "group": "Tips",
-            "pages": ["zite/tips/troubleshooting", "zite/tips/credit-efficiency"]
+            "pages": [
+              "zite/tips/troubleshooting",
+              "zite/tips/credit-efficiency"
+            ]
           },
           {
             "group": "Other",

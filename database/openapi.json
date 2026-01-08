@@ -41,11 +41,13 @@
                 "example": [
                   {
                     "id": "cd6ff4eff7845d96",
-                    "name": "Business Website Database"
+                    "name": "Business Website Database",
+                    "url": "https://build.fillout.com/database/cd6ff4eff7845d96"
                   },
                   {
                     "id": "2f95d3fcbc961f90",
-                    "name": "Professional Business Website"
+                    "name": "Professional Business Website",
+                    "url": "https://build.fillout.com/database/2f95d3fcbc961f90"
                   }
                 ]
               }
@@ -951,9 +953,15 @@
             "type": "string",
             "description": "Name of the database",
             "example": "Business Website Database"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to view this database in the app",
+            "example": "https://build.fillout.com/database/cd6ff4eff7845d96"
           }
         },
-        "required": ["id", "name"]
+        "required": ["id", "name", "url"]
       },
       "FieldType": {
         "type": "string",
@@ -1016,9 +1024,15 @@
           "workspaceId": {
             "type": "string",
             "description": "Workspace ID that owns this database"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to view this database in the app",
+            "example": "https://build.fillout.com/database/bad4b276-f604-47ad-86e5-d2ae4f60968f"
           }
         },
-        "required": ["id", "name", "tables", "createdAt", "updatedAt"]
+        "required": ["id", "name", "tables", "createdAt", "updatedAt", "url"]
       },
       "DatabaseWithTables": {
         "$ref": "#/components/schemas/Database"
@@ -1055,9 +1069,23 @@
               "$ref": "#/components/schemas/View"
             },
             "description": "List of views in the table"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to view this table in the app",
+            "example": "https://build.fillout.com/database/bad4b276-f604-47ad-86e5-d2ae4f60968f/tbl_abc123"
           }
         },
-        "required": ["id", "name", "order", "primaryFieldId", "fields", "views"]
+        "required": [
+          "id",
+          "name",
+          "order",
+          "primaryFieldId",
+          "fields",
+          "views",
+          "url"
+        ]
       },
       "Field": {
         "type": "object",

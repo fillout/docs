@@ -2,7 +2,7 @@
 title: "Connect Zite Database to Relay.app"
 description: "Automate workflows by connecting your Zite database tables to other apps with Relay.app."
 sidebarTitle: "Relay.app"
-icon: "bolt"
+icon: "swap-arrows"
 ---
 
 ## Overview
@@ -17,16 +17,37 @@ The [Zite Relay.app integration](https://www.relay.app/apps/zite/integrations) l
 
 <Steps>
   <Step title="Connect Zite to Relay.app">
-    Create a free [Relay.app account](https://www.relay.app). Then, set up a trigger to start your workflow.
+    Create a free [Relay.app account](https://www.relay.app). Click `Apps` followed by `Manage apps`. 
+
+    ![Screenshot 2026 01 20 At 1 31 57 PM](/images/Screenshot2026-01-20at1.31.57PM.png)
+
+    Then, search for `Zite`.
   </Step>
-  <Step title="Choose your actions">
-    Select one or more actions to run as part of your workflow. Connect and authorize Zite and any other apps you want to automate.
+  <Step title="Create a workflow">
+    On the upper left side, click `+ New workflow`. You can select Zite as the trigger or use it in succeeding steps. For example, let's record web visitors who book a Zoom demo as leads in our Zite database.
+
+    First, `+ Add trigger`. Let's click `Zoom`, followed by `Meeting scheduled`.
+
+    ![Screenshot 2026 01 20 At 2 36 45 PM](/images/Screenshot2026-01-20at2.36.45PM.png)
+
+    Now, let's `+ Add step`. Here, we'll choose `Zite` and `Add record to table`.
+
+    ![Screenshot 2026 01 20 At 3 06 06 PM](/images/Screenshot2026-01-20at3.06.06PM.png)
   </Step>
   <Step title="Select your Database and Table">
-    Choose the **Database** and **Table** you want to connect. Relay.app will dynamically show all the fields from your selected table.
+    Choose the Zite **Database** and **Table** you want to connect. Add and map **Fields to populate**. In our example, we'll auto-populate the email and meeting date columns in our database for every new meeeting.
+
+    ![Screenshot 2026 01 20 At 3 29 38 PM](/images/Screenshot2026-01-20at3.29.38PM.png)
   </Step>
   <Step title="Turn on your workflow">
-    Test your workflow, then turn it on to start automating.
+    `Start a test run` first. When everything's working as intended, turn it `On`.
+
+    <img
+      src="/images/Screenshot2026-01-20at3.38.07PM.png"
+      alt="Screenshot 2026 01 20 At 3 38 07 PM"
+      title="Screenshot 2026 01 20 At 3 38 07 PM"
+      style={{ width:"53%" }}
+    />
   </Step>
 </Steps>
 
@@ -34,26 +55,26 @@ The [Zite Relay.app integration](https://www.relay.app/apps/zite/integrations) l
 
 Start a workflow when something happens in Zite:
 
-| Trigger | Description |
-| --- | --- |
-| **New record added** | Fires when a new record is created in a table |
-| **Record changed** | Fires when an existing record is updated |
+| Trigger                           | Description                                            |
+| --------------------------------- | ------------------------------------------------------ |
+| **New record added**              | Fires when a new record is created in a table          |
+| **Record changed**                | Fires when an existing record is updated               |
 | **Record first meets conditions** | Fires when a record first matches specified conditions |
 
 <Info>
   All triggers fire in real-time—no polling delays.
 </Info>
 
-## Actions
+## Steps
 
 Do something in Zite from another app:
 
-| Action | Description |
-| --- | --- |
-| **Add record to table** | Creates a new record in a table |
-| **Update record** | Updates an existing record |
-| **Create or update record** | Creates a new record or updates an existing one |
-| **Find record(s)** | Searches for records matching specified criteria |
+| Action                      | Description                                      |
+| --------------------------- | ------------------------------------------------ |
+| **Add record to table**     | Creates a new record in a table                  |
+| **Update record**           | Updates an existing record                       |
+| **Create or update record** | Creates a new record or updates an existing one  |
+| **Find record(s)**          | Searches for records matching specified criteria |
 
 ## Common use cases
 

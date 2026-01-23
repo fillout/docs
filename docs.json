@@ -678,6 +678,7 @@
               "database/sync-form-results",
               "database/import-data",
               "database/access",
+              "database/guides/auto-generate-ids",
               "database/formulas"
             ]
           },

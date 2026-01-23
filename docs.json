@@ -672,6 +672,7 @@
             "group": "Guides",
             "icon": "book-open",
             "pages": [
+              "database/guides/auto-generate-ids",
               "database/make-database",
               "database/build-apps",
               "database/sync-form-results",

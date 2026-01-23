@@ -1,0 +1,60 @@
+---
+title: "Auto-Generate IDs"
+icon: "input-numeric"
+mode: "wide"
+description: "Automatically create unique ID numbers for each new record on your Zite Database."
+---
+
+## Overview
+
+For some use cases, generating unique record IDs can be helpful when keeping track of data or exporting it for external use.
+
+## Common use cases
+
+- **Invoices:** Easily assign and reference invoice numbers when billing clients
+- **Data exports:** Maintain consistent identifiers across systems
+- **Internal tracking:** Quickly reference specific records without confusion
+
+## How to create unique record IDs
+
+<Steps>
+  <Step title="Create or edit field">
+    In your database, create a new column or hover over an existing column and click followed by`Edit field`.
+
+    ![Screenshot 2026 01 23 At 4 47 09 PM](/images/Screenshot2026-01-23at4.47.09PM.png)
+  </Step>
+  <Step title="Use Autonumber">
+    Choose the `Autonumber` field type.
+
+    ![Screenshot 2026 01 23 At 4 47 05 PM](/images/Screenshot2026-01-23at4.47.05PM-2.png)
+
+    <Note>
+      Autonumber fields assign simple numbers starting from 1. For more control over how your IDs look, read on.
+    </Note>
+    That's it! A number will now be generated for each row, whether existing or new.
+
+    ![Screenshot 2026 01 23 At 4 48 20 PM](/images/Screenshot2026-01-23at4.48.20PM-1.png)
+  </Step>
+</Steps>
+
+## How to create custom unique record IDs
+
+<Steps>
+  <Step title="Start with an Autonumber column">
+    Follow the steps above. You can hide this field from view.
+  </Step>
+  <Step title="Add a Formula column">
+    `+ Add field` and select `Formula`. 
+
+    ![Screenshot 2026 01 23 At 5 15 54 PM](/images/Screenshot2026-01-23at5.15.54PM-1.png)
+  </Step>
+  <Step title="Input formula">
+    Enter a **Title** or column name, followed by your **Formula**. Then, click `Create`.
+
+    ![Screenshot 2026 01 23 At 5 17 20 PM](/images/Screenshot2026-01-23at5.17.20PM-1.png)
+
+    That's it! A custom number will now be generated for both new and existing records.
+
+    ![Screenshot 2026 01 23 At 5 17 44 PM](/images/Screenshot2026-01-23at5.17.44PM-1.png)
+  </Step>
+</Steps>

@@ -362,7 +362,7 @@
               "workflows",
               {
                 "group": "Workflow Types",
-                "icon": "code-branch",
+                "icon": "circle-nodes",
                 "pages": [
                   "ai-workflows",
                   "custom-emails",

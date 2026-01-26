@@ -293,6 +293,7 @@
           {
             "group": "Sharing & Embedding",
             "pages": [
+              "fillout/sharing-and-embedding/overview",
               "sharing",
               "embedded-url-parameters",
               {
@@ -678,7 +679,6 @@
               "database/sync-form-results",
               "database/import-data",
               "database/access",
-              "database/guides/auto-generate-ids",
               "database/formulas"
             ]
           },

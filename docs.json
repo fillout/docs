@@ -293,7 +293,7 @@
           {
             "group": "Sharing & Embedding",
             "pages": [
-              "fillout/sharing-and-embedding/overview",
+              "distribute",
               "sharing",
               "embedded-url-parameters",
               {

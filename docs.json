@@ -359,6 +359,7 @@
           {
             "group": "Fillout Workflows",
             "pages": [
+              "automations",
               "workflows",
               {
                 "group": "Workflow Types",
@@ -504,11 +505,12 @@
           {
             "group": "Account",
             "pages": [
-              "account",
+              "organization",
               {
                 "group": "Your Account",
                 "icon": "user-gear",
                 "pages": [
+                  "account",
                   "reset-password",
                   "delete-user-account",
                   "billing-and-payments",

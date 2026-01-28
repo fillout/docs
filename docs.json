@@ -394,6 +394,45 @@
             ]
           },
           {
+            "group": "Account",
+            "pages": [
+              "organization",
+              {
+                "group": "Your Account",
+                "icon": "user-gear",
+                "pages": [
+                  "account",
+                  "reset-password",
+                  "delete-user-account",
+                  "billing-and-payments",
+                  "team-plan",
+                  "pricing-discounts",
+                  "2fa"
+                ]
+              },
+              {
+                "group": "Team Collaboration",
+                "icon": "users-line",
+                "pages": [
+                  "organizations",
+                  "workspaces",
+                  "invite-collaborators",
+                  "manage-members",
+                  "granular-permissions",
+                  "comment"
+                ]
+              },
+              {
+                "group": "Partners",
+                "icon": "handshake",
+                "pages": [
+                  "affiliate-program",
+                  "startup-discount"
+                ]
+              }
+            ]
+          },
+          {
             "group": "Guides",
             "pages": [
               "guides",
@@ -452,7 +491,6 @@
           },
           {
             "group": "API Reference",
-            "icon": "code",
             "pages": [
               {
                 "group": "Fillout REST API",
@@ -498,45 +536,6 @@
                   "add-links-to-form",
                   "collaborative-forms",
                   "smtp"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "organization",
-              {
-                "group": "Your Account",
-                "icon": "user-gear",
-                "pages": [
-                  "account",
-                  "reset-password",
-                  "delete-user-account",
-                  "billing-and-payments",
-                  "team-plan",
-                  "pricing-discounts",
-                  "2fa"
-                ]
-              },
-              {
-                "group": "Team Collaboration",
-                "icon": "users-line",
-                "pages": [
-                  "organizations",
-                  "workspaces",
-                  "invite-collaborators",
-                  "manage-members",
-                  "granular-permissions",
-                  "comment"
-                ]
-              },
-              {
-                "group": "Partners",
-                "icon": "handshake",
-                "pages": [
-                  "affiliate-program",
-                  "startup-discount"
                 ]
               }
             ]

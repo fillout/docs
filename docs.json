@@ -651,7 +651,6 @@
           },
           {
             "group": "Other",
-            "icon": "gift",
             "pages": [
               "affiliate-program",
               "zite/subscription",
@@ -674,12 +673,12 @@
             "group": "Guides",
             "icon": "book-open",
             "pages": [
-              "database/guides/auto-generate-ids",
               "database/make-database",
               "database/build-apps",
               "database/sync-form-results",
               "database/import-data",
               "database/access",
+              "database/guides/auto-generate-ids",
               "database/formulas"
             ]
           },

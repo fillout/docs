@@ -589,6 +589,7 @@
           {
             "group": "Getting Started",
             "pages": [
+              "zite/getting-started/overview",
               "zite/getting-started",
               "zite/design",
               "zite/integrations",

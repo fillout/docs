@@ -19,6 +19,16 @@ To display dynamic data, first pull the data from Airtable, Notion, or another s
 In Fillout, you can **display data almost anywhere**: in question labels, alerts, logic for hiding or validating questions, and more. In this example, we'll use a Text field type, which lets us display uneditable, formatted text.
 
 <Steps>
+  <Step title="Connect your Fillout form to Airtable">
+    Follow the steps [here](https://www.fillout.com/help/airtable#how-it-works). Once connected, Airtable [fields will automatically show up](https://www.fillout.com/help/additional-integration-mappings#automatic-field-mapping) in the left-hand panel. You can also [manually map](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually) existing and new fields.
+
+    <img
+      src="/images/Screenshot2026-02-05at4.44.30PM.png"
+      alt="Screenshot 2026 02 05 At 4 44 30 PM"
+      title="Screenshot 2026 02 05 At 4 44 30 PM"
+      style={{ width:"34%" }}
+    />
+  </Step>
   <Step title="Add a Heading field">
     First, drag and drop the Heading field from the left-hand panel to your form. In this example, we have a record picker (Choose a manufacturer) that we want to display more information from.
 
@@ -62,8 +72,8 @@ Reference data in the **Default value** to pre-fill fields. More info [here](/pr
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Login page" icon="key" iconType="regular" color="#FFC738" href="/login-page">
-    Require respondents to verify their email, key in a password, or use SSO.
+  <Card title="Map fields" icon="right-left" iconType="regular" color="#FFC738">
+    Configure form fields and values to send to integrations.
   </Card>
   <Card title="URL Parameters" icon="brackets-curly" iconType="regular" color="#FFC738" href="/url-parameters">
     Pass information to a form to support pre-filling.

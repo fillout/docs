@@ -285,6 +285,7 @@
               "input-validation",
               "conditional-hiding",
               "answer-piping",
+              "import-subform-data",
               "combine-and-repeat-forms",
               "condition-logic-groups",
               "conditional-integration"

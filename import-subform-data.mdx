@@ -1,4 +1,76 @@
 ---
 title: "Import Subform Data"
-iconType: "file-fragment"
+description: "Pass data from a subform to a main form using Fillout."
+icon: "file-fragment"
 ---
+
+## Overview
+
+Values from a [subform](https://www.fillout.com/help/subforms) submission can be automatically inserted into a main form using [Answer Piping](https://www.fillout.com/help/answer-piping). By referencing subform responses, you can populate any field where answer piping is supported, such as question fields, headings, default values, labels, logic, and more.
+
+This speeds up form completion and reduces data entry errors. For example, you can:
+
+- Auto-fill contact information collected in a subform into the main form
+- Reference prior selections to personalize questions or instructions
+- Carry over calculated values or totals from a subform into summary fields in the main form
+
+## How to import data
+
+<Steps>
+  <Step title="Choose destination field">
+    On your main form, choose a field where you'd like to insert subform values to. In this example, we'll create a quote request where customers can see a summary in the end.
+
+    ![Screenshot 2026 02 12 At 6 53 10 PM](/images/Screenshot2026-02-12at6.53.10PM.png)
+  </Step>
+  <Step title="Select subform question">
+    Type **@** to open the answer piping menu and click your **subform question**.
+
+    <img
+      src="/images/Screenshot2026-02-12at6.55.29PM.png"
+      alt="Screenshot 2026 02 12 At 6 55 29 PM"
+      title="Screenshot 2026 02 12 At 6 55 29 PM"
+      style={{ width:"75%" }}
+    />
+  </Step>
+  <Step title="Choose subform values">
+    Choose the **specific fields or questions in your subform**. For example, let's add a quantity to each print type in the summary page.
+
+    <img
+      src="/images/Screenshot2026-02-12at6.59.42PM.png"
+      alt="Screenshot 2026 02 12 At 6 59 42 PM"
+      title="Screenshot 2026 02 12 At 6 59 42 PM"
+      style={{ width:"77%" }}
+    />
+
+    You can also optionally show or hide fields. In our example, we'll only make print types show if they were previously selected. Check out our quick guide.
+  </Step>
+  <Step title="Publish and share">
+    That's it! Dynamic subform values will now automatically populate forms.
+
+    <img
+      src="/images/Screenshot2026-02-12at7.17.35PM.png"
+      alt="Screenshot 2026 02 12 At 7 17 35 PM"
+      style={{ width:"59%" }}
+    />
+
+    Click `Publish` in the upper right corner to share or embed your form.
+  </Step>
+</Steps>
+
+## Pass main form data
+
+You can also do it the other way around by sending values from your main form to your subform. Check out this [quick guide](https://www.fillout.com/help/url-parameters-between-forms).
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Answer piping" icon="wand-magic-sparkles" iconType="regular" color="#FFC738">
+    Insert previous answers into upcoming questions or fields.
+  </Card>
+  <Card title="Subforms" icon="diagram-nested" iconType="regular" color="#FFC738" href="/subforms">
+    Collect repeated data with compact nested forms.
+  </Card>
+  <Card title="Form parameters" icon="file-brackets-curly" iconType="regular" color="#FFC738" href="/url-parameters-between-forms">
+    Share data between forms with URL parameters.
+  </Card>
+</CardGroup>

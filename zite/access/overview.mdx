@@ -1,0 +1,69 @@
+---
+title: "Access & Sharing"
+description: "Understand how Zite app access works — from internal team use to sharing publicly on the web."
+sidebarTitle: "Overview"
+icon: "circle-info"
+---
+
+## Overview
+
+Every Zite app is **internal by default** — only members of your organization can access it. When you're ready, you can [share your app to the web](/zite/access/share-to-web) so people outside your organization can use it too.
+
+## Internal apps (default)
+
+When you create a new app, it starts in internal mode. Organization members are automatically authenticated — no login screen is needed.
+
+### Who can access internal apps
+
+- **Admins** — Always have full access to all apps in the organization.
+- **Invited collaborators** — Organization members who have been specifically invited to the app.
+
+### Invite collaborators
+
+<Steps>
+  <Step title="Open Access settings">
+    Go to **Settings** > **Access** in the app editor.
+  </Step>
+  <Step title="Add collaborators">
+    Under **People with access**, click `Add collaborators...` and enter one or more email addresses.
+  </Step>
+  <Step title="Choose an access level">
+    Select an access level for each collaborator:
+
+    | Level | Description |
+    |-------|-------------|
+    | **Edit** | Can use the app and edit it in the editor |
+    | **Use only** | Can use the app but cannot edit it |
+
+    The default access level is **Edit**.
+  </Step>
+  <Step title="Send invites">
+    Click `Send`. Pending invites expire after 2 weeks.
+  </Step>
+</Steps>
+
+<Note>
+  If you invite someone with Edit access to an app that has a connected Zite Database, they will also be invited to the underlying database.
+</Note>
+
+### Manage collaborator access
+
+In the **People with access** section, click the access dropdown next to a user's name to:
+
+- **Change access level** — Switch between Edit and Use only
+- **Remove access** — Remove the collaborator (you'll be asked to confirm)
+- **Revoke pending invites** — Cancel invites that haven't been accepted
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Share to web" icon="globe" iconType="regular" color="#FFC738" href="/zite/access/share-to-web">
+    Make your app accessible to people outside your organization.
+  </Card>
+  <Card title="Authentication" icon="lock" iconType="regular" color="#4FD1C5" href="/zite/access/authentication">
+    Add sign-in to your shared app with magic links or Google.
+  </Card>
+  <Card title="User sync" icon="arrows-rotate" iconType="regular" color="#A78BFA" href="/zite/access/user-sync">
+    Sync app users to a database table automatically.
+  </Card>
+</CardGroup>

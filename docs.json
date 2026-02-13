@@ -33,6 +33,14 @@
     {
       "source": "/update-smartsuite",
       "destination": "/smartsuite-update"
+    },
+    {
+      "source": "/zite/sharing",
+      "destination": "/zite/access/share-to-web"
+    },
+    {
+      "source": "/zite/add-user-login",
+      "destination": "/zite/access/authentication"
     }
   ],
   "navigation": {
@@ -602,10 +610,18 @@
             "group": "Basics",
             "pages": [
               "zite/selective-edits",
-              "zite/sharing",
+              {
+                "group": "Access & Sharing",
+                "icon": "share-nodes",
+                "pages": [
+                  "zite/access/overview",
+                  "zite/access/share-to-web",
+                  "zite/access/authentication",
+                  "zite/access/user-sync"
+                ]
+              },
               "zite/embedding",
               "zite/customize-links",
-              "zite/add-user-login",
               "zite/history",
               "zite/model-selection",
               {

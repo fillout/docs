@@ -1,0 +1,93 @@
+---
+title: "Authentication for shared apps"
+description: "Add sign-in to your shared Zite app with magic links, Google, or invite-only access."
+sidebarTitle: "Authentication"
+icon: "lock"
+---
+
+## Overview
+
+When your app is [shared to the web](/zite/access/share-to-web), you can require users to sign in before accessing it. Zite handles authentication for you — no custom login code needed.
+
+## Video tutorial
+
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/e3eczZRLIC8" title="Add user login to your Zite Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+
+[_User Login in 5 minutes, a tutorial from Zite partner Automation Helpers_](https://www.automationhelpers.com/)
+
+## Set up authentication
+
+<Steps>
+  <Step title="Share your app to the web">
+    If you haven't already, enable **Share to web** in **Settings** > **Access**. See [Share to web](/zite/access/share-to-web).
+  </Step>
+  <Step title="Add login">
+    Type **"Add user login"** in your Zite chat, or click **+** and select `Add login`.
+
+    <img
+      src="/images/Screenshot2025-12-16at2.43.01PM.png"
+      alt="Add login option"
+      style={{ width:"43%" }}
+    />
+  </Step>
+  <Step title="Configure sign-in methods">
+    In **Settings** > **Access**, under **Sign-in method**, choose which methods to enable:
+
+    - **Magic link** — Users receive a sign-in link via email (valid for 10 minutes)
+    - **Google Sign-in** — Users sign in with their Google account
+
+    Both are enabled by default. At least one method must be enabled.
+  </Step>
+  <Step title="Choose who can sign up">
+    Under **Who can sign up?**, select one of:
+
+    | Setting | Description |
+    |---------|-------------|
+    | **Invite only** (default) | Only users you explicitly add can sign in |
+    | **Anyone** | Anyone who visits your app can create an account |
+    | **Only allowed domains** | Only users from specific email domains (e.g., `example.com`) can sign up |
+  </Step>
+</Steps>
+
+## Customize login page
+
+Navigate to the `Login page` in the dropdown, then `Edit` your logo, colors, and branding.
+
+![Customize login page](/images/Screenshot2025-12-16at2.59.54PM.png)
+
+## Manage users
+
+When your app has authentication enabled, the **Users** tab shows external users who have signed in.
+
+### Add users
+
+In the **Users** tab, click `Add user to app...`, enter the user's email address, and optionally their first and last name.
+
+### Remove users
+
+Click the **Guest** dropdown next to a user and select `Remove`. This removes the user's access to the app.
+
+## Key features
+
+- **User-specific data** — Logged-in user records are automatically available in your [workflows](/zite/workflows)
+- **Automatic security** — Backend workflows are secured by default for authenticated users
+- **No user limits** — Add unlimited users without per-seat pricing
+- **Database integration** — Connect to Airtable, Google Sheets, Zite Database, or other databases
+
+<Info>
+  To automatically sync user data to a database table, see [User sync](/zite/access/user-sync).
+</Info>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Access & Sharing" icon="circle-info" iconType="regular" color="#FFC738" href="/zite/access/overview">
+    Overview of internal apps and access levels.
+  </Card>
+  <Card title="Share to web" icon="globe" iconType="regular" color="#4FD1C5" href="/zite/access/share-to-web">
+    Make your app accessible outside your organization.
+  </Card>
+  <Card title="User sync" icon="arrows-rotate" iconType="regular" color="#A78BFA" href="/zite/access/user-sync">
+    Sync app users to a database table automatically.
+  </Card>
+</CardGroup>

@@ -1,0 +1,64 @@
+---
+title: "Share to web"
+description: "Make your Zite app publicly accessible to people outside your organization."
+sidebarTitle: "Share to Web"
+icon: "globe"
+---
+
+## Overview
+
+When you share your Zite app to the web, anyone with the link can access it — even people outside your organization. This is ideal for customer-facing portals, public-facing tools, directories and websites.
+
+## Enable sharing
+
+<Steps>
+  <Step title="Open Access settings">
+    In the app editor, go to **Settings** > **Access**.
+  </Step>
+  <Step title="Toggle on Share to web">
+    Enable the **Share to web** toggle.
+
+    If your app uses authentication, you'll be prompted to choose who can sign up. See [Authentication](/zite/access/authentication) for details.
+  </Step>
+  <Step title="Share the link">
+    Click `Share` in the upper right corner, then `Copy` to copy your app's link. Click <Icon icon="arrow-up-right-from-square" /> to open it in a new tab.
+  </Step>
+</Steps>
+
+## Share a QR code
+
+In the **Share** menu, choose <Icon icon="qrcode" /> `QR code`, then `Copy` or `Download` the generated code.
+
+<img
+  src="/images/Screenshot2025-08-20at4.33.41PM.png"
+  alt="QR code sharing"
+  style={{ width:"49%" }}
+/>
+
+## Public apps (no login required)
+
+If your app doesn't use authentication, anyone with the link can access it without signing in.
+
+To require sign-in while still sharing your app to the web, see [Authentication](/zite/access/authentication).
+
+## Disable sharing
+
+To make your app internal again, go to **Settings** > **Access** and toggle off **Share to web**. External users and guests will lose access immediately.
+
+<Tip>
+  Customize your app's domain and link preview from **Settings** > **Link**. Learn more in [Customize links](/zite/customize-links).
+</Tip>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Access & Sharing" icon="circle-info" iconType="regular" color="#FFC738" href="/zite/access/overview">
+    Overview of internal apps and access levels.
+  </Card>
+  <Card title="Authentication" icon="lock" iconType="regular" color="#4FD1C5" href="/zite/access/authentication">
+    Add sign-in with magic links or Google.
+  </Card>
+  <Card title="Customize links" icon="link" iconType="regular" color="#A78BFA" href="/zite/customize-links">
+    Set up a custom domain and link preview.
+  </Card>
+</CardGroup>

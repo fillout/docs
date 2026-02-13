@@ -1,0 +1,57 @@
+---
+title: "User sync"
+description: "Automatically sync your Zite app users to a database table when they sign up or log in."
+sidebarTitle: "User Sync"
+icon: "arrows-rotate"
+---
+
+## Overview
+
+User sync connects your app's authenticated users to a table in your database. When enabled, users are automatically added to the specified table when they sign up or log in. This is useful for building user profiles, tracking additional user data, and setting up row-level permissions.
+
+User sync works for both internal apps and apps that are shared to the web.
+
+## Prerequisites
+
+- Your app must have a connected database (Zite Database or Airtable)
+- The database must have a table with at least one email field
+
+## Enable user sync
+
+<Steps>
+  <Step title="Open Access settings">
+    Go to **Settings** > **Access** and find the **Sync users to database** section.
+
+    If no database is connected, click `Connect database` to set one up first.
+  </Step>
+  <Step title="Configure sync settings">
+    Select the following:
+
+    - **Users table** — The table that stores your users
+    - **Email field** — The email field in that table (required)
+    - **First name field** — Optional
+    - **Last name field** — Optional
+  </Step>
+  <Step title="Enable">
+    Click `Enable` to save and activate user sync.
+  </Step>
+</Steps>
+
+## Edit or disable user sync
+
+Once enabled, the section shows your connected table with a link to open it. Click `Edit` to change the table or field configuration, or `Remove` to disable user sync entirely.
+
+<Warning>
+  If the connected database or selected table is removed, you'll see a warning. Either reconnect a database or disable user sync to resolve it.
+</Warning>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Access & Sharing" icon="circle-info" iconType="regular" color="#FFC738" href="/zite/access/overview">
+    Overview of internal apps and access levels.
+  </Card>
+  <Card title="Authentication" icon="lock" iconType="regular" color="#4FD1C5" href="/zite/access/authentication">
+    Add sign-in with magic links or Google.
+  </Card>
+</CardGroup>

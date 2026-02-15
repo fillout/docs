@@ -1,0 +1,99 @@
+---
+title: "Single Sign-On (SSO)"
+description: "Require users to sign in with your organization's SSO identity provider before accessing your Zite app."
+sidebarTitle: "Single Sign-On (SSO)"
+icon: "shield-keyhole"
+---
+
+## Overview
+
+You can require users to authenticate through your organization's **Single Sign-On** (SSO) identity provider — such as Okta, Azure AD, or Google Workspace — before accessing your Zite app.
+
+SSO gives you centralized control over who can access your app, and allows you to pull in **custom attributes** like department, role, or cost center from your identity provider.
+
+<Note>
+  SSO is available on the **Enterprise Plan**. Learn more [here](https://www.fillout.com/enterprise).
+</Note>
+
+## Prerequisites
+
+- Your organization must be on Zite's [Enterprise Plan](https://main.fillout.com/zite-demo)
+- Your SSO provider must be [configured with Zite](/saml-sso)
+
+## Enable SSO
+
+<Steps>
+  <Step title="Open Access settings">
+    In the app editor, go to **Settings** > **Access**.
+  </Step>
+  <Step title="Enable SSO">
+    Under **Sign-in method**, toggle on **Sign in with SSO**.
+
+    <Frame>
+      ![Sign-in methods including SSO](/images/images/sso-new-images/enable-sso-zite.png)
+    </Frame>
+
+    <Info>
+      When SSO is enabled, Magic Link and Google Sign-In are automatically disabled. Only one authentication method can be active at a time.
+    </Info>
+  </Step>
+  <Step title="Choose who can sign up">
+    Under **Who can sign up?**, select one of:
+
+    | Setting | Description |
+    |---------|-------------|
+    | **Invite only** (default) | Only users you explicitly add can sign in |
+    | **Anyone** | Anyone who authenticates via SSO can create an account |
+    | **Only allowed domains** | Only users from specific email domains can sign up |
+  </Step>
+</Steps>
+
+## Custom attributes
+
+When SSO is enabled, you can pull in **custom attributes** from your identity provider — such as department, role, or cost center — and use them in your app.
+
+<Frame>
+  ![Custom attributes in Access settings](/images/images/sso-new-images/zite-custom-attributes.png)
+</Frame>
+
+### Discover attributes
+
+Custom attributes are automatically discovered from actual SSO logins. At least one user must have signed in to a Zite app via SSO for attributes to appear.
+
+Click the **refresh** button to re-scan for new attributes after more users have signed in.
+
+### Select attributes
+
+Each discovered attribute appears as a checkbox. Toggle on the attributes you want available in your app, then click **Save**.
+
+### Use attributes in your app
+
+Once enabled, custom attributes are available on the authenticated user object. For example, if you enable `department`, your app can access the user's department to personalize content or control feature access.
+
+The Zite AI builder also understands these attributes — you can ask it to build features like *"show different content based on the user's department"*.
+
+<Info>
+  SSO attributes (including custom attributes) are refreshed every time a user signs in. If a user's department changes in your identity provider, the updated value will appear the next time they log in to the app.
+</Info>
+
+## How SSO login works for end users
+
+1. User visits the published Zite app
+2. The login page shows a **Sign in with SSO** button and an email field
+3. User enters their work email and clicks **Sign in with SSO**
+4. They are redirected to your organization's identity provider (e.g., Okta, Azure AD)
+5. After authenticating, they are redirected back to the app and signed in
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Authentication" icon="lock" iconType="regular" color="#FFC738" href="/zite/access/authentication">
+    Add sign-in to your app with magic links or Google.
+  </Card>
+  <Card title="SAML Single Sign On" icon="shield-keyhole" iconType="regular" color="#4FD1C5" href="/saml-sso">
+    Configure your SSO provider with Fillout.
+  </Card>
+  <Card title="User sync" icon="arrows-rotate" iconType="regular" color="#A78BFA" href="/zite/access/user-sync">
+    Sync app users to a database table automatically.
+  </Card>
+</CardGroup>

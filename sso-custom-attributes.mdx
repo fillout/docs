@@ -1,0 +1,64 @@
+---
+title: "SSO custom attributes"
+description: "Use custom attributes from your SSO identity provider — like department, role, or cost center — to pre-fill fields and add conditional logic to your forms."
+sidebarTitle: "SSO Custom Attributes"
+icon: "id-badge"
+---
+
+## Overview
+
+When your form uses an [SSO login page](/sso-form-login), you can pull in **custom attributes** from your identity provider — such as department, role, or cost center. Use these attributes to pre-fill fields, add conditional logic, or personalize the form experience.
+
+<Note>
+  SSO custom attributes require the **Enterprise Plan** with [SSO configured](/saml-sso). Your form must have a [login page](/login-page) set to the **SSO** verification type.
+</Note>
+
+## Enable custom attributes
+
+<Steps>
+  <Step title="Open the login page settings">
+    In the form editor, select your **Login page** step. In the left-hand panel, make sure the **Verification type** is set to `SSO`.
+  </Step>
+  <Step title="Open the Custom attributes section">
+    Below the SSO status, expand the **Custom attributes** section. You'll see a list of all discovered attribute names from your identity provider.
+
+    <Frame>
+      ![Custom attributes in form login settings](/images/images/sso-new-images/fillout-custom-attributes.png)
+    </Frame>
+  </Step>
+  <Step title="Select attributes">
+    Check the box next to each attribute you want to use in the form (e.g., `departmentName`). Then **save** the form.
+  </Step>
+</Steps>
+
+<Info>
+  Custom attributes are automatically discovered from actual SSO logins. At least one SSO user must have signed in to a form in your organization for attributes to appear. Click the **refresh** button to re-scan after new users have logged in.
+</Info>
+
+## Use custom attributes in your form
+
+Once enabled, custom attributes appear as references under the **Login page** in the reference picker — alongside the standard **Email**, **First Name**, and **Last Name** fields.
+
+You can use them anywhere that supports the reference picker:
+
+- **Pre-fill fields** — Auto-fill a text field with the user's department or role. Learn more about [pre-filling fields](/prefill-fields).
+- **Conditional logic** — Show or hide questions based on attribute values, e.g. display a section only for users in the "Engineering" department. Learn more about [page logic](/page-logic).
+- **Calculations and answer piping** — Reference attributes in [calculations](/calculations) or [answer piping](/answer-piping).
+
+<Info>
+  Attribute values are refreshed every time a user logs in via SSO. If a user's department changes in your identity provider, the updated value will appear the next time they sign in.
+</Info>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="SSO form login" icon="key-skeleton-left-right" iconType="regular" color="#FFC738" href="/sso-form-login">
+    Add SSO login to your forms.
+  </Card>
+  <Card title="SAML Single Sign On" icon="shield-keyhole" iconType="regular" color="#4FD1C5" href="/saml-sso">
+    Configure your SSO provider with Fillout.
+  </Card>
+  <Card title="Pre-fill fields" icon="fill-drip" iconType="regular" color="#A78BFA" href="/prefill-fields">
+    Set default values for form fields.
+  </Card>
+</CardGroup>

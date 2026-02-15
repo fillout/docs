@@ -1,6 +1,6 @@
 ---
 title: "Authentication for shared apps"
-description: "Add sign-in to your shared Zite app with magic links, Google, or invite-only access."
+description: "Add sign-in to your shared Zite app with magic links, Google, SSO, or invite-only access."
 sidebarTitle: "Authentication"
 icon: "lock"
 ---
@@ -35,8 +35,9 @@ When your app is [shared to the web](/zite/access/share-to-web), you can require
 
     - **Magic link** — Users receive a sign-in link via email (valid for 10 minutes)
     - **Google Sign-in** — Users sign in with their Google account
+    - **SSO** — Users authenticate through your organization's identity provider. [Learn more](/zite/access/sso).
 
-    Both are enabled by default. At least one method must be enabled.
+    Magic link and Google are enabled by default. At least one method must be enabled.
   </Step>
   <Step title="Choose who can sign up">
     Under **Who can sign up?**, select one of:
@@ -81,8 +82,8 @@ Click the **Guest** dropdown next to a user and select `Remove`. This removes th
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Access & Sharing" icon="circle-info" iconType="regular" color="#FFC738" href="/zite/access/overview">
-    Overview of internal apps and access levels.
+  <Card title="Single Sign-On (SSO)" icon="shield-keyhole" iconType="regular" color="#FFC738" href="/zite/access/sso">
+    Require SSO authentication and use custom attributes.
   </Card>
   <Card title="Share to web" icon="globe" iconType="regular" color="#4FD1C5" href="/zite/access/share-to-web">
     Make your app accessible outside your organization.

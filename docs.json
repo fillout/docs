@@ -560,6 +560,8 @@
                   "security",
                   "encrypted-forms",
                   "saml-sso",
+                  "sso-form-login",
+                  "sso-custom-attributes",
                   "gdpr"
                 ]
               },
@@ -617,6 +619,7 @@
                   "zite/access/overview",
                   "zite/access/share-to-web",
                   "zite/access/authentication",
+                  "zite/access/sso",
                   "zite/access/user-sync"
                 ]
               },

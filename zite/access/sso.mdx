@@ -15,7 +15,7 @@ SSO gives you centralized control over who can access your app, and allows you t
   SSO is available on the **Enterprise Plan**. Learn more [here](https://www.fillout.com/enterprise).
 </Info>
 
-## Prerequisites
+**Prerequisites**
 
 - Your organization must be on Zite's [Enterprise Plan](https://main.fillout.com/zite-demo)
 - Your SSO provider must be [configured with Zite](/saml-sso)
@@ -24,57 +24,57 @@ SSO gives you centralized control over who can access your app, and allows you t
 
 <Steps>
   <Step title="Open Access settings">
-    In the app editor, go to **Settings** > **Access**.
+    Click <Icon icon="gear" /> in the upper left area and navigate to `Access`.
+
+    <img
+      src="/images/Screenshot2026-02-16at4.41.11PMcopy.png"
+      alt="Screenshot 2026 02 16 At 4 41 11 PM Copy"
+      title="Screenshot 2026 02 16 At 4 41 11 PM Copy"
+      style={{ width:"81%" }}
+    />
   </Step>
   <Step title="Enable SSO">
-    Under **Sign-in method**, toggle on **Sign in with SSO**.
-
-    <Frame>
-      ![Sign-in methods including SSO](/images/images/sso-new-images/enable-sso-zite.png)
-    </Frame>
+    Under **Sign-in method**, toggle on `Sign in with SSO`.
 
     <Info>
       When SSO is enabled, Magic Link and Google Sign-In are automatically disabled. Only one authentication method can be active at a time.
     </Info>
   </Step>
   <Step title="Choose who can sign up">
-    Under **Who can sign up?**, select one of:
+    Under **Who can sign up?**, select one of the ff:
 
-    | Setting | Description |
-    |---------|-------------|
-    | **Invite only** (default) | Only users you explicitly add can sign in |
-    | **Anyone** | Anyone who authenticates via SSO can create an account |
-    | **Only allowed domains** | Only users from specific email domains can sign up |
+    - **Invite only** (default) - only users you explicitly add can sign in
+    - **Anyone** - anybody who visits your app can create an account
+    - **Only allowed domains** - only users from specific email domains (e.g., [example.com](http://example.com)) can sign up
   </Step>
 </Steps>
 
 ## Custom attributes
 
-When SSO is enabled, you can pull in **custom attributes** from your identity provider — such as department, role, or cost center — and use them in your app.
+When SSO is enabled, **custom attributes** — such as department, role, or cost center — are **automatically discovered** from your identity provider.
 
-<Frame>
-  ![Custom attributes in Access settings](/images/images/sso-new-images/zite-custom-attributes.png)
-</Frame>
+To use them in your app, <Icon icon="check" /> **tick** the checkbox, then click `Save`.
 
-### Discover attributes
+<img
+  src="/images/zite-custom-attributes.png.avif"
+  alt="Zite Custom Attributes Png"
+  title="Zite Custom Attributes Png"
+  style={{ width:"74%" }}
+/>
 
-Custom attributes are automatically discovered from actual SSO logins. At least one user must have signed in to a Zite app via SSO for attributes to appear.
+At least one user must have signed in to a Zite app via SSO for attributes to appear.
 
-Click the **refresh** button to re-scan for new attributes after more users have signed in.
+Click <Icon icon="arrows-rotate" /> to re-scan for new attributes after more users have signed in.
 
-### Select attributes
-
-Each discovered attribute appears as a checkbox. Toggle on the attributes you want available in your app, then click **Save**.
-
-### Use attributes in your app
+**Using attributes in your app**
 
 Once enabled, custom attributes are available on the authenticated user object. For example, if you enable `department`, your app can access the user's department to personalize content or control feature access.
 
-The Zite AI builder also understands these attributes — you can ask it to build features like *"show different content based on the user's department"*.
+The Zite AI builder also understands these attributes — you can ask it to build features like _"show different content based on the user's department"_.
 
-<Info>
+<Note>
   SSO attributes (including custom attributes) are refreshed every time a user signs in. If a user's department changes in your identity provider, the updated value will appear the next time they log in to the app.
-</Info>
+</Note>
 
 ## How SSO login works for end users
 
@@ -87,13 +87,13 @@ The Zite AI builder also understands these attributes — you can ask it to buil
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Authentication" icon="lock" iconType="regular" color="#FFC738" href="/zite/access/authentication">
+  <Card color="#FFC738" icon="lock" iconType="regular" href="/zite/access/authentication" title="Authentication">
     Add sign-in to your app with magic links or Google.
   </Card>
-  <Card title="SAML Single Sign On" icon="shield-keyhole" iconType="regular" color="#4FD1C5" href="/saml-sso">
-    Configure your SSO provider with Fillout.
+  <Card color="#4FD1C5" icon="shield-keyhole" iconType="regular" href="/saml-sso" title="SAML Single Sign On">
+    Enable SSO through Okta, Azure AD, and more.
   </Card>
-  <Card title="User sync" icon="arrows-rotate" iconType="regular" color="#A78BFA" href="/zite/access/user-sync">
+  <Card color="#A78BFA" icon="arrows-rotate" iconType="regular" href="/zite/access/user-sync" title="User sync">
     Sync app users to a database table automatically.
   </Card>
 </CardGroup>

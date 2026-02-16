@@ -9,44 +9,53 @@ icon: "circle-info"
 
 Every Zite app is **internal by default** — only members of your organization can access it. When you're ready, you can [share your app to the web](/zite/access/share-to-web) so people outside your organization can use it too.
 
-## Internal apps (default)
+**Who can access internal apps**
 
-When you create a new app, it starts in internal mode. Organization members are automatically authenticated — no login screen is needed.
+- **Admins** — always have full access to all apps in the organization
+- **Invited collaborators** — organization members who have been specifically invited to the app
 
-### Who can access internal apps
-
-- **Admins** — Always have full access to all apps in the organization.
-- **Invited collaborators** — Organization members who have been specifically invited to the app.
-
-### Invite collaborators
+## Invite collaborators
 
 <Steps>
   <Step title="Open Access settings">
-    Go to **Settings** > **Access** in the app editor.
-  </Step>
-  <Step title="Add collaborators">
-    Under **People with access**, click `Add collaborators...` and enter one or more email addresses.
-  </Step>
-  <Step title="Choose an access level">
-    Select an access level for each collaborator:
+    Click `Share` followed by `People with access`.
 
-    | Level | Description |
-    |-------|-------------|
-    | **Edit** | Can use the app and edit it in the editor |
-    | **Use only** | Can use the app but cannot edit it |
+    ![Screenshot 2026 02 16 At 3 53 53 PM](/images/Screenshot2026-02-16at3.53.53PM.png)
 
-    The default access level is **Edit**.
+    Then, `Add collaborators...`.  
+
+    <img
+      src="/images/Screenshot2026-02-16at3.34.25PM.png"
+      alt="Screenshot 2026 02 16 At 3 34 25 PM"
+      title="Screenshot 2026 02 16 At 3 34 25 PM"
+      style={{ width:"60%" }}
+    />
+
+    Alternatively, you can click <Icon icon="gear" /> (beside Help) followed by `Access` in the popup.
+  </Step>
+  <Step title="Set up access">
+    Enter one or more email addresses in the popup. Then, choose an access level for the collaborators:
+
+    - **Edit** (default) - can edit the app in the editor
+    - **Use only** - cannot edit the app
+
+    <img
+      src="/images/Screenshot2026-02-16at3.38.32PM.png"
+      alt="Screenshot 2026 02 16 At 3 38 32 PM"
+      title="Screenshot 2026 02 16 At 3 38 32 PM"
+      style={{ width:"60%" }}
+    />
+
+    <Note>
+      If you invite someone with Edit access to an app that has a connected Zite Database, they will also be invited to the underlying database.
+    </Note>
   </Step>
   <Step title="Send invites">
     Click `Send`. Pending invites expire after 2 weeks.
   </Step>
 </Steps>
 
-<Note>
-  If you invite someone with Edit access to an app that has a connected Zite Database, they will also be invited to the underlying database.
-</Note>
-
-### Manage collaborator access
+## Manage collaborator access
 
 In the **People with access** section, click the access dropdown next to a user's name to:
 
@@ -57,13 +66,13 @@ In the **People with access** section, click the access dropdown next to a user'
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Share to web" icon="globe" iconType="regular" color="#FFC738" href="/zite/access/share-to-web">
-    Make your app accessible to people outside your organization.
+  <Card color="#FFC738" icon="globe" iconType="regular" href="/zite/access/share-to-web" title="Share to web">
+    Make your app accessible to the public.
   </Card>
-  <Card title="Authentication" icon="lock" iconType="regular" color="#4FD1C5" href="/zite/access/authentication">
+  <Card color="#4FD1C5" icon="lock" iconType="regular" href="/zite/access/authentication" title="Authentication">
     Add sign-in to your shared app with magic links, Google, or SSO.
   </Card>
-  <Card title="User sync" icon="arrows-rotate" iconType="regular" color="#A78BFA" href="/zite/access/user-sync">
+  <Card color="#A78BFA" icon="arrows-rotate" iconType="regular" href="/zite/access/user-sync" title="User sync">
     Sync app users to a database table automatically.
   </Card>
 </CardGroup>

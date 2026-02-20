@@ -1,0 +1,114 @@
+---
+title: "Manage Integrations"
+icon: "list-tree"
+description: "Add, remove, or update integrations your organization is connected to."
+---
+
+## View and edit existing connections
+
+<Steps>
+  <Step title="Navigate to Integrations">
+    From the dashboard, click your `Account name` followed by `Integrations` in the dropdown menu.
+
+    ![Screenshot2026 02 20at4 33 06PM 3](/images/Screenshot2026-02-20at4.33.06PM-3.png)
+
+    [Here](https://build.fillout.com/home/settings/integrations), you’ll see a full list of all apps and services connected to your forms, apps, and databases.
+  </Step>
+  <Step title="View connection details">
+    Click any **connection** to see its name, the user who connected it, its status, and which forms and/or apps it’s used in.
+
+    ![Screenshot2026 02 20at4 39 16PM](/images/Screenshot2026-02-20at4.39.16PM.png)
+  </Step>
+  <Step title="Edit connection">
+    If you have multiple connections for the same integration, it helps to `Rename` them so you can easily tell them apart.
+
+    <img
+      src="/images/Screenshot2026-02-20at4.39.16PMcopy.png"
+      alt="Screenshot2026 02 20at4 39 16P Mcopy"
+      title="Screenshot2026 02 20at4 39 16P Mcopy"
+      style={{ width:"46%" }}
+    />
+
+    You can also `Reconnect` and `Delete` here.
+
+    <Warning>
+      Deleting a connection will stop responses from syncing with your integration.
+    </Warning>
+  </Step>
+</Steps>
+
+## Limit connections to specific workspaces
+
+You can restrict connections to certain workspaces only. This is helpful if you have clients, partners, or team members with [granular permissions](/granular-permissions) in a specific workspace.
+
+<Steps>
+  <Step title="View connection's workspaces">
+    On your chosen connection's row, click `All`.
+
+    <img
+      src="/images/Screenshot2026-02-20at4.50.03PM.png"
+      alt="Screenshot2026 02 20at4 50 03PM"
+      title="Screenshot2026 02 20at4 50 03PM"
+      style={{ width:"76%" }}
+    />
+  <Note>
+    Zapier and Make integrations don’t support granular permissions. A workaround is to use the per-form [webhook integration](/webhook) to trigger external automations.
+  </Note>
+  </Step>
+  <Step title="Add workspace(s)">
+    In the popup, click `Limited workspaces`, then select a **workspace** from the dropdown. 
+
+    <img
+      src="/images/Screenshot2026-02-20at4.51.04PM.png"
+      alt="Screenshot2026 02 20at4 51 04PM"
+      title="Screenshot2026 02 20at4 51 04PM"
+      style={{ width:"55%" }}
+    />
+
+    You can add more than one.
+  </Step>
+  <Step title="Save changes">
+    Click `Save`
+  </Step>
+</Steps>
+
+## Disconnect 3rd party apps
+
+<Steps>
+  <Step title="Navigate to integrations">
+    From the dashboard, click your `Account name` followed by `Integrations` in the dropdown menu.
+
+    ![Screenshot2026 02 20at4 33 06PM 4](/images/Screenshot2026-02-20at4.33.06PM-4.png)
+  <Note>
+  Only admins can connect 3rd party apps to Fillout. Once connected, make sure only authorized users who should have permission to add webhooks to **all forms across all workspaces** have access.
+  </Note>
+  </Step>
+  <Step title="View apps">
+    Go to `Apps`. 
+
+    <img
+      src="/images/Screenshot2026-02-20at5.17.50PM.png"
+      alt="Screenshot2026 02 20at5 17 50PM"
+      title="Screenshot2026 02 20at5 17 50PM"
+      style={{ width:"77%" }}
+    />
+  </Step>
+  <Step title="Choose an app">
+    Hover over the app and click `Disconnect`.
+
+    <img
+      src="/images/Screenshot2026-02-20at5.18.18PM.png"
+      alt="Screenshot2026 02 20at5 18 18PM"
+      title="Screenshot2026 02 20at5 18 18PM"
+      style={{ width:"77%" }}
+    />
+  </Step>
+</Steps>
+
+## Related article
+
+<Columns cols={3}>
+  <Card color="#FFC738" icon="universal-access" iconType="regular" href="/granular-permissions" title="Granular permissions">
+    Set member access to view only, and manage existing permissions.
+  </Card>
+</Columns>

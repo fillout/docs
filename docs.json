@@ -270,6 +270,7 @@
                 "group": "Guides",
                 "icon": "book-open",
                 "pages": [
+                  "manage-integrations",
                   "linked-record-update",
                   "fetch-dynamic-data",
                   "webhook",

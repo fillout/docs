@@ -26,49 +26,28 @@ Then, `+ Select workspace` along with their respective access level:
 
 ## View existing permissions
 
-Click your `Account name` in the bottom right corner followed by `Manage members`.
+Click your `Account name` in the top left corner followed by `Manage members`.
 
-## Admin vs non-admins
+**Admin vs non-admins**
 
 **Admins** can access all workspaces, integrations, and organization settings. **Non-admins** have limited access based on their assigned workspaces and can't change organization settings. The **account owner** is the first user created on the account and has admin privileges by default.
 
 ## Limit access to integrations (connected accounts)
 
-To limit which team members can access which integrations, log in as an admin. From your dashboard, click your `Account name` and head to `Integrations`.
+To limit which team members can access which integrations, log in as an admin. From your dashboard, click your `Account name` and head to `Integrations`. More info [here](/manage-integrations).
 
-Integrations are shared with all workspaces by default. To restrict access, click `All` next to the app you want to limit.
-
-![Screenshot 2025-10-09 at 5.02.26 PM.png](/images/Screenshot2025-10-09at5.02.26PM.png)
-
-Next, select `Limited workspaces` and choose the workspaces that you would like to share the integration connection with.
-
-<img
-  src="/images/Screenshot2025-10-09at5.04.11PM.png"
-  alt="Screenshot 2025-10-09 at 5.04.11 PM.png"
-  title="Screenshot 2025-10-09 at 5.04.11 PM.png"
-  style={{ width:"66%" }}
-/>
-
-Users who are part of of the allowed workspaces will be able to create new forms and edit existing ones that use that integration. Users who do not have access will not be able to use the integration.
-
-## Limitations
-
-**Only applies if using Zapier/Make**
-
-Zapier and Make integrations don’t support granular permissions, so only admins can connect them to Fillout. Once connected, make sure only authorized users who should have permission to add webhooks to **all forms across all workspaces** have access.
-
-If you need granular permissions for Zapier/Make, we instead recommend using the per-form [webhook integration](/webhook) to trigger external automations.
+Users in the allowed workspaces can create new forms and edit existing ones that use that integration. Users without access won’t be able to use the integration.
 
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Invite team members to your forms" icon="user-plus" iconType="regular" color="#FFC738" href="/invite-collaborators">
+  <Card color="#FFC738" icon="user-plus" iconType="regular" href="/invite-collaborators" title="Invite team members to your forms">
     View results, and edit surveys with free seats.
   </Card>
-  <Card title="Organizations" icon="building" iconType="regular" color="#FFC738" href="/organizations">
+  <Card color="#FFC738" icon="building" iconType="regular" href="/organizations" title="Organizations">
     Create organizations for different companies with the same email.
   </Card>
-  <Card title="Workspaces" icon="folders" iconType="regular" color="#FFC738" href="/workspaces">
+  <Card color="#FFC738" icon="folders" iconType="regular" href="/workspaces" title="Workspaces">
     Organize forms in folders and control user access.
   </Card>
 </CardGroup>

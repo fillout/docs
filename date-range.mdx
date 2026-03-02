@@ -1,15 +1,45 @@
 ---
-title: "Date range"
-description: "Collect a start and end date from your respondents. This is useful for booking forms, project planning or anytime you need to collect a date duration."
+title: "Date"
+description: "Collect a single date, data and time, or date range from your respondents. This is useful for bookings, events, and availability tracking. "
 icon: "calendar-range"
-sidebarTitle: "Date Range"
+sidebarTitle: "Date"
 ---
 
-## How to add a date range
+## Date fields vs Scheduling page
 
-In the left-hand panel of your form, drag and drop the `Date range` field. This lets respondents select **start** and **end** dates in your forms.
+**Date fields** (Date picker, Date time picker, and Date range) collect a date input. Common use cases include:
+
+- Asking a repondent's date of birth
+- Collecting project deadlines
+- Gathering travel or vacation dates
+- Tracking project start and end dates
+- Collecting multiple availabilities
+
+On the other hand, **Scheduling pages** reserve available time slots on an individual's calendar (Google or Outlook calendar).
+
+| Date Fields                   | Scheduling Page                        |
+| ----------------------------- | -------------------------------------- |
+| Collects a date or time input | Books a real calendar slot             |
+| No calendar integration       | Connects to Google or Outlook Calendar |
+| No availability checking      | Shows live availability                |
+| No automatic booking          | Automatically creates calendar event   |
+| Best for general forms        | Best for appointments & meetings       |
+
+This article is about date fields. To know more about scheduling pages, check out [this guide](https://www.fillout.com/help/scheduling-page).
+
+## How to add a date fields
+
+In the left-hand panel of your form, drag and drop your chosen **date field**. You can pick between:
+
+- **Date picker** - collects a single date
+- **Date time picker** - collects a date and time
+- **Date range** - lets respondents select start and end dates in your forms
+
+In our example, we'll select `Date range`.
 
 ![Screenshot 2025-10-02 at 6.31.40 PM.png](/images/Screenshot2025-10-02at6.31.40PM.png)
+
+## Change date format and settings
 
 To configure your field settings, click <Icon icon="gear-complex" iconType="solid" />. In the right-hand panel, you can:
 
@@ -24,6 +54,17 @@ To configure your field settings, click <Icon icon="gear-complex" iconType="soli
   style={{ width:"35%" }}
 />
 
+## Collect multiple availabilities
+
+To gather several preferred dates and times from respondents, add multiple `date fields` to your form.
+
+<img
+  src="/images/Screenshot2026-03-02at4.07.29PM.png"
+  alt="Screenshot 2026 03 02 At 4 07 29 PM"
+  title="Screenshot 2026 03 02 At 4 07 29 PM"
+  style={{ width:"63%" }}
+/>
+
 ## Mapping to Airtable, Notion and other databases
 
 <Steps>
@@ -31,7 +72,7 @@ To configure your field settings, click <Icon icon="gear-complex" iconType="soli
     Click `Integrate` in top menu and choose Airtable, Notion or another [database](/integrations).
   </Step>
   <Step title="Add a Date range field">
-    Click `Edit` in the top menu. In the left-hand panel under **Other**, click `Date range`.
+    Click `Edit` in the top menu. In the left-hand panel under **Other**, click your `Date field`.
   </Step>
   <Step title="Map fields">
     Go back to the `Integrate` page. Under **Mappings**, choose the fields you want to save the start and end dates to. Reference your integration fields from the left to Fillout form fields in the right.
@@ -43,7 +84,10 @@ To configure your field settings, click <Icon icon="gear-complex" iconType="soli
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Pre-fill dates" icon="calendar-days" iconType="regular" color="#FFC738" href="pre-fill-dates">
+  <Card color="#FFC738" icon="calendar-days" iconType="regular" href="pre-fill-dates" title="Pre-fill dates">
     Set the default value to today, tomorrow, or another date.
+  </Card>
+  <Card color="#FFC738" icon="calendar-day" iconType="regular" title="Scheduling page">
+    Let respondents book a time slot on your calendar.
   </Card>
 </CardGroup>

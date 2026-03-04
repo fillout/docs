@@ -1,0 +1,57 @@
+---
+title: "User Groups"
+description: "Create groups to manage workspace and form access for multiple team members at once."
+sidebarTitle: "User Groups"
+icon: "users"
+---
+
+User Groups let admins bundle team members together and grant them workspace or form access all at once. Instead of assigning permissions to each member individually, you can manage access for an entire group in one place.
+
+<Warning>
+  User Groups are available on the **Team** and **Enterprise** plans. Learn more about the [Team plan](/team-plan).
+</Warning>
+
+## Create a group
+
+<Steps>
+  <Step title="Open group settings">
+    From your dashboard, click your `Account name` in the upper left corner and select `Settings`. Then, switch to the **Groups** tab.
+  </Step>
+  <Step title="Create a new group">
+    Click `+ New group` and give the group a name.
+  </Step>
+  <Step title="Add members">
+    Add team members to the group. Any permissions assigned to the group will apply to all its members.
+  </Step>
+</Steps>
+
+## Assign permissions to a group
+
+Groups can have **Use** or **Edit** permissions on workspaces or individual forms, apps, or databases within a workspace.
+
+- **Use** – Members can view results but cannot edit forms.
+- **Edit** – Members can edit forms and view results.
+
+To assign permissions, open the group's settings and select `+ Select workspace` or choose a specific form. Then pick the access level.
+
+<Info>
+  If a user has permissions from multiple sources (e.g., directly and via a group), the highest permission always wins. For example, if a group grants **Use** access but the user was individually granted **Edit** access, they'll have **Edit** access.
+</Info>
+
+## View group access on a workspace or form
+
+Groups with access to a workspace or form are shown alongside individual members in the sharing and collaboration interfaces, so you always have a clear view of who has access.
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Granular Permissions" icon="universal-access" iconType="regular" color="#FFC738" href="/granular-permissions">
+    Set member access levels and restrict integration accounts.
+  </Card>
+  <Card title="Manage Members" icon="user-gear" iconType="regular" color="#FFC738" href="/manage-members">
+    Add, remove, and update team members.
+  </Card>
+  <Card title="Workspaces" icon="folders" iconType="regular" color="#FFC738" href="/workspaces">
+    Organize forms in folders and control user access.
+  </Card>
+</CardGroup>

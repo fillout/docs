@@ -613,6 +613,7 @@
                   "workspaces",
                   "invite-collaborators",
                   "manage-members",
+                  "user-groups",
                   "granular-permissions",
                   "comment"
                 ]

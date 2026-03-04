@@ -134,6 +134,27 @@
               "zite/subscription",
               "zite/cancel-account"
             ]
+          },
+          {
+            "group": "Security & Legal",
+            "pages": [
+              "security-and-legal",
+              "security",
+              {
+                "group": "Legal",
+                "icon": "scale-balanced",
+                "pages": [
+                  "privacy-policy",
+                  "terms-of-service",
+                  "fair-use-policy"
+                ]
+              },
+              {
+                "group": "Data & Infrastructure",
+                "icon": "server",
+                "pages": ["subprocessors"]
+              }
+            ]
           }
         ]
       },

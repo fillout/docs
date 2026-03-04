@@ -1,19 +1,15 @@
 ---
-title: "Security at Fillout"
-description: "This page describes the administrative, technical and physical safeguards in place at Fillout as well as SOC 2 Type 2 compliance."
+title: "Security at Zite"
+description: "This page describes the administrative, technical and physical safeguards in place at Zite and Fillout (by Zite) as well as SOC 2 Type 2 compliance."
 icon: "shield-halved"
 ---
 
-Fillout is designed for intaking data securely. We follow industry best practices to keep your responses secure and are `SOC 2 Type 2 compliant`. This certification verifies that Fillout meets rigorous standards for security, availability, and confidentiality in our data handling and processing systems.
 
-This Security Practices page describes the administrative, technical and physical controls applicable to Fillout. If you have additional questions regarding security, please contact [security@fillout.com](/) and we will respond as soon as possible.
 
-## Security features
+This Security Practices page describes the administrative, technical and physical controls applicable to Zite. If you have additional questions regarding security, please contact [security@fillout.com](/) and we will respond as soon as possible.
 
-In addition to following industry best practices, Fillout offers a number of security-focused features as additional safeguards.
+Fillout (by Zite) is designed for intaking data securely. We follow industry best practices to keep your responses secure and are `SOC 2 Type 2 compliant`. This certification verifies that Zite meets rigorous standards for security, availability, and confidentiality in our data handling and processing systems.
 
-- Fillout offers an option to only store form responses in external databases, like Airtable, Notion, SmartSuite and others, instead of storing data in Fillout.
-- Fillout supports SSO providers, like Okta, Active Directory, or other SAML providers.
 
 ## Data we collect and store
 
@@ -21,23 +17,23 @@ See our [privacy policy](/privacy-policy).
 
 ## Infrastructure and network security
 
-Security is a non-negotiable priority at Fillout. We take the following measures to keep your data and account secure.
+Security is a non-negotiable priority at Zite. We take the following measures to keep your data and account secure.
 
 **Hosting**
 
-Fillout is hosted on Amazon Web Services (AWS, via Render.com) and our AWS/Render servers are located in the United States and in the European Union (EU). EU servers are only used if requested by the customer. AWS data centers have state-of-the-art physical access controls, logical access controls, and frequent third-party independent audits. AWS has published a detailed security whitepaper outlining these measures.
+Zite is hosted on Amazon Web Services (AWS, via Render.com) and our AWS/Render servers are located in the United States and in the European Union (EU). EU servers are only used if requested by the customer. AWS data centers have state-of-the-art physical access controls, logical access controls, and frequent third-party independent audits. AWS has published a detailed security whitepaper outlining these measures.
 
-Fillout employees have as-needed access to infrastructure on Render. All employees have dedicated user accounts and access infrastructure via two-factor authentication.
+Zite employees have as-needed access to infrastructure on Render. All employees have dedicated user accounts and access infrastructure via two-factor authentication.
 
 **Encryption**
 
-All `data in transit is encrypted` over HTTPS/TLS between you and Fillout's servers. All data is `encrypted at rest` and replicated for durability.
+All `data in transit is encrypted` over HTTPS/TLS between you and Zite's servers. All data is `encrypted at rest` and replicated for durability.
 
 ## Application security
 
 **Two-factor authentication and single sign-on**
 
-Fillout supports G Suite SSO, allowing customers to enforce that users sign in using customer-managed identity providers. Two-factor authentication for application login can be enforced at the identity provider level (e.g. by turning it on within G Suite).
+Zite supports G Suite SSO, allowing customers to enforce that users sign in using customer-managed identity providers. Two-factor authentication for application login can be enforced at the identity provider level (e.g. by turning it on within G Suite).
 
 [Contact us](https://forms.fillout.com/t/sKWfR8LJnous) to enable other SSO providers, like Okta, Active Directory, or other SAML providers.
 
@@ -45,12 +41,12 @@ Fillout supports G Suite SSO, allowing customers to enforce that users sign in u
 
 **Business Continuity**
 
-Fillout keeps daily and point-in-time encrypted backups of data on render.com. While never expected, in the case of production data loss, we are able to restore customer data from these backups.
+Zite keeps daily and point-in-time encrypted backups of data on render.com. While never expected, in the case of production data loss, we are able to restore customer data from these backups.
 
 **Disaster Recovery**
 
-In the event of a region-wide outage, Fillout will bring up a duplicate environment in a different AWS Platform region. Fillout infrastructure is designed to be portable and restorable under different regions.
+In the event of a region-wide outage, Zite will bring up a duplicate environment in a different AWS Platform region. Zite infrastructure is designed to be portable and restorable under different regions.
 
 ## How to report vulnerabilities
 
-You can email [security@fillout.com](/) with details on any security vulnerabilities you discover. Fillout operates a security bug bounty program. Security researchers around the world continuously test the security of the Fillout services, and report issues via the program.
+You can email [security@fillout.com](/) with details on any security vulnerabilities you discover. Zite operates a security bug bounty program. Security researchers around the world continuously test the security of Zite's services, and report issues via the program.

@@ -2,10 +2,14 @@
 function replaceMintlifyLink() {
   const links = document.querySelectorAll("a");
   links.forEach((link) => {
-    if (link.textContent.trim() === "Powered by Mintlify") {
+    if (
+      link.href &&
+      link.href.includes("mintlify.com") &&
+      link.href.includes("poweredBy")
+    ) {
       const newLink = document.createElement("a");
-      newLink.href = "https://fillout.com";
-      newLink.textContent = "® 2025 Restly, Inc. DBA Fillout";
+      newLink.href = "https://zite.com";
+      newLink.textContent = "® 2026 Restly, Inc. DBA Zite";
       newLink.target = "_blank"; // Opens the link in a new tab
       newLink.rel = "noopener noreferrer"; // Security best practices for external links
       link.replaceWith(newLink);

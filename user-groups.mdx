@@ -20,8 +20,8 @@ User Groups let admins bundle team members together and grant them workspace or 
   <Step title="Create a new group">
     Click `+ New group` and give the group a name.
   </Step>
-  <Step title="Add members">
-    Add team members to the group. Any permissions assigned to the group will apply to all its members.
+  <Step title="Add members & change permissions">
+    Using the dropdown menu on each group you can manage their members or change the permissions of this group.
   </Step>
 </Steps>
 
@@ -29,18 +29,14 @@ User Groups let admins bundle team members together and grant them workspace or 
 
 Groups can have **Use** or **Edit** permissions on workspaces or individual forms, apps, or databases within a workspace.
 
-- **Use** – Members can view results but cannot edit forms.
-- **Edit** – Members can edit forms and view results.
+- **Use** – Members can view forms and their results and use apps but aren't able to edit them.
+- **Edit** – Members can edit and remove forms, apps, and databases.
 
-To assign permissions, open the group's settings and select `+ Select workspace` or choose a specific form. Then pick the access level.
+If a user has permissions from multiple sources (e.g., directly and via a group), the highest permission always wins. For example, if a group grants **Use** access but the user was individually granted **Edit** access, they'll have **Edit** access.
 
 <Info>
-  If a user has permissions from multiple sources (e.g., directly and via a group), the highest permission always wins. For example, if a group grants **Use** access but the user was individually granted **Edit** access, they'll have **Edit** access.
+  **Use** permissions are currently not implemented on databases. If a user only has **Use** permissions for a database, it will not show up for them.
 </Info>
-
-## View group access on a workspace or form
-
-Groups with access to a workspace or form are shown alongside individual members in the sharing and collaboration interfaces, so you always have a clear view of who has access.
 
 ## Related articles
 

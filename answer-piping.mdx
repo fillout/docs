@@ -15,21 +15,51 @@ sidebarTitle: "Answer Piping"
 - <Icon icon="calendar" iconType="solid" /> - [custom dates](/pre-fill-dates) (e.g., today, a month from now, etc.)
 - <Icon icon="user" iconType="solid" /> - [enriched emails](https://www.fillout.com/help/lead-enrichment#how-to-enrich-emails) with company information
 
-## Reference in field labels
+## Reference field labels
 
 To reference previous form inputs in headings, paragraphs, and banners, type **@**. Then, select the field or question, or simply search for it.
 
-![Screenshot of the Form designer tab of a form](/images/logic/image-19.png)
+<img
+  src="/images/logic/image-19.png"
+  alt="Screenshot of the Form designer tab of a form"
+  style={{ width:"66%" }}
+/>
 
 Test your form by clicking `Preview` in the upper right corner.
 
-![Screenshot of the Form designer tab of a form](/images/logic/image-20.png)
+<img
+  src="/images/logic/image-20.png"
+  alt="Screenshot of the Form designer tab of a form"
+  style={{ width:"67%" }}
+/>
 
 <Info>
   Need help troubleshooting? Our team can help. Send an email to [support@fillout.com](mailto:support@fillout.com).
 </Info>
 
-## Reference in answer fields
+## Reference integration records
+
+If your form is set to [update an existing record](https://www.fillout.com/help/airtable-update-form#how-it-works) in an integration (e.g., in Airtable or HubSpot), you can display values from that record in your form.
+
+In your heading or paragraph, type **@**. Then, click <Icon icon="database" /> followed by `Updating records` to choose the field you'd like to display.
+
+<img
+  src="/images/Screenshot2026-03-05at7.23.15PM.png"
+  alt="Screenshot 2026 03 05 At 7 23 15 PM"
+  title="Screenshot 2026 03 05 At 7 23 15 PM"
+  style={{ width:"86%" }}
+/>
+
+In our example, we'll reference a client's name and project details.
+
+<img
+  src="/images/Screenshot2026-03-05at7.24.17PM.png"
+  alt="Screenshot 2026 03 05 At 7 24 17 PM"
+  title="Screenshot 2026 03 05 At 7 24 17 PM"
+  style={{ width:"74%" }}
+/>
+
+## Reference answer fields
 
 Reference inputs in answer text fields and choice fields by [pre-filling](https://www.fillout.com/help/prefill-fields).
 
@@ -42,13 +72,13 @@ You can insert data from a subform into your main form. Learn how to [here](http
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Hide fields" icon="eye-slash" iconType="regular" color="#FFC738" href="/conditional-hiding">
+  <Card color="#FFC738" icon="eye-slash" iconType="regular" href="/conditional-hiding" title="Hide fields">
     Hide or show fields based on answers, URL parameters or data.
   </Card>
-  <Card title="Use dynamic data" icon="arrow-down-right" iconType="regular" color="#FFC738" href="/fetch-dynamic-data">
+  <Card color="#FFC738" icon="arrow-down-right" iconType="regular" href="/fetch-dynamic-data" title="Use dynamic data">
     Display content to hide, validate and pre-fill fields.
   </Card>
-  <Card title="Placeholders" icon="input-text" iconType="regular" color="#FFC738" href="/placeholder">
+  <Card color="#FFC738" icon="input-text" iconType="regular" href="/placeholder" title="Placeholders">
     Add text to guide respondents’ answers or choices.
   </Card>
 </CardGroup>

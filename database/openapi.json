@@ -1462,8 +1462,8 @@
         },
         "example": {
           "sort": [
-            { "fieldId": "name", "direction": "asc" },
-            { "fieldId": "createdAt", "direction": "desc" }
+            { "field": "name", "direction": "asc" },
+            { "field": "createdAt", "direction": "desc" }
           ],
           "filter": {
             "and": [
@@ -1520,9 +1520,14 @@
       "SortObject": {
         "type": "object",
         "properties": {
+          "field": {
+            "type": "string",
+            "description": "Field name, field ID, or system field name (id, createdAt, updatedAt)"
+          },
           "fieldId": {
             "type": "string",
-            "description": "Field ID or system field name (id, createdAt, updatedAt)"
+            "description": "Deprecated. Use 'field' instead. Kept for backward compatibility.",
+            "deprecated": true
           },
           "direction": {
             "type": "string",
@@ -1531,7 +1536,7 @@
             "description": "Sort direction (default: asc)"
           }
         },
-        "required": ["fieldId"]
+        "required": ["field"]
       },
       "FilterCondition": {
         "type": "object",

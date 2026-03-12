@@ -1,5 +1,5 @@
 ---
-title: "Workflow run history"
+title: "Zite Workflow run history"
 description: "View, filter, and debug your workflow executions with detailed logs."
 sidebarTitle: "Workflow Run History"
 icon: "clock-rotate-left"
@@ -25,10 +25,10 @@ Open any workflow and click the **History** tab to see all past runs.
   src="/images/zite/view-workflow-logs.png"
   alt="Workflow run history"
   title="Workflow run history"
-  style={{ width:"100%" }}
 />
 
 Each run shows:
+
 - **Status** – Whether it succeeded or failed
 - **Mode** – `Live` (production) or `Preview` (testing)
 - **Time** – When it ran
@@ -44,7 +44,6 @@ When you open a run, you'll see a step-by-step timeline of everything that happe
   src="/images/zite/view-individual-workflow-log.png"
   alt="Run detail view"
   title="Run detail view"
-  style={{ width:"100%" }}
 />
 
 - **Input** – The data that triggered the workflow
@@ -103,11 +102,13 @@ Want to run a workflow again with the same inputs? Click `Replay` from the run d
 If something isn't working, ask Zite for help. The AI can read your workflow logs to identify what went wrong.
 
 Try prompts like:
+
 - "Why is my workflow failing?"
 - "What's causing the error in my getOrders workflow?"
 - "Help me debug this endpoint"
 
 When Zite requests access to your logs, you can:
+
 - `Allow once` – Share logs for this request only
 - `Allow always` – Let Zite read logs anytime (you can change this in settings)
 - `Skip` – Don't share logs
@@ -126,13 +127,13 @@ When Zite requests access to your logs, you can:
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Workflows" icon="bolt" iconType="regular" color="#FFC738" href="/zite/workflows">
+  <Card color="#FFC738" icon="bolt" iconType="regular" href="/zite/workflows" title="Workflows">
     Learn how to create and manage workflows.
   </Card>
-  <Card title="Connect to integrations" icon="plug" iconType="regular" color="#FFC738" href="/zite/integrations">
+  <Card color="#FFC738" icon="plug" iconType="regular" href="/zite/integrations" title="Connect to integrations">
     Link your accounts and use external services.
   </Card>
-  <Card title="Troubleshooting" icon="wrench" iconType="regular" color="#FFC738" href="/zite/tips/troubleshooting">
+  <Card color="#FFC738" icon="wrench" iconType="regular" href="/zite/tips/troubleshooting" title="Troubleshooting">
     Tips for debugging and fixing common issues.
   </Card>
 </CardGroup>

@@ -9,6 +9,13 @@ icon: "tags"
 
 [Google Tag Manager](https://tagmanager.google.com/?ref=fillout-forms-help-article) is a free tool that allows you to manage and deploy marketing tags on your website without editing the code. It simplifies tracking and analytics for better insights and optimization.
 
+Tag Manager works using two main components:
+
+- **Tags** – the data you want to send (for example, an event sent to Google Analytics).
+- **Triggers** – the actions that cause the tag to fire (such as a form submission).
+
+To detect these actions, Tag Manager uses built-in **variables** like Clicks and Forms, which allow it to recognize interactions such as button clicks or form submissions.
+
 ## How it works
 
 <Steps>
@@ -23,22 +30,30 @@ icon: "tags"
       Only [admins](https://www.fillout.com/help/granular-permissions#admin-vs-non-admins) will be able to add a custom domain.
     </Warning>
   </Step>
-  <Step title="Add triggers">
+  <Step title="Set variables">
     In your Tag Manager **Workspace**, head over to `Variables` from the left panel and click `Configure`.
 
     ![Screenshot of the Integrate tab of a form](/images/Screenshot2025-02-18at2.21.34PM.png)
 
-    Scroll down and \*\*tick \*\*all variables under **Clicks** and **Forms**.
+    Scroll down and **tick** all variables under **Clicks** and **Forms**.
 
-    ![Screenshot of the Integrate tab of a form](/images/Screenshot2024-08-28at5.08.24PM.png)
-
+    <img
+      src="/images/Screenshot2024-08-28at5.08.24PM.png"
+      alt="Screenshot of the Integrate tab of a form"
+      style={{ width:"62%" }}
+    />
+  </Step>
+  <Step title="Add tags">
     Then, go back to your **Workspace**. Click `Tags` in the left panel followed by `New`.
 
     In **Tag Configuration**, we’ll choose `Google Analytics`. Copy and paste the [**Measurement ID**](https://support.google.com/analytics/answer/12270356?hl=en) and enter an **Event Name**.
 
     ![Screenshot of the Integrate tab of a form](/images/Screenshot2024-08-28at5.28.05PM.png)
 
-    Click `Save` in the upper right corner, then `Add Trigger`. Click **\+** on the right corner and set your preferences. In our example, we’ll fire the trigger when respondents click the submit button in the Fillout form.
+    Click `Save` in the upper right corner.
+  </Step>
+  <Step title="Add triggers">
+    Click `Add Trigger` followed by **\+** on the right corner and set your preferences. In our example, we’ll fire the trigger when respondents click the submit button in the Fillout form.
 
     ![Screenshot of the Integrate tab of a form](/images/Screenshot2024-08-28at5.41.45PM.png)
 
@@ -49,10 +64,20 @@ icon: "tags"
   </Step>
 </Steps>
 
+## Advanced (Optional)
+
+**Send submission data to Google Tag Manager**
+
+To send submission data using `dataLayer.push`, add a **Custom Code** or **HTML block** to your form. You can place your tracking script there and reference form field values or submission data in the `dataLayer.push`.
+
+**Track events between form pages**
+
+For multi-page forms, you can add an HTML block to add a script to the pages you want to track. This lets you to track different events for each page as the respondent navigates through the form.
+
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Track conversion data in Google Ads" icon="google-plus-g" iconType="regular" color="#FFC738" href="/google-ads-conversions">
+  <Card color="#FFC738" icon="google-plus-g" iconType="regular" href="/google-ads-conversions" title="Track conversion data in Google Ads">
     Use email, GCLID, address, and more.
   </Card>
 </CardGroup>

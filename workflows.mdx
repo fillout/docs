@@ -1,5 +1,5 @@
 ---
-title: "Fillout Workflows"
+title: "Form Workflows"
 sidebarTitle: "Create a Workflow"
 description: "Turn forms into powerful automations. Reclaim your team's time with Fillout's built-in form and scheduling workflows."
 icon: "code-branch"
@@ -19,7 +19,6 @@ icon: "code-branch"
     <img
       src="/images/workflows/image-1.png"
       alt="Fillout Workflow"
-      style={{ width:"100%" }}
     />
 
     **Workflow triggers**
@@ -27,19 +26,19 @@ icon: "code-branch"
     A trigger refers to a condition that starts a specific action or series of actions. Examples are:
 
     <CardGroup cols={2}>
-      <Card title="Form submitted" icon="square-check" iconType="regular" color="#FFC738" horizontal="true">
+      <Card color="#FFC738" icon="square-check" iconType="regular" horizontal="true" title="Form submitted">
         
       </Card>
-      <Card title="Form abandoned" icon="file-dashed-line" iconType="regular" color="#FFC738" horizontal>
+      <Card color="#FFC738" icon="file-dashed-line" iconType="regular" horizontal title="Form abandoned">
         
       </Card>
-      <Card title="Scheduling event canceled" icon="calendar-xmark" iconType="regular" color="#FFC738" horizontal>
+      <Card color="#FFC738" icon="calendar-xmark" iconType="regular" horizontal title="Scheduling event canceled">
         
       </Card>
-      <Card title="Event rescheduled" icon="calendar-pen" iconType="regular" color="#FFC738" horizontal>
+      <Card color="#FFC738" icon="calendar-pen" iconType="regular" horizontal title="Event rescheduled">
         
       </Card>
-      <Card title="Before event starts" icon="calendar-circle-exclamation" iconType="regular" color="#FFC738" horizontal>
+      <Card color="#FFC738" icon="calendar-circle-exclamation" iconType="regular" horizontal title="Before event starts">
         
       </Card>
     </CardGroup>
@@ -54,25 +53,25 @@ icon: "code-branch"
     Actions are the tasks or steps that are automatically carried out after a trigger occurs. Examples are:
 
     <CardGroup cols={2}>
-      <Card title="Run AI (Summarize, Classify, Generate, Extract)" icon="robot" iconType="regular" color="#FFC738" horizontal="true" href="/ai-workflows">
+      <Card color="#FFC738" icon="robot" iconType="regular" horizontal="true" href="/ai-workflows" title="Run AI (Summarize, Classify, Generate, Extract)">
         
       </Card>
-      <Card title="Send Slack/Teams/Discord messages" icon="slack" iconType="regular" color="#FFC738" horizontal="true">
+      <Card color="#FFC738" icon="slack" iconType="regular" horizontal="true" title="Send Slack/Teams/Discord messages">
         
       </Card>
-      <Card title='Delay ("wait 4 hours")' icon="clock" iconType="regular" color="#FFC738" horizontal="true" href="/delay-workflows">
+      <Card color="#FFC738" icon="clock" iconType="regular" horizontal="true" href="/delay-workflows" title='Delay ("wait 4 hours")'>
         
       </Card>
-      <Card title="Send custom emails" icon="envelope-open-text" iconType="regular" color="#FFC738" horizontal="true" href="/custom-emails">
+      <Card color="#FFC738" icon="envelope-open-text" iconType="regular" horizontal="true" href="/custom-emails" title="Send custom emails">
         
       </Card>
-      <Card title="Filter and Branch" icon="filter" iconType="regular" color="#FFC738" horizontal="true" href="/filter-branch-workflows">
+      <Card color="#FFC738" icon="filter" iconType="regular" horizontal="true" href="/filter-branch-workflows" title="Filter and Branch">
         
       </Card>
-      <Card title="Send Webhooks" icon="webhook" iconType="regular" color="#FFC738" horizontal>
+      <Card color="#FFC738" icon="webhook" iconType="regular" horizontal title="Send Webhooks">
         
       </Card>
-      <Card title="Connect to Zapier (coming soon)" icon="bolt" iconType="regular" color="#FFC738" horizontal="true">
+      <Card color="#FFC738" icon="bolt" iconType="regular" horizontal="true" title="Connect to Zapier (coming soon)">
         
       </Card>
     </CardGroup>
@@ -96,7 +95,7 @@ Click `Integrate` from the top menu of your form, and click `Workflows`. Simply 
 
 Test your workflows without waiting for triggers or creating demo submissions.
 
-<video controls className="w-full aspect-video rounded-xl" src="https://prod-files-secure.s3.us-west-2.amazonaws.com/2a7ed980-5add-4b51-82ab-889415f57134/440f1939-5f54-4b69-bc27-27769f0947bc/testworkflow.mp4" />
+<video controls={true} className="w-full aspect-video rounded-xl" src="https://prod-files-secure.s3.us-west-2.amazonaws.com/2a7ed980-5add-4b51-82ab-889415f57134/440f1939-5f54-4b69-bc27-27769f0947bc/testworkflow.mp4" />
 
 ## 1-click automations with templates
 

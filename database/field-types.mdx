@@ -1,7 +1,8 @@
 ---
-title: Field Types
-description: Complete reference for all available field types and their configurations.
-icon: table-columns
+title: "Zite Database Field Types"
+description: "Complete reference for all available field types and their configurations."
+icon: "table-columns"
+sidebarTitle: "Field Types"
 ---
 
 Reference for all supported field types, their value formats, and configuration settings.
@@ -15,11 +16,13 @@ Reference for all supported field types, their value formats, and configuration 
 Short text input for names, titles, and brief descriptions.
 
 **Value**
+
 ```typescript
 string // e.g., "John Doe", "Product Name"
 ```
 
 **Type**
+
 ```json
 "single_line_text"
 ```
@@ -31,11 +34,13 @@ string // e.g., "John Doe", "Product Name"
 Multi-line text for comments, descriptions, and notes.
 
 **Value**
+
 ```typescript
 string // Multi-line text, e.g., "This is a long description\nwith multiple lines"
 ```
 
 **Type**
+
 ```json
 "long_text"
 ```
@@ -47,11 +52,13 @@ string // Multi-line text, e.g., "This is a long description\nwith multiple line
 Email addresses with automatic format validation.
 
 **Value**
+
 ```typescript
 string // Valid email address, e.g., "user@example.com"
 ```
 
 **Type**
+
 ```json
 "email"
 ```
@@ -63,11 +70,13 @@ string // Valid email address, e.g., "user@example.com"
 Website links with automatic URL validation.
 
 **Value**
+
 ```typescript
 string // Valid URL, e.g., "https://example.com"
 ```
 
 **Type**
+
 ```json
 "url"
 ```
@@ -79,11 +88,13 @@ string // Valid URL, e.g., "https://example.com"
 Phone numbers with flexible formatting.
 
 **Value**
+
 ```typescript
 string // Phone number with any formatting, e.g., "+1 (555) 123-4567"
 ```
 
 **Type**
+
 ```json
 "phone_number"
 ```
@@ -97,16 +108,19 @@ string // Phone number with any formatting, e.g., "+1 (555) 123-4567"
 Numeric values with customizable decimal places and formatting.
 
 **Value**
+
 ```typescript
 number | null // e.g., 42.5, 1000, null
 ```
 
 **Type**
+
 ```json
 "number"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Quantity",
@@ -124,16 +138,19 @@ number | null // e.g., 42.5, 1000, null
 Monetary values with currency symbol and formatting.
 
 **Value**
+
 ```typescript
 number | null // Stored as raw number, e.g., 99.99, 1000.00, null
 ```
 
 **Type**
+
 ```json
 "currency"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Price",
@@ -152,16 +169,19 @@ number | null // Stored as raw number, e.g., 99.99, 1000.00, null
 Percentage values with optional progress bar display.
 
 **Value**
+
 ```typescript
 number | null // Stored as decimal (0.5 = 50%), e.g., 0.85, 1.0, null
 ```
 
 **Type**
+
 ```json
 "percent"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Completion Rate",
@@ -181,16 +201,19 @@ number | null // Stored as decimal (0.5 = 50%), e.g., 0.85, 1.0, null
 Star rating system with customizable maximum value.
 
 **Value**
+
 ```typescript
 number | null // Integer from 0 to maxRating, e.g., 4, 5, null
 ```
 
 **Type**
+
 ```json
 "rating"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Customer Rating",
@@ -207,16 +230,19 @@ number | null // Integer from 0 to maxRating, e.g., 4, 5, null
 Time duration with customizable display format.
 
 **Value**
+
 ```typescript
 number | null // Stored as total seconds, e.g., 3600 (1 hour), 7260 (2:01:00), null
 ```
 
 **Type**
+
 ```json
 "duration"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Meeting Length",
@@ -235,16 +261,19 @@ number | null // Stored as total seconds, e.g., 3600 (1 hour), 7260 (2:01:00), n
 Choose one option from a predefined list.
 
 **Value**
+
 ```typescript
 string | null // Option label, e.g., "Active", "Pending", null
 ```
 
 **Type**
+
 ```json
 "single_select"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Status",
@@ -259,9 +288,9 @@ string | null // Option label, e.g., "Active", "Pending", null
 ```
 
 <Note>
-- `label` (required): The display text for the option
-- `color` (optional): Color key for the option. If not specified, a color will be auto-assigned. Available colors: purple, orange, blue, gray, red, yellow, green, pink, lime, tangerine, emerald, sky, teal, indigo, cyan, violet, fuchsia
-- `value` (optional): Not specified when creating new options. Useful in write operations when specifying existing options (e.g., reordering options, keeping old options and adding new ones)
+  - `label` (required): The display text for the option
+  - `color` (optional): Color key for the option. If not specified, a color will be auto-assigned. Available colors: purple, orange, blue, gray, red, yellow, green, pink, lime, tangerine, emerald, sky, teal, indigo, cyan, violet, fuchsia
+  - `value` (optional): Not specified when creating new options. Useful in write operations when specifying existing options (e.g., reordering options, keeping old options and adding new ones)
 </Note>
 
 ---
@@ -271,16 +300,19 @@ string | null // Option label, e.g., "Active", "Pending", null
 Choose multiple options from a predefined list.
 
 **Value**
+
 ```typescript
 string[] // Array of option labels, e.g., ["Urgent", "Bug"], []
 ```
 
 **Type**
+
 ```json
 "multiple_select"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Tags",
@@ -296,9 +328,9 @@ string[] // Array of option labels, e.g., ["Urgent", "Bug"], []
 ```
 
 <Note>
-- `label` (required): The display text for the option
-- `color` (optional): Color key for the option. If not specified, a color will be auto-assigned. Available colors: purple, orange, blue, gray, red, yellow, green, pink, lime, tangerine, emerald, sky, teal, indigo, cyan, violet, fuchsia
-- `value` (optional): Not specified when creating new options. Useful in write operations when specifying existing options (e.g., reordering options, keeping old options and adding new ones)
+  - `label` (required): The display text for the option
+  - `color` (optional): Color key for the option. If not specified, a color will be auto-assigned. Available colors: purple, orange, blue, gray, red, yellow, green, pink, lime, tangerine, emerald, sky, teal, indigo, cyan, violet, fuchsia
+  - `value` (optional): Not specified when creating new options. Useful in write operations when specifying existing options (e.g., reordering options, keeping old options and adding new ones)
 </Note>
 
 ---
@@ -308,16 +340,19 @@ string[] // Array of option labels, e.g., ["Urgent", "Bug"], []
 Boolean true/false toggle.
 
 **Value**
+
 ```typescript
 boolean // true or false
 ```
 
 **Type**
+
 ```json
 "checkbox"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Is Complete",
@@ -336,16 +371,19 @@ boolean // true or false
 Calendar date without time component.
 
 **Value**
+
 ```typescript
 string | null // ISO date string (UTC), e.g., "2024-03-15T00:00:00.000Z", null
 ```
 
 **Type**
+
 ```json
 "date"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Due Date",
@@ -362,16 +400,19 @@ string | null // ISO date string (UTC), e.g., "2024-03-15T00:00:00.000Z", null
 Date and time with timezone support.
 
 **Value**
+
 ```typescript
 string | null // ISO datetime string, e.g., "2024-03-15T14:30:00.000Z", null
 ```
 
 **Type**
+
 ```json
 "datetime"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Meeting Time",
@@ -393,6 +434,7 @@ string | null // ISO datetime string, e.g., "2024-03-15T14:30:00.000Z", null
 File attachments with URL and optional filename.
 
 **Value**
+
 ```typescript
 Array<{
   url: string,          // Required: URL to the file
@@ -401,12 +443,13 @@ Array<{
 ```
 
 **Type**
+
 ```json
 "attachments"
 ```
 
 <Note>
-When providing attachment values, the URL must be accessible. The filename is optional and used for display purposes only.
+  When providing attachment values, the URL must be accessible. The filename is optional and used for display purposes only.
 </Note>
 
 ---
@@ -418,16 +461,19 @@ When providing attachment values, the URL must be accessible. The filename is op
 Create relationships between records in different tables.
 
 **Value**
+
 ```typescript
 string[] // Array of record IDs, e.g., ["rec123", "rec456"] or []
 ```
 
 **Type**
+
 ```json
 "linked_record"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Related Tasks",
@@ -441,8 +487,8 @@ string[] // Array of record IDs, e.g., ["rec123", "rec456"] or []
 ```
 
 <Note>
-- `tableId` can be either a table ID or table name during base creation
-- Creating linked record fields automatically connects tables in both directions
+  - `tableId` can be either a table ID or table name during base creation
+  - Creating linked record fields automatically connects tables in both directions
 </Note>
 
 ---
@@ -452,6 +498,7 @@ string[] // Array of record IDs, e.g., ["rec123", "rec456"] or []
 Display values from linked records.
 
 **Value**
+
 ```typescript
 any | any[] | null
 // Returns the actual values from the looked-up field
@@ -461,11 +508,13 @@ any | any[] | null
 ```
 
 **Type**
+
 ```json
 "lookup"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Task Names",
@@ -477,7 +526,7 @@ any | any[] | null
 ```
 
 <Warning>
-Lookup fields cannot be created during initial base setup. Add them later using the field creation endpoint.
+  Lookup fields cannot be created during initial base setup. Add them later using the field creation endpoint.
 </Warning>
 
 ---
@@ -489,20 +538,23 @@ Lookup fields cannot be created during initial base setup. Add them later using 
 Dynamically computed values based on other fields using formula expressions.
 
 <Note>
-Formula fields are read-only and automatically recalculate when referenced fields change. See the [Formulas guide](/database/formulas) for the complete list of supported functions.
+  Formula fields are read-only and automatically recalculate when referenced fields change. See the [Formulas guide](/database/formulas) for the complete list of supported functions.
 </Note>
 
 **Value**
+
 ```typescript
 string | number | Date | boolean | any[]  // Based on resultType
 ```
 
 **Type**
+
 ```json
 "formula"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Total Price",
@@ -517,21 +569,23 @@ string | number | Date | boolean | any[]  // Based on resultType
 }
 ```
 
-| Property | Type | Description |
-| --- | --- | --- |
+| Property     | Type   | Description                                                                |
+| ------------ | ------ | -------------------------------------------------------------------------- |
 | `expression` | string | The [formula expression](/database/formulas), e.g. `"SUM({Price}, {Tax})"` |
 | `resultType` | string | The output type: `"text"`, `"number"`, `"date"`, `"boolean"`, or `"array"` |
-| `formatting` | object | Optional display formatting options (see below) |
+| `formatting` | object | Optional display formatting options (see below)                            |
 
 **Formatting Options**
 
 For numbers (`numberDisplayType`):
+
 - `"number"` - Plain number
 - `"currency"` - Currency display (use with `decimalPlaces`, `numberFormat`)
 - `"percent"` - Percentage display
 - `"duration"` - Time duration
 
 For dates:
+
 - `dateFormat` - Date format string
 - `timeFormat` - Time format (`"12h"` or `"24h"`)
 - `timezone` - Timezone for display
@@ -546,16 +600,19 @@ For dates:
 Auto-incrementing integer field, system-generated.
 
 **Value**
+
 ```typescript
 number | null  // e.g., 1, 2, 3, ... (auto-assigned by the system)
 ```
 
 **Type**
+
 ```json
 "autonumber"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "ID",
@@ -564,7 +621,7 @@ number | null  // e.g., 1, 2, 3, ... (auto-assigned by the system)
 ```
 
 <Note>
-Autonumber values are auto-generated and cannot be set manually. The field is read-only.
+  Autonumber values are auto-generated and cannot be set manually. The field is read-only.
 </Note>
 
 ---
@@ -574,6 +631,7 @@ Autonumber values are auto-generated and cannot be set manually. The field is re
 Tracks where the record was created from (form, API, workflow, etc.).
 
 **Value**
+
 ```typescript
 // Discriminated union based on `type`
 | { type: "public_api", apiKeyId?: number }
@@ -584,11 +642,13 @@ Tracks where the record was created from (form, API, workflow, etc.).
 ```
 
 **Type**
+
 ```json
 "source"
 ```
 
 **Settings**
+
 ```json
 {
   "name": "Source",
@@ -597,7 +657,7 @@ Tracks where the record was created from (form, API, workflow, etc.).
 ```
 
 <Note>
-Source values are system-generated and cannot be set manually. The value is stored as JSONB.
+  Source values are system-generated and cannot be set manually. The value is stored as JSONB.
 </Note>
 
 ---
@@ -630,7 +690,6 @@ The first field in each table becomes the **primary field** and must be one of t
    - Array fields: `[]` (empty array)
    - Object fields: `null`
 
-
 <Warning>
-Changing field types after data has been added may result in data loss if the new type is incompatible with existing values.
+  Changing field types after data has been added may result in data loss if the new type is incompatible with existing values.
 </Warning>

@@ -133,10 +133,10 @@
             ]
           },
           {
-            "group": "Other",
+            "group": "Account",
             "pages": [
-              "affiliate-program",
               "zite/subscription",
+              "affiliate-program",
               "zite/cancel-account",
               "zite/refund-policy"
             ]
@@ -649,6 +649,7 @@
                   "account",
                   "reset-password",
                   "delete-user-account",
+                  "cancel-plan",
                   "billing-and-payments",
                   "team-plan",
                   "pricing-discounts",

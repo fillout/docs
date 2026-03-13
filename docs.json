@@ -126,6 +126,12 @@
             ]
           },
           {
+            "group": "Account",
+            "pages": [
+              "zite/import-and-export"
+            ]
+          },
+          {
             "group": "Tips",
             "pages": [
               "zite/tips/troubleshooting",

@@ -74,17 +74,6 @@
             "group": "Basics",
             "pages": [
               "zite/selective-edits",
-              {
-                "group": "Access & Sharing",
-                "icon": "share-nodes",
-                "pages": [
-                  "zite/access/overview",
-                  "zite/access/share-to-web",
-                  "zite/access/authentication",
-                  "zite/access/sso",
-                  "zite/access/user-sync"
-                ]
-              },
               "zite/embedding",
               "zite/customize-links",
               "zite/history",
@@ -99,6 +88,17 @@
                   "zite/chat-mode"
                 ]
               }
+            ]
+          },
+          {
+            "group": "Access & Sharing",
+            "pages": [
+              "zite/access/overview",
+              "zite/access/share-to-web",
+              "zite/access/authentication",
+              "zite/access/sso",
+              "zite/access/user-sync",
+              "zite/import-and-export-apps"
             ]
           },
           {
@@ -123,12 +123,6 @@
               "zite/guides/fillout",
               "zite/guides/slack",
               "zite/guides/openai"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "zite/import-and-export"
             ]
           },
           {
@@ -184,21 +178,25 @@
           },
           {
             "group": "Guides",
-            "icon": "book-open",
             "pages": [
               "database/guides/overview",
               "database/make-database",
               "database/build-apps",
               "database/sync-form-results",
               "database/import-data",
-              "database/access",
               "database/guides/auto-generate-ids",
               "database/formulas"
             ]
           },
           {
+            "group": "Access & Sharing",
+            "pages": [
+              "database/access",
+              "export"
+            ]
+          },
+          {
             "group": "Automations",
-            "icon": "bolt",
             "pages": [
               "database/automations",
               "database/zapier",
@@ -207,7 +205,6 @@
           },
           {
             "group": "Zite MCP",
-            "icon": "server",
             "pages": [
               "database/mcp/mcp-overview",
               {
@@ -227,7 +224,6 @@
           },
           {
             "group": "API Reference",
-            "icon": "code",
             "pages": [
               "database/api",
               "database/field-types",

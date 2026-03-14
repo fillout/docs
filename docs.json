@@ -99,7 +99,8 @@
               "zite/access/authentication",
               "zite/access/sso",
               "zite/access/user-sync",
-              "zite/import-and-export-apps"
+              "zite/import-and-export-apps",
+              "zite/working-with-clients"
             ]
           },
           {

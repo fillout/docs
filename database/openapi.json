@@ -1536,7 +1536,10 @@
             "description": "Sort direction (default: asc)"
           }
         },
-        "required": ["field"]
+        "anyOf": [
+          { "required": ["field"] },
+          { "required": ["fieldId"] }
+        ]
       },
       "FilterCondition": {
         "type": "object",

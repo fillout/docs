@@ -22,16 +22,18 @@ When no `sort` parameter is provided, records are returned in ascending order by
 ```json
 {
   "sort": [
-    { "fieldId": "name", "direction": "asc" },
-    { "fieldId": "createdAt", "direction": "desc" }
+    { "field": "name", "direction": "asc" },
+    { "field": "createdAt", "direction": "desc" }
   ]
 }
 ```
 
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
-| `fieldId` | string | Yes | Field ID or system field name (`id`, `createdAt`, `updatedAt`) |
+| `field` | string | Yes | Field name, field ID, or system field (`id`, `createdAt`, `updatedAt`) |
 | `direction` | string | No | `"asc"` (default) or `"desc"` |
+
+<Note>`fieldId` is also accepted for backward compatibility, but `field` is preferred.</Note>
 
 ## Filtering
 

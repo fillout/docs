@@ -847,6 +847,19 @@ Formula fields let you compute values dynamically based on other fields in your 
     ```
   </Accordion>
 
+  <Accordion title="RECORD_ID">
+    Returns the ID of the current record.
+
+    ```
+    RECORD_ID()
+    ```
+
+    **Example**
+    ```
+    CONCATENATE("ID-", RECORD_ID())
+    ```
+  </Accordion>
+
   <Accordion title="CREATED_TIME">
     Returns the creation time of the current record.
 

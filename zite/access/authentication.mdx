@@ -9,11 +9,9 @@ icon: "lock"
 
 When your app is [shared to the web](/zite/access/share-to-web), you can require users to sign in before accessing it. Zite handles authentication for you — no custom login code needed.
 
-## Video tutorial
-
-<iframe width="100%" height="420" src="https://www.youtube.com/embed/e3eczZRLIC8" title="Add user login to your Zite Apps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
-
-[_User Login in 5 minutes, a tutorial from Zite partner Automation Helpers_](https://www.automationhelpers.com/)
+<Frame>
+  ![Screenshot 2026 03 19 At 7 57 19 PM](/images/Screenshot2026-03-19at7.57.19PM.png)
+</Frame>
 
 ## Set up authentication
 
@@ -22,14 +20,16 @@ When your app is [shared to the web](/zite/access/share-to-web), you can require
     If you haven't already, enable  [Share to web](/zite/access/share-to-web).
   </Step>
   <Step title="Add login">
-    Type **"Add user login"** in the chatbox.
+    Click `Users` on top followed by `Authentication`. Then, click `Add login`.
 
     <img
-      src="/images/Screenshot2026-02-16at4.31.28PM.png"
-      alt="Screenshot 2026 02 16 At 4 31 28 PM"
-      title="Screenshot 2026 02 16 At 4 31 28 PM"
-      style={{ width:"56%" }}
+      src="/images/Screenshot2026-03-19at7.52.20PM.png"
+      alt="Screenshot 2026 03 19 At 7 52 20 PM"
+      title="Screenshot 2026 03 19 At 7 52 20 PM"
+      style={{ width:"81%" }}
     />
+
+    Alternatively, you can type **"Add user login"** in the chatbox.
   </Step>
   <Step title="Configure sign-in methods">
     Click <Icon icon="gear" /> in the upper left area and navigate to `Access`.
@@ -48,19 +48,36 @@ When your app is [shared to the web](/zite/access/share-to-web), you can require
     - **SSO** — Users authenticate through your organization's identity provider. [Learn more](/zite/access/sso).
 
     Magic link and Google are enabled by default.
+
+    <img
+      src="/images/Screenshot2026-03-19at7.57.40PM.png"
+      alt="Screenshot 2026 03 19 At 7 57 40 PM"
+      title="Screenshot 2026 03 19 At 7 57 40 PM"
+      style={{ width:"84%" }}
+    />
   </Step>
   <Step title="Choose who can sign up">
-    Under **Who can sign up?**, select one of the ff:
+    Scroll down to see the  **Who can sign up? **section. Then, select one of the ff:
 
     - **Invite only** (default) - only users you explicitly add can sign in
     - **Anyone** - anybody who visits your app can create an account
     - **Only allowed domains** - only users from specific email domains (e.g., [example.com](http://example.com)) can sign up
+
+    <img
+      src="/images/Screenshot2026-03-19at7.58.44PM.png"
+      alt="Screenshot 2026 03 19 At 7 58 44 PM"
+      title="Screenshot 2026 03 19 At 7 58 44 PM"
+      style={{ width:"87%" }}
+    />
+  </Step>
+  <Step title="Publish and deploy">
+    Click `Publish` on the upper right corner to reflect the changes, then [share](https://www.fillout.com/help/zite/access/share-to-web) your app.
   </Step>
 </Steps>
 
 ## Customize login page
 
-Navigate to the `Login page` in the dropdown, then `Edit` your logo, colors, and branding.
+Navigate to the login page in the dropdown, by clicking `/zite-auth`. Then `Edit` your logo, colors, and branding.
 
 ![Customize login page](/images/Screenshot2025-12-16at2.59.54PM.png)
 
@@ -71,7 +88,6 @@ In the **Access settings**, scroll down to **People with access**. Here, you can
 - **Add single** users - click `Add user to app...`
 - **Bulk import** users - click `Add user to app...`
 - **Remove** users - click `Guest` followed by `Remove`
-
   <img
     src="/images/Screenshot2026-02-16at4.56.16PM.png"
     alt="Screenshot 2026 02 16 At 4 56 16 PM"
@@ -93,13 +109,15 @@ In the **Access settings**, scroll down to **People with access**. Here, you can
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card color="#FFC738" icon="shield-keyhole" iconType="regular" href="/zite/access/sso" title="Single Sign-On (SSO)">
+  <Card title="Single Sign-On (SSO)" color="#FFC738" icon="shield-keyhole" iconType="regular" href="/zite/access/sso">
     Require SSO authentication and use custom attributes.
   </Card>
-  <Card color="#4FD1C5" icon="globe" iconType="regular" href="/zite/access/share-to-web" title="Share to web">
+
+  <Card title="Share to web" color="#4FD1C5" icon="globe" iconType="regular" href="/zite/access/share-to-web">
     Make your app accessible outside your organization.
   </Card>
-  <Card color="#A78BFA" icon="arrows-rotate" iconType="regular" href="/zite/access/user-sync" title="User sync">
+
+  <Card title="User sync" color="#A78BFA" icon="arrows-rotate" iconType="regular" href="/zite/access/user-sync">
     Sync app users to a database table automatically.
   </Card>
 </CardGroup>

@@ -202,7 +202,8 @@
             "pages": [
               "database/automations",
               "database/zapier",
-              "database/relay"
+              "database/relay",
+              "database/n8n"
             ]
           },
           {

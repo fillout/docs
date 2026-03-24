@@ -1,0 +1,131 @@
+---
+title: "Connect Zite Database to n8n"
+description: "Automate workflows by connecting your Zite database tables to thousands of apps, data sources, and services with n8n"
+sidebarTitle: "n8n"
+icon: "share-nodes"
+---
+
+## Overview
+
+At its core, n8n is a visual workflow automation tool where you connect nodes (apps, APIs, logic blocks) into pipelines. The [Zite n8n integration](https://n8n.io/integrations/zite-database/) acts like a structured database layer, letting you read, create, and update database records as part of multi-step automations. You can trigger workflows from database events, transform data, and sync it across other tools.
+
+## How it works
+
+<Steps>
+  <Step title="Create a workflow">
+    From the n8n dashboard, click **\+** on the upper left corner followed by `Workflow`, then choose where to create it (e.g., Personal).
+
+    <img
+      src="/images/Screenshot2026-03-24at4.55.06PM.png"
+      alt="Screenshot 2026 03 24 At 4 55 06 PM"
+      title="Screenshot 2026 03 24 At 4 55 06 PM"
+      style={{ width:"38%" }}
+    />
+  </Step>
+  <Step title="Install Zite">
+    Click **\+** to open the nodes panel. Search for `Zite Database`.
+
+    ![Screenshot 2026 03 24 At 5 00 34 PM](/images/Screenshot2026-03-24at5.00.34PM.png)
+
+    Then, `Install node`
+
+    <img
+      src="/images/Screenshot2026-03-24at5.02.30PM.png"
+      alt="Screenshot 2026 03 24 At 5 02 30 PM"
+      title="Screenshot 2026 03 24 At 5 02 30 PM"
+      style={{ width:"31%" }}
+    />
+
+    .
+  </Step>
+  <Step title="Set a trigger">
+    You can use Zite in a trigger or action. For this example, we'll trigger `On new Zite event`. Since this is your first Zite setup, `Set up credential` by pasting your [API key from Zite](https://build.fillout.com/home/settings/developer).
+
+    <img
+      src="/images/Screenshot2026-03-24at5.03.23PM.png"
+      alt="Screenshot 2026 03 24 At 5 03 23 PM"
+      title="Screenshot 2026 03 24 At 5 03 23 PM"
+      style={{ width:"43%" }}
+    />
+
+    Then, select your **Base** and **Table**.
+
+    <img
+      src="/images/Screenshot2026-03-24at5.07.01PM.png"
+      alt="Screenshot 2026 03 24 At 5 07 01 PM"
+      title="Screenshot 2026 03 24 At 5 07 01 PM"
+      style={{ width:"44%" }}
+    />
+  </Step>
+  <Step title="Add an action">
+    Click **\+** to choose the next app or service. Let's  `Send a message` to  `Slack`. 
+
+    <img
+      src="/images/Screenshot2026-03-24at5.08.36PM-1.png"
+      alt="Screenshot 2026 03 24 At 5 08 36 PM"
+      title="Screenshot 2026 03 24 At 5 08 36 PM"
+      style={{ width:"63%" }}
+    />
+
+    Select the channel and fill in the other details as you see fit.
+
+    <img
+      src="/images/Screenshot2026-03-24at5.09.57PM.png"
+      alt="Screenshot 2026 03 24 At 5 09 57 PM"
+      title="Screenshot 2026 03 24 At 5 09 57 PM"
+      style={{ width:"44%" }}
+    />
+
+    Now everytime a new record is created on Zite, a new message will be sent to Slack.
+  </Step>
+  <Step title="Test and publish">
+    Click `Execute workflow` at the bottom to ensure everything's working. Then,  `Publish` on the upper right corner.
+  </Step>
+</Steps>
+
+## Trigger
+
+Start a workflow when something happens in Zite:
+
+| Trigger | Description |
+| --- | --- |
+| **On new event** | Fires when a new record is created in a table |
+
+## Actions
+
+Do something in Zite from another app:
+
+| Action | Description |
+| --- | --- |
+| **Get many records** | Retrieve a list of records from a table |
+| **Get record by ID** | Retrieve a record from a table |
+| **Get by record by field value** | Retrieve a record by searching a field value |
+| **Create record** | Create a new record |
+| **Update record** | Update an existing record |
+| **Delete record** | Delete a record permanently |
+| **Get many tables** | Retrieve a list of tables from a base |
+| **Get table** | Retrieve a table by ID or name |
+
+## Common use cases
+
+- **New record notification:** Get a Slack message when a new record is added
+- **CRM sync:** Automatically create a Zite record when a new contact is added in your CRM
+- **Form to database:** Store form submissions from any platform in Zite
+- **Email automation:** Send an email when a record field reaches a certain status
+- **Spreadsheet backup:** Copy new Zite records to a Google Sheet for backup
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Database Overview" color="#FFC738" icon="database" iconType="regular" href="/database/overview">
+    Learn more about Zite Database.
+  </Card>
+
+  <Card title="Webhooks" color="#FFC738" icon="webhook" iconType="regular" href="/database/webhooks">
+    Set up webhooks for real-time notifications.
+  </Card>
+
+  <Card title="API Reference" color="#FFC738" icon="code" iconType="regular" href="/database/api">
+    Use the Zite Database API.
+  </Card>
+</CardGroup>

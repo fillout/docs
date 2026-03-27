@@ -190,6 +190,7 @@
               "database/guides/overview",
               "database/make-database",
               "database/import-data",
+              "database/ai-fields",
               "database/formulas"
             ]
           },

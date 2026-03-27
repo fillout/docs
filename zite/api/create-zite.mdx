@@ -5,7 +5,7 @@ description: Programmatically create Zites from a prompt using the REST API.
 
 The Create Zite API lets you programmatically generate a Zite from a text prompt, optionally including files, a theme, and a name. The Zite is created instantly and a **claim URL** is returned so a user can take ownership of it.
 
-No user login is required to call this endpoint — just an API key.
+No authentication is required to call this endpoint.
 
 ## Use cases
 
@@ -23,16 +23,6 @@ No user login is required to call this endpoint — just an API key.
 <Frame>
   ![Claiming a Zite](/images/claim-image.png)
 </Frame>
-
-## Authentication
-
-Provide your API key in the `Authorization` header:
-
-```bash
-Authorization: Bearer <your-api-key>
-```
-
-Generate or view your API key in the [Developer settings](https://build.fillout.com/home/settings/developer) tab of your account.
 
 <Info>
   The base URL is `https://api.fillout.com`. If you're using the EU region, use `https://eu-api.fillout.com` instead.
@@ -75,7 +65,6 @@ POST /v1/api/zite/create
 
 ```bash
 curl -X POST https://api.fillout.com/v1/api/zite/create \
-  -H "Authorization: Bearer your-api-key" \
   -H "Content-Type: application/json" \
   -d '{
     "prompt": "A project management dashboard with task boards, deadlines, and team assignments"

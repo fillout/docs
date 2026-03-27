@@ -185,16 +185,23 @@
             ]
           },
           {
-            "group": "Guides",
+            "group": "Getting Started",
             "pages": [
               "database/guides/overview",
               "database/make-database",
+              "database/import-data",
+              "database/formulas"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
               "database/build-apps",
               "database/sync-form-results",
-              "database/update-with-forms",
-              "database/import-data",
               "database/guides/auto-generate-ids",
-              "database/formulas"
+              "database/map-fields",
+              "database/update-with-forms",
+              "database/use-login-forms"
             ]
           },
           {

@@ -1,0 +1,53 @@
+---
+title: "Sync data securely with login forms"
+sidebarTitle: "Sync with Login Forms"
+description: "Use Fillout login forms to securely update database records."
+icon: "file-lock"
+---
+
+## Overview
+
+You can let others update your Zite database securely using a [Fillout login form](https://www.fillout.com/help/login-page). Instead of giving direct access to your tables, users must log in with their email, password, or SSO to access the form. Once logged in, they can [create new records](https://www.fillout.com/help/database/sync-form-results#link-your-form-to-a-zite-database) or [edit existing ones](https://www.fillout.com/help/database/update-with-forms#enable-record-updates), and their responses will automatically update your database.
+
+<Note>
+  Before you start, you'll need a Fillout form with a login page. See details [here](https://www.fillout.com/help/login-page).
+</Note>
+
+### Common use cases
+
+- **Vendor Management:** Let suppliers add or update contact info, product lists, or pricing
+- **Customer Details:** Allow customers to modify their delivery preferences or profile info
+- **Event Registrations:** Enable attendees to update registration details or special requests
+- **Customer Disputes:** Let customers or support update dispute status
+- **Sales Leads:** Let your sales team add or update lead info, deal status, or follow-up notes
+
+## Allow adding records via login
+
+<Steps>
+  <Step title="Connect your login form">
+    Open the Fillout form where login is enabled. Click `Integrate` on top followed by `Zite database`.
+  </Step>
+  <Step title="Set your database">
+    You can update a `New` or `Existing database`. If you choose the latter, select your **Database** and **Table**.
+  </Step>
+  <Step title="Map fields">
+    Zite automatically links database columns to matching Fillout form fields. Click `Edit mapping` to check.
+
+    If no match is found, **check** <Icon icon="check" /> the column  and `Select field` in the dropdown. Then, `Continue`.  Click `Publish form` in the next popup to save changes.
+
+    To link an email field from the login page, go back to `Integrate` and click `Zite Database`to set it under **Mappings**.
+
+    <Check>
+      If your Zite database has columns with no matching form fields, you can drag and drop these columns into fields on your form.
+    </Check>
+  </Step>
+  <Step title="Publish and share">
+    `Publish` on the upper right corner to reflect changes, then [share](https://www.fillout.com/help/sharing) your form.
+
+    That's it! Now, verified users who have completed the form can add new records to your database automatically.
+  </Step>
+</Steps>
+
+## Allow updating records via login
+
+To let others update records, follow steps one through three above, then [switch to Update mode](https://www.fillout.com/help/database/update-with-forms#enable-record-updates).

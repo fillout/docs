@@ -1,0 +1,70 @@
+---
+title: "Update existing records with a form"
+sidebarTitle: "Update with Forms"
+icon: "money-check-pen"
+description: "Edit existing records on your Zite database by letting users complete a Fillout form."
+---
+
+## Overview
+
+You can have others update your Zite database without giving them direct access to your tables. Instead, connect a Fillout form where users can select and edit an existing record. Their responses will automatically update the matched record in your database. This is useful in various cases.
+
+### Common Use Cases
+
+- **Contact Information:** Let clients or employees update their address, contact number, etc.
+- **Inventory:** Allow warehouse or operations staff to update current stock levels
+- **Customer Feedback:** Let customers update their preferences or provide additional details
+- **Event Registrations:** Allow attendees to modify their registration details
+- **Employee Records:** Let HR or team leads update employee info like department or role
+
+## Enable record updates
+
+<Steps>
+  <Step title="Switch connection to update mode">
+    Open your [Zite-connected form](https://www.fillout.com/help/database/sync-form-results). Click `Integrate` in the top menu followed by `Zite Database`.
+
+    ![Screenshot 2026 03 27 At 4 06 24 PM](/images/Screenshot2026-03-27at4.06.24PM-1.png)
+
+    Zite automatically links your  form fields to matching database fields under **Mappings**. Choose to `Update record`.
+
+    ![Screenshot 2026 03 27 At 4 06 39 PM](/images/Screenshot2026-03-27at4.06.39PM.png)
+  </Step>
+  <Step title="Add formula">
+    Click `Add formula field to table` (in the yellow box). A formula field will automatically be added to each record. No need to paste anything.
+  </Step>
+  <Step title="Publish">
+    Click `Update` on the upper right corner followed by `Publish`.
+
+    That's it! Now others  can update datatabase records with a form.
+  </Step>
+</Steps>
+
+## Update records
+
+There are two ways to update records based on form access.
+
+**Preview mode**
+
+If they have [form](https://www.fillout.com/help/invite-collaborators#share-a-specific-form) or [workspace access](https://www.fillout.com/help/granular-permissions), they can simply `Preview` the form and select a `Record to update`.
+
+![Screenshot 2026 03 27 At 4 19 26 PM](/images/Screenshot2026-03-27at4.19.26PM-1.png)
+
+**Unique link**
+
+For those without access, you can send them the **Edit form link** of the unique record found in your database.
+
+![Screenshot 2026 03 27 At 4 22 32 PM](/images/Screenshot2026-03-27at4.22.32PM.png)
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Sync form results" icon="arrow-right-to-bracket" iconType="regular" color="#FFC738" href="/database/sync-form-results">
+    Add multiple tables, custom fields, views, and more.
+  </Card>
+  <Card title="Add form collaborators" icon="user-plus" iconType="regular" color="#FFC738" href="/invite-collaborators">
+    View results and edit forms with free seats.
+  </Card>
+  <Card title="Granular permissions" icon="universal-access" iconType="regular" color="#FFC738" href="/granular-permissions">
+    Set member access to view only, and more.
+  </Card>
+</CardGroup>

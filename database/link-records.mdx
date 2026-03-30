@@ -1,0 +1,59 @@
+---
+title: "Link Zite database records"
+sidebarTitle: "Link Records"
+icon: "files-medical"
+---
+
+Link records across tables to assign or reference existing records, keeping your data organized and consistent.
+
+## How it works
+
+You can provide users with a dropdown to **select an existing record from another table** instead of typing it manually. This ties records together and keeps your data organized. To do this, use a **Link to table field**.
+
+For example, in a Time Deposit Accounts table, you can link each account to a customer in the Bank Customers table. When adding a new account, you select the customer from the linked table, ensuring the account is tied to the correct person. This prevents duplicates, keeps your data consistent, and makes it easy to navigate between related records.
+
+### Common use cases
+
+- **Employee Records:** Assign employees to managers, departments, or teams
+- **Project Management:** Link tasks to a specific project or team member
+- **Bank Accounts:** Link a time deposit account, loan, or credit card to clients
+- **Event Planning:** Assign attendees to sessions, workshops, or ticket types
+- **Inventory Management:** Tag stock items to suppliers or product categories
+
+## Link records
+
+<Steps>
+  <Step title="Add a new column">
+    Click `+ Add field` and choose `Link to table`.
+
+    ![Screenshot 2026 03 30 At 5 38 02 PM](/images/Screenshot2026-03-30at5.38.02PM.png)
+  </Step>
+  <Step title="Set details">
+    Enter a **Title** or column name, then `Choose a table` and click `Create`.
+
+    <img
+      src="/images/Screenshot2026-03-30at5.38.17PM.png"
+      alt="Screenshot 2026 03 30 At 5 38 17 PM"
+      title="Screenshot 2026 03 30 At 5 38 17 PM"
+      style={{ width:"51%" }}
+    />
+
+    That's it! You can now pick a record from a dropdown.
+
+    <Warning>
+      You can only select tables from the same database.
+    </Warning>
+  </Step>
+  <Step title="Disable multiple record linking (Optional)">
+    By default, this field `Allows linking to multiple records`, meaning you can reference more than one record in a field.
+
+    <img
+      src="/images/Screenshot2026-03-30at5.40.58PM.png"
+      alt="Screenshot 2026 03 30 At 5 40 58 PM"
+      title="Screenshot 2026 03 30 At 5 40 58 PM"
+      style={{ width:"53%" }}
+    />
+
+    If you only want to link a single record, simply untoggle this option.
+  </Step>
+</Steps>

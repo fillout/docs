@@ -1,0 +1,74 @@
+---
+title: "Pre-fetch records for use in your form"
+sidebarTitle: "Pre-Fetch Records"
+description: "Fetch information from your Zite database before your Fillout form loads, and automatically fill in fields with that data to improve user experience."
+icon: "table-columns-merge-next"
+---
+
+## What is pre-fetching?
+
+**Pre-fetching** means retrieving existing data before a form is displayed and automatically filling in the fields with that data.
+
+## How it works
+
+Typically, a form loads with empty fields. With pre-fetching, the form first looks up data from your database using an identifier (like an email), then loads with fields already populated. 
+
+For example, you can send users a link like: [https://yourform.com/update-profile?email=juan@email.com](https://yourform.com/update-profile?email=juan@email.com)
+
+When the form opens, it uses the **email** parameter to find a matching record in your database and fills in fields like:
+
+- Name: Juan Dela Cruz
+- Email: [juan@email.com](mailto:juan@email.com)
+- Birth Date: Dec 2, 1992
+- Position: Finance Manager
+
+Users can then review and update field answers as needed.
+
+### Common use cases
+
+- **User Profiles**: Let users update their personal information with pre-populated fields
+- **Account Settings**: Enable users to modify preferences without re-entering existing selections
+- **E-commerce Checkout**: Pre-fill saved shipping and billing details for faster checkout
+- **Admin Dashboards**: Allow administrators to edit existing records with pre-loaded data in forms
+- **Content Management**: Let users edit existing posts or pages with previously saved content
+
+## Fetch data into your form
+
+<Steps>
+  <Step title="Connect to Zite Database">
+    Open your Fillout form and click `Integrate` on top to [link it to your Zite Database](https://www.fillout.com/help/database/sync-form-results#link-your-form-to-a-zite-database).
+  </Step>
+  <Step title="Open Database connection">
+    Go back to `Integrate` and click `Zite Database`.
+
+    ![Screenshot 2026 03 30 At 7 10 01 PM](/images/Screenshot2026-03-30at7.10.01PM.png)
+  </Step>
+  <Step title="Add records to pre-fetch">
+    Click `Pre-fetch records` followed by **\+ Add new**. In our example, we'll have a form where clients can update their delivery address. Instead of filling everything from scratch, their existing details will be pre-filled.
+
+    ![Screenshot 2026 03 30 At 7 13 35 PM](/images/Screenshot2026-03-30at7.13.35PM.png)
+
+    In the popup, **Name your record**. This is just a label to help you identify this pre-fetch setup when using it in your form.
+  </Step>
+  <Step title="Test fetch">
+    Select the **Table** you'd like to fetch records from. Then **\+ Add condition** to **Filter by**.
+
+    <img
+      src="/images/Screenshot2026-03-30at7.18.00PM.png"
+      alt="Screenshot 2026 03 30 At 7 18 00 PM"
+      title="Screenshot 2026 03 30 At 7 18 00 PM"
+      style={{ width:"55%" }}
+    />
+
+     
+
+    Choose a database column from the left, then match this a [url parameter](https://www.fillout.com/help/url-parameters) or static value on the right . This condition is how the form identifies which record to fetch.
+
+    For our example, we'll fetch records with their `Email`. 
+  </Step>
+  <Step title="Publish and share">
+    Click `Publish` in the upper right corner  [share](https://www.fillout.com/help/sharing) your form using a link that includes the identifier. For example: [https://yourform.com/update-profile?email=juan@email.com](https://yourform.com/update-profile?email=juan@email.com)\
+    \
+    That's it! When users open this link, the form will load with their data already filled in.
+  </Step>
+</Steps>

@@ -147,6 +147,7 @@
               "zite/subscription",
               "affiliate-program",
               "zite/cancel-account",
+              "zite/billing",
               "zite/refund-policy"
             ]
           },

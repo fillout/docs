@@ -11,7 +11,7 @@ icon: "table-columns-merge-next"
 
 ## How it works
 
-Typically, a form loads with empty fields. With pre-fetching, the form first looks up data from your database using an identifier (like an email), then loads with fields already populated. 
+Typically, a form loads with empty fields. With pre-fetching, the form first looks up data from your database using an identifier (like an email), which you can use to [pre-fill fields](https://www.fillout.com/help/prefill-fields).
 
 For example, you can send users a link like: [https://yourform.com/update-profile?email=juan@email.com](https://yourform.com/update-profile?email=juan@email.com)
 
@@ -50,7 +50,7 @@ Users can then review and update field answers as needed.
 
     In the popup, **Name your record**. This is just a label to help you identify this pre-fetch setup when using it in your form.
   </Step>
-  <Step title="Test fetch">
+  <Step title="Test fetch (Optional)">
     Select the **Table** you'd like to fetch records from. Then **\+ Add condition** to **Filter by**.
 
     <img
@@ -60,15 +60,11 @@ Users can then review and update field answers as needed.
       style={{ width:"55%" }}
     />
 
-     
-
     Choose a database column from the left, then match this a [url parameter](https://www.fillout.com/help/url-parameters) or static value on the right . This condition is how the form identifies which record to fetch.
 
-    For our example, we'll fetch records with their `Email`. 
+    For our example, we'll fetch records with their `Email`.
   </Step>
   <Step title="Publish and share">
-    Click `Publish` in the upper right corner  [share](https://www.fillout.com/help/sharing) your form using a link that includes the identifier. For example: [https://yourform.com/update-profile?email=juan@email.com](https://yourform.com/update-profile?email=juan@email.com)\
-    \
-    That's it! When users open this link, the form will load with their data already filled in.
+    Click `Publish` in the upper right corner  [share](https://www.fillout.com/help/sharing) your form using a link that includes the identifier. For example: [https://yourform.com/update-profile?email=juan@email.com](https://yourform.com/update-profile?email=juan@email.com)
   </Step>
 </Steps>

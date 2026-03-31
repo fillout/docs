@@ -124,7 +124,8 @@
               "zite/guides/airtable",
               "zite/guides/fillout",
               "zite/guides/slack",
-              "zite/guides/openai"
+              "zite/guides/openai",
+              "zite/guides/notify-with-email"
             ]
           },
           {

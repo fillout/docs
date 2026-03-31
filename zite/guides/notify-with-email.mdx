@@ -1,0 +1,108 @@
+---
+title: "Create apps that notify with email"
+icon: "envelope-dot"
+sidebarTitle: "Notify with Email"
+description: "Send emails when users take specific actions in your Zite app or when they submit a form."
+---
+
+## Overview
+
+You can automatically send emails and notifications based on your workflows. This is useful for confirmations, reminders, receipts, and more. Four email types are supported:
+
+| **Type** | **Sender** | **Use-case** |
+| :-- | :-- | :-- |
+| Zite | Built-in email | Internal or testing |
+| Gmail | Personal or Google Workspace | Personal or team inboxes |
+| Outlook | Personal or Work email | Personal or team inboxes |
+| Custom SMTP | Email providers (e.g. SendGrid, Mailgun, Loops) | Scalable, high-volume or production email |
+
+<Note>
+  When using your own email account as the sender, the sender name will default to the name of your email account.
+</Note>
+
+The fastest way to start sending emails from your app is with the **Zite** built-in option. This is intended for testing or internal apps, and emails will be sent from [notify@mail.zite.com](mailto:notify@mail.zite.com)
+
+## How to automate with Zite mail
+
+<Steps>
+  <Step title="Connect your email">
+    In the chat box, request your app to be integrated with Email or click <Icon icon="rectangle-list" />.
+
+    <img
+      src="/images/Screenshot2026-03-31at12.47.23PM.png"
+      alt="Screenshot 2026 03 31 At 12 47 23 PM"
+      title="Screenshot 2026 03 31 At 12 47 23 PM"
+      style={{ width:"36%" }}
+    />
+  </Step>
+  <Step title="Choose email type">
+    Select `Email` followed `Zite`.
+
+    <img
+      src="/images/Screenshot2026-03-31at2.22.48PM.png"
+      alt="Screenshot 2026 03 31 At 2 22 48 PM"
+      title="Screenshot 2026 03 31 At 2 22 48 PM"
+      style={{ width:"61%" }}
+    />
+  </Step>
+  <Step title="Enter your use case">
+    In the chat box, tell Zite how you'd like to use email in your app. For example, we'll send an email when events are booked.
+
+    <img
+      src="/images/Screenshot2026-03-31at2.23.12PM.png"
+      alt="Screenshot 2026 03 31 At 2 23 12 PM"
+      title="Screenshot 2026 03 31 At 2 23 12 PM"
+      style={{ width:"43%" }}
+    />
+  </Step>
+  <Step title="Customize email">
+    Once Zite completes the integration, you’ll be prompted to `Customize email` using a pre-created template.
+
+    <img
+      src="/images/Screenshot2026-03-31at2.36.04PM.png"
+      alt="Screenshot 2026 03 31 At 2 36 04 PM"
+      title="Screenshot 2026 03 31 At 2 36 04 PM"
+      style={{ width:"43%" }}
+    />
+
+    Hover over the email body and click `Edit email body`. Click here to see all custom options.
+  </Step>
+  <Step title="Test">
+    Click `Workflows` on top and select your email workflow. Then, click `History` followed by `Test run`. 
+
+    ![Screenshot 2026 03 31 At 2 51 38 PM](/images/Screenshot2026-03-31at2.51.38PM.png)
+
+    Your app will often display a toast notification to confirm if an action was successful or not. 
+  </Step>
+  <Step title="Deploy and share">
+    Click `Publish` in the upper right corner to [**share**](https://www.fillout.com/help/zite/access/share-to-web) or [**embed**](https://www.fillout.com/help/zite/embedding) your app.
+
+    [**Modify the theme**](https://www.fillout.com/help/zite/design) or [**style specific elements**](https://www.fillout.com/help/zite/selective-edits) your app to personalize it or match it with your brand.
+  </Step>
+</Steps>
+
+## Customize your email
+
+Aside from the custom email button that shows up during connection, you can access the email editor from the `Workflows` page (top) by selecting the email workflow. Here, you can:
+
+- Edit the sender email or use a dynamic email field
+- Edit the default subject and body
+- Change font weight, add bullets, and more by **highlighting text**
+  <img
+    src="/images/Screenshot2026-03-31at3.14.18PM.png"
+    alt="Screenshot 2026 03 31 At 3 14 18 PM"
+    title="Screenshot 2026 03 31 At 3 14 18 PM"
+    style={{ width:"69%" }}
+  />
+- Customize button text, alignment, and URL
+- Insert dynamic data like name and preferences (orange tags) to personalize email by **typing @ and selecting a field**
+  <img
+    src="/images/Screenshot2026-03-31at3.17.05PM.png"
+    alt="Screenshot 2026 03 31 At 3 17 05 PM"
+    title="Screenshot 2026 03 31 At 3 17 05 PM"
+    style={{ width:"70%" }}
+  />
+
+<Info>
+  Fields are recognized by Zite as values from database columns or Fillout form questions.
+</Info>

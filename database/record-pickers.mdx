@@ -1,6 +1,6 @@
 ---
 sidebarTitle: "Use Record Pickers"
-icon: "cabinet-filing"
+icon: "rectangle-list"
 title: "Add a record picker to your form"
 description: "Allow users to select Zite database records from a Fillout form by linking to existing records."
 hidden: true
@@ -8,9 +8,9 @@ hidden: true
 
 ## How it works
 
-You can add a dropdown to your Fillout form that lets respondents select existing records from your Zite database. The record picker **only links to the selected record**. It does not update existing records.
+You can add a dropdown to your Fillout form that lets respondents pick existing records from your Zite database. This record picker **only links to the selected record**. It does not update existing records. 
 
-If you want form respondents to edit records in your database without giving them direct access, see [this article](https://www.fillout.com/help/database/update-with-forms).
+If you want respondents to edit records without database access, see [this article](https://www.fillout.com/help/database/update-with-forms).
 
 ### Common use cases
 
@@ -24,19 +24,29 @@ If you want form respondents to edit records in your database without giving the
 
 <Steps>
   <Step title="Link records">
-    On your Zite database, link tables by following these quick steps.
+    On your Zite database, link tables by following [these quick steps](https://www.fillout.com/help/database/link-records#link-records).
+
+    ![Screenshot 2026 03 31 At 5 53 59 PM](/images/Screenshot2026-03-31at5.53.59PM.png)
   </Step>
   <Step title="Connect your form">
-    Open your Fillout form and navigate to `Integrate` on top and choose `Zite Database`. Then, set your preferences.
-  </Step>
-  <Step title="Create a record picker">
-    If you have Zite [automatically maps fields](https://www.fillout.com/help/database/map-fields#automatic-column-or-field-mapping) if they are present in both the form and database. In any case, you can still [manually map](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually) them.
+    Open your Fillout form. Go to `Integrate` on top and choose `Zite Database`. Then, set your preferences.
 
-    If you haven't created a field yet to connect the records to, Zite column fields will automatically appear on the left-hand panel. Drag the `record picker` to be used to have respondents select onto your form. This is now your record picker.
+    ![Screenshot 2026 03 31 At 5 54 52 PM](/images/Screenshot2026-03-31at5.54.52PM.png)
+
+    Zite [automatically maps](https://www.fillout.com/help/database/map-fields#automatic-column-or-field-mapping) matching fields when available. If not, you can [manually drag](https://www.fillout.com/help/database/map-fields#automatic-column-or-field-mapping) your database columns (on the left-hand panel) into the form.
+  </Step>
+  <Step title="Insert record picker field">
+    For example, let's allow our employees to request for budget approval through a form. They can select their name from the Employees table. Their response is recorded in the Budget Requests table and linked to them.
+
+    ![Screenshot 2026 03 31 At 5 50 55 PM](/images/Screenshot2026-03-31at5.50.55PM.png)
+
+    Drag the `record picker` into your form. This becomes your dropdown for selecting records.
   </Step>
   <Step title="Publish and share">
     Click `Publish` on the top right to reflect the changes.
 
     That's it! Respondends can now select records from your database. 
+
+    ![Screenshot 2026 03 31 At 5 53 16 PM](/images/Screenshot2026-03-31at5.53.16PM.png)
   </Step>
 </Steps>

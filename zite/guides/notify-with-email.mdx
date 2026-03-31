@@ -9,12 +9,16 @@ description: "Send emails when users take specific actions in your Zite app or w
 
 You can automatically send emails and notifications based on your workflows. This is useful for confirmations, reminders, receipts, and more. Four email services are supported:
 
-| **Service** | **Sender Name** | **Use-case** |
+| **Type** | **Sender Name** | **Use-case** |
 | :-- | :-- | :-- |
 | Zite | Notifications ([notify@mail.zite.com](mailto:notify@mail.zite.com)) | Internal or testing |
 | Gmail | Your Account Name (e.g. Finn Green - [finn@gmail.com](mailto:finn@gmail.com) or [finn@company.com](mailto:finn@company.com)) | Personal or team inboxes |
 | Outlook | Your Account Name (e.g. Finn Green - [finn@outlook.com](mailto:finn@outlook.com) or [finn@company.com](mailto:finn@company.com)) | Personal or team inboxes |
-| Custom SMTP | SMTP providers (e.g. SendGrid, Mailgun, Loops) | Scalable, high-volume or production email |
+| Custom SMTP | SMTP hosts (e.g. SendGrid, Mailgun, Loops) | Scalable, high-volume or production email |
+
+<Info>
+  Custom SMTP notifications is available on the Enterprise plan. Learn more [here](https://www.zite.com/pricing).
+</Info>
 
 ## How to automate with email providers
 
@@ -33,9 +37,9 @@ You can also connect your personal, Gmail, or Outlook account to send messages f
       style={{ width:"36%" }}
     />
 
-    Select `Email` followed by your\*\* preferred email provider\*\* (Zite, GMail, or Outlook). If you choose Gmail or Outlook, you'll be prompted to sign in to your account.
+    Select `Email` followed by your **preferred email provider** (Zite, GMail, or Outlook). If you choose Gmail or Outlook, you'll be prompted to sign in to your account.
 
-    For Custom SMTPs, check this section. 
+    For Custom SMTPs, check [this section](https://www.fillout.com/help/zite/guides/notify-with-email#how-to-automate-via-smtp). 
   </Step>
   <Step title="Enter your use case">
     In the chat box, tell Zite how you'd like to use email in your app. For example, we'll send an email when events are booked.
@@ -97,6 +101,97 @@ Aside from the custom email button that shows up during connection, you can acce
   Fields are recognized by Zite as values from database columns or Fillout form questions.
 </Info>
 
+## How to automate via SMTP
+
+You can also connect to SMPT providers such as SendGrid, Loops, Mailgun and others. This is best suited for scalable, high-volume or production email and is recommended for public-facing apps.
+
+<Steps>
+  <Step title="Choose email provider">
+    In the chat box, click <Icon icon="rectangle-list" /> followed by `Email`.
+
+    <img
+      src="/images/Screenshot2026-03-31at12.47.23PM.png"
+      alt="Screenshot 2026 03 31 At 12 47 23 PM"
+      title="Screenshot 2026 03 31 At 12 47 23 PM"
+      style={{ width:"36%" }}
+    />
+
+    Choose `SMTP`. In this example, we'll use SendGrid as our host. 
+  </Step>
+  <Step title="Generate API Key">
+    To fill out the necessary details, let's go to our SendGrid dashboard. Click `Email API` on the left-hand panel followed by `Integration guide`. We'll choose SMTP Relay.
+
+    <img
+      src="/images/Screenshot2026-03-31at4.32.40PM.png"
+      alt="Screenshot 2026 03 31 At 4 32 40 PM"
+      title="Screenshot 2026 03 31 At 4 32 40 PM"
+      style={{ width:"85%" }}
+    />
+
+    Enter a label and `Create Key`.
+
+    <img
+      src="/images/Screenshot2026-03-31at4.34.08PM.png"
+      alt="Screenshot 2026 03 31 At 4 34 08 PM"
+      title="Screenshot 2026 03 31 At 4 34 08 PM"
+      style={{ width:"83%" }}
+    />
+
+     
+
+    The required details will be displayed on number 2. For example:
+
+    - Username: apikey
+    - Password: sendgrid-api-key
+    - Host: [<u>smtp.sendgrid.net</u>](http://smtp.sendgrid.net)
+    - Email address: [<u>greg@zite.com</u>](mailto:greg@zite.com) (the email sender)
+    - Security protocol: TLS (recommended)
+    - Port: 587
+  </Step>
+  <Step title="Configure SMPT">
+    Go back to Zite and paste the details from number 2.
+
+    <img
+      src="/images/Screenshot2026-03-31at4.48.02PM.png"
+      alt="Screenshot 2026 03 31 At 4 48 02 PM"
+      title="Screenshot 2026 03 31 At 4 48 02 PM"
+      style={{ width:"58%" }}
+    />
+  </Step>
+  <Step title="Enter your use case">
+    After saving the details, describe the change or action you want to be made in the chat.
+
+    <img
+      src="/images/Screenshot2026-03-31at2.23.12PM.png"
+      alt="Screenshot 2026 03 31 At 2 23 12 PM"
+      title="Screenshot 2026 03 31 At 2 23 12 PM"
+      style={{ width:"43%" }}
+    />
+  </Step>
+  <Step title="Customize email">
+    Once Zite completes the integration, you’ll be prompted to `Customize email` using a pre-created template.
+
+    <img
+      src="/images/Screenshot2026-03-31at2.36.04PM.png"
+      alt="Screenshot 2026 03 31 At 2 36 04 PM"
+      title="Screenshot 2026 03 31 At 2 36 04 PM"
+      style={{ width:"43%" }}
+    />
+
+    Hover over the email body and click `Edit email body`. Click [here](https://www.fillout.com/help/zite/guides/notify-with-email#customize-your-email) to see all custom options.
+  </Step>
+  <Step title="Test">
+    Click `Workflows` on top and select your email workflow. Then, click `History` followed by `Test run`. 
+
+    ![Screenshot 2026 03 31 At 2 51 38 PM](/images/Screenshot2026-03-31at2.51.38PM.png)
+
+    Your app will often display a toast notification to confirm if an action was successful or not. 
+  </Step>
+  <Step title="Deploy and share">
+    Click `Publish` in the upper right corner to [**share**](https://www.fillout.com/help/zite/access/share-to-web) or [**embed**](https://www.fillout.com/help/zite/embedding) your app.
+  </Step>
+</Steps>
+
 ## Troubleshooting
 
 If your email did not arrive, click `Workflows` on top followed by your **email workflow**. Then, go to `History`.
@@ -116,14 +211,3 @@ If you notice a red <Icon icon="circle-xmark" /> on your email workflow step, th
   title="Screenshot 2026 03 31 At 3 34 32 PM"
   style={{ width:"58%" }}
 />
-
-## How to automate via SMTP
-
-You can also connect to SMPT providers such as SendGrid, Loops, Mailgun and others. This is best suited for scalable, high-volume or production email and is recommended for public-facing apps.
-
-<Steps>
-  <Step>
-  </Step>
-</Steps>
-
-\

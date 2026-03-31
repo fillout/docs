@@ -7,25 +7,23 @@ description: "Send emails when users take specific actions in your Zite app or w
 
 ## Overview
 
-You can automatically send emails and notifications based on your workflows. This is useful for confirmations, reminders, receipts, and more. Four email types are supported:
+You can automatically send emails and notifications based on your workflows. This is useful for confirmations, reminders, receipts, and more. Four email services are supported:
 
-| **Type** | **Sender** | **Use-case** |
+| **Service** | **Sender Name** | **Use-case** |
 | :-- | :-- | :-- |
-| [Zite](https://www.fillout.com/help/zite/guides/notify-with-email#how-to-automate-with-zite-mail) | Built-in email | Internal or testing |
-| Gmail | Personal or Google Workspace | Personal or team inboxes |
-| Outlook | Personal or Work email | Personal or team inboxes |
-| Custom SMTP | Email providers (e.g. SendGrid, Mailgun, Loops) | Scalable, high-volume or production email |
+| Zite | Notifications (notify@mail.zite.com) | Internal or testing |
+| Gmail | Your Account Name (e.g. Finn Green - finn@gmail.com or finn@company.com) | Personal or team inboxes |
+| Outlook | Your Account Name (e.g. Finn Green - finn@outlook.com or finn@company.com) | Personal or team inboxes |
+| Custom SMTP | SMTP providers (e.g. SendGrid, Mailgun, Loops) | Scalable, high-volume or production email |
 
-<Note>
-  When using Zite, the sender name will appear as “Notifications” in the inbox. When using your own email account, the sender name defaults to your account name.
-</Note>
+## How to automate with email providers
 
-The fastest way to start sending emails from your app is with the **Zite** built-in option. This is intended for testing or internal apps, and emails will be sent from [notify@mail.zite.com](mailto:notify@mail.zite.com)
+The quickest way to send emails is using Zite’s built-in option, ideal for testing or internal apps.
 
-## How to automate with Zite mail
+You can also connect your personal, Gmail, or Outlook account to send messages from your personal or work email.
 
 <Steps>
-  <Step title="Connect your email">
+  <Step title="Choose email provider">
     In the chat box, request your app to be integrated with Email or click <Icon icon="rectangle-list" />.
 
     <img
@@ -34,16 +32,10 @@ The fastest way to start sending emails from your app is with the **Zite** built
       title="Screenshot 2026 03 31 At 12 47 23 PM"
       style={{ width:"36%" }}
     />
-  </Step>
-  <Step title="Choose email type">
-    Select `Email` followed `Zite`.
 
-    <img
-      src="/images/Screenshot2026-03-31at2.22.48PM.png"
-      alt="Screenshot 2026 03 31 At 2 22 48 PM"
-      title="Screenshot 2026 03 31 At 2 22 48 PM"
-      style={{ width:"61%" }}
-    />
+    Select `Email` followed by your** preferred email provider** (Zite, GMail, or Outlook). If you choose Gmail or Outlook, you'll be prompted to sign in to your account.
+
+    For Custom SMTPs, check this section. 
   </Step>
   <Step title="Enter your use case">
     In the chat box, tell Zite how you'd like to use email in your app. For example, we'll send an email when events are booked.
@@ -76,8 +68,6 @@ The fastest way to start sending emails from your app is with the **Zite** built
   </Step>
   <Step title="Deploy and share">
     Click `Publish` in the upper right corner to [**share**](https://www.fillout.com/help/zite/access/share-to-web) or [**embed**](https://www.fillout.com/help/zite/embedding) your app.
-
-    [**Modify the theme**](https://www.fillout.com/help/zite/design) or [**style specific elements**](https://www.fillout.com/help/zite/selective-edits) your app to personalize it or match it with your brand.
   </Step>
 </Steps>
 
@@ -127,7 +117,4 @@ If you notice a red <Icon icon="circle-xmark" /> on your email workflow step, th
   style={{ width:"58%" }}
 />
 
-\
-
-\
-\
+## How to automate via SMTP

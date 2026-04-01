@@ -1,0 +1,81 @@
+---
+title: "Send messages from your app with Twilio"
+sidebarTitle: "Message with Twilio"
+icon: "message-sms"
+description: "Send SMS or WhatsApp messages in real time when changes happen in your app."
+---
+
+## Overview
+
+Automatically notify users or team members when actions happen in your app. This is useful for alerts, reminders, confirmations, and follow-ups. By connecting Zite to Twilio, you can:
+
+- Send SMS messages to US phone numbers
+- Send WhatsApp messages to users worldwide with API
+- Send messages to multiple users at once
+- Send 2FAs or one-time codes via SMS for extra security on sensitive actions
+
+<Note>
+  To send WhatsApp messages, recipients’ phone numbers must be added to your [Twilio Sandbox](https://www.twilio.com/docs/whatsapp/sandbox).
+</Note>
+
+## How to automate messages
+
+<Steps>
+  <Step title="Connect to Twilio">
+    In the chat box, ask Zite to connect to Twilio or click <Icon icon="rectangle-list" />.
+
+    <img
+      src="/images/Screenshot2026-03-31at12.47.23PM.png"
+      alt="Screenshot 2026 03 31 At 12 47 23 PM"
+      title="Screenshot 2026 03 31 At 12 47 23 PM"
+      style={{ width:"36%" }}
+    />
+
+    Then, enter your Twilio **Account SID** and **Auth Token**.
+
+    <img
+      src="/images/Screenshot2026-04-01at4.01.06PM.png"
+      alt="Screenshot 2026 04 01 At 4 01 06 PM"
+      title="Screenshot 2026 04 01 At 4 01 06 PM"
+      style={{ width:"56%" }}
+    />
+  </Step>
+  <Step title="Enter your use case">
+    Describe how you want to use Twilio in your app. In this example, we’ll send a WhatsApp message when inventory is low.
+
+    ![Screenshot 2026 04 01 At 4 07 58 PM](/images/Screenshot2026-04-01at4.07.58PM-1.png)
+  </Step>
+  <Step title="Deploy and share">
+    That's it! The recipient will now receive a message whenever there are low stock levels.
+
+    ![Screenshot 2026 04 01 At 4 28 30 PM](/images/Screenshot2026-04-01at4.28.30PM.png)
+
+    Click `Publish` in the upper right corner to [**share**](https://www.fillout.com/help/zite/access/share-to-web) or [**embed**](https://www.fillout.com/help/zite/embedding) your app.
+  </Step>
+</Steps>
+
+## How to automate 2FAs
+
+For actions that require extra security, like deleting an SKU, you can send 2FAs. Just like the steps above, enter a prompt to send 2FAs when a specific action occurs.
+
+<img
+  src="/images/Screenshot2026-04-01at4.51.26PM.png"
+  alt="Screenshot 2026 04 01 At 4 51 26 PM"
+  title="Screenshot 2026 04 01 At 4 51 26 PM"
+  className="mx-auto"
+  style={{ width:"89%" }}
+/>
+
+<Info>
+  Codes sent expire in 5 minutes.
+</Info>
+
+## Common use cases
+
+With a Twilio connection, you create apps like:
+
+- **Shopping or Marketplace: **Send order confirmations and delivery updates
+- **Lead Generation: **Alert your team of new signups or conversions
+- **Bookings or Appointments: **Remind clients of upcoming events
+- **Inventory Management: **Notify POCs when an item is low in stock
+- **Private Resource Hub: **Send 2FAs to managers to allow download of private or financial data\

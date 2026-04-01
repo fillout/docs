@@ -125,7 +125,8 @@
               "zite/guides/fillout",
               "zite/guides/slack",
               "zite/guides/openai",
-              "zite/guides/notify-with-email"
+              "zite/guides/notify-with-email",
+              "zite/guides/message-with-twilio"
             ]
           },
           {

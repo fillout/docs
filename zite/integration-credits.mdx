@@ -1,0 +1,79 @@
+---
+title: "Integration Credits"
+description: "Integration credits are consumed when your published Zite apps interact with external services like email and Twilio."
+icon: "bolt"
+sidebarTitle: "Integration Credits"
+---
+
+## Overview
+
+Integration credits are separate from [AI credits](/zite/credits) and are consumed when your **published** apps interact with external services. For example, sending an email costs 5 integration credits.
+
+Each plan includes a monthly integration credit allowance that resets on the 1st of each month. You can view your usage on the [Billing & Usage](https://build.fillout.com/home/settings/billing) page in your account settings. [Learn more](#check-your-usage).
+
+<Check>
+  **Zite Database operations are always free** and do not use any integration credits, regardless of your plan.
+</Check>
+
+## What costs integration credits
+
+Integration credits are used any time your published app triggers an action that sends data to or retrieves data from an external service. Common examples include:
+
+- **Sending an email** to a user or team member (5 credits)
+- **Uploading or downloading a file** via Google Drive (1 credit)
+- **Triggering an action** in HubSpot, Twilio, or another connected service (1 credit)
+- **Generating a document** like a PDF (coming soon)
+
+| Action | Credits per use |
+| --- | --- |
+| Standard integration (e.g. Twilio, HubSpot, OpenAI, Google Drive) | 1 |
+| Email send | 5 |
+| Document generation (coming soon) | 10 |
+| Zite Database operations | Free (always) |
+
+<Check>
+  Integrations like Airtable, Google Sheets, and Slack are free for existing customers and do not consume integration credits.
+</Check>
+
+## Monthly limits by plan
+
+Each plan includes a monthly integration credit allowance.
+
+| Plan | Credits / month |
+| --- | --- |
+| Free | 1,000 |
+| Pro | 50,000 |
+| Business | 250,000 |
+| Team | 1,000,000 |
+| Enterprise | Custom |
+
+## How credits reset
+
+Integration credits reset on the **1st of each month** (UTC). Unused credits do not roll over — each month starts fresh based on your plan.
+
+## Check your usage
+
+You can view your integration credit usage on the [Billing & Usage](https://build.fillout.com/home/settings/billing) page in your account settings. The **Integration Credits** section shows a breakdown of your usage by type, along with how many credits you have remaining.
+
+## Integration credits vs AI credits
+
+| | AI credits | Integration credits |
+| --- | --- | --- |
+| **Used for** | Building and modifying apps (chat, plan, and build modes) and AI features in Zite Databases | Published app interactions with external services |
+| **When consumed** | While you're editing your app | When end users trigger workflows at runtime |
+
+For more on how AI credits work, see the [AI Credits](/zite/credits) guide.
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="AI Credits" icon="coin-blank" iconType="regular" color="#FFC738" href="/zite/credits">
+    Learn how AI credits are used when building your Zite apps.
+  </Card>
+  <Card title="Integrations" icon="plug" iconType="regular" color="#FFC738" href="/zite/integrations">
+    Connect your Zite app to external services.
+  </Card>
+  <Card title="Notify with Email" icon="envelope-dot" iconType="regular" color="#FFC738" href="/zite/guides/notify-with-email">
+    Send emails when users take actions in your app.
+  </Card>
+</CardGroup>

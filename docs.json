@@ -68,6 +68,7 @@
               "zite/integrations",
               "zite/analytics",
               "zite/credits",
+              "zite/integration-credits",
               "zite/faq"
             ]
           },

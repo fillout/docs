@@ -1,39 +1,32 @@
 ---
 title: "Integration Credits"
-description: "Integration credits are consumed when your published Zite apps interact with certain external services, like email, Google Drive, and Twilio."
+description: "Integration credits are consumed when your published Zite apps interact with certain external services, like email, Slack, OpenAI, and Twilio."
 icon: "bolt"
 sidebarTitle: "Integration Credits"
 ---
 
 ## Overview
 
-Integration credits are separate from [AI credits](/zite/credits) and are consumed when your **published** apps interact with external services. Most integrated actions consume one credit, while some more resource-intensive actions may consume additional credits (see [table below](#what-costs-integration-credits)).
+Integration credits are separate from [AI credits](/zite/credits) and are consumed when your **published** apps interact with external services. Most integrated actions consume one credit, while some more resource-intensive actions may consume additional credits (see [below](#what-costs-integration-credits)).
 
 Each plan includes a monthly integration credit allowance that resets on the 1st of each month. You can view your usage on the [Billing & Usage](https://build.fillout.com/home/settings/billing) page in your account settings. [Learn more](#check-your-usage).
 
 <Check>
-  **Zite Database operations are always free** and do not use any integration credits, regardless of your plan.
+  **Database integrations are always free.** 
+  
+  Zite Database, Airtable, and Google Sheets **do not consume integration credits**, regardless of your plan.
 </Check>
 
 ## What costs integration credits
 
-Integration credits are used any time your published app triggers an action that sends data to or retrieves data from an external service. Common examples include:
-
-- **Uploading or downloading a file** via Google Drive (1 credit)
-- **Triggering an action** in Twilio, Slack, or another connected service (1 credit)
-- **Sending an email** to a user or team member (5 credits)
-- **Generating a document** like a PDF (coming soon)
+Integration credits are used when your published app sends data to or retrieves data from certain external services. Common examples include:
 
 | Action | Credits per use |
 | --- | --- |
 | Standard integration (e.g. Twilio, Slack, OpenAI, Google Drive) | 1 |
 | Email send | 5 |
 | Document generation (coming soon) | 10 |
-| Zite Database operations | Free (always) |
-
-<Check>
-  Database integrations like Airtable, Zite Database, and Google Sheets are free and do not consume integration credits.
-</Check>
+| Zite Database, Airtable, and Google Sheets | Free |
 
 ## Monthly limits by plan
 
@@ -53,16 +46,13 @@ Integration credits reset on the **1st of each month** (UTC). Unused credits do 
 
 ## Check your usage
 
-You can view your integration credit usage on the [Billing & Usage](https://build.fillout.com/home/settings/billing) page in your account settings. The **Integration Credits** section shows a breakdown of your usage by type, along with how many credits you have remaining.
+You can view your integration credit usage on the [Billing & Usage](https://build.fillout.com/home/settings/billing) page in your account settings.
 
 ## FAQ
 
 <AccordionGroup>
   <Accordion title="What if I need more integration credits?">
-    The easiest way to get more integration credits is to upgrade your Zite plan. Each tier includes a higher monthly allowance. See the [limits by plan](#monthly-limits-by-plan) table above.
-  </Accordion>
-  <Accordion title="What if I need more integration credits than the Team plan includes?">
-    If you need more than 500,000 integration credits per month, contact [support@zite.com](mailto:support@zite.com) to get an add-on.
+    Upgrade your Zite plan for a higher monthly allowance. If you need more than 500,000 credits per month, contact [support@zite.com](mailto:support@zite.com) for a custom add-on.
   </Accordion>
 </AccordionGroup>
 

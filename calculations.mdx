@@ -9,6 +9,10 @@ icon: "calculator-simple"
 
 <iframe width="720" height="420" src="https://www.youtube.com/embed/51JXFjaZF6k" title="How to add calculations to your form" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
+<Frame>
+  ![Screenshot 2026 04 13 At 5 09 06 PM](/images/Screenshot-2026-04-13-at-5.09.06-PM.png)
+</Frame>
+
 ## Add a calculation
 
 <Steps>
@@ -17,18 +21,22 @@ icon: "calculator-simple"
 
     ![Screenshot 2025-11-25 at 6.32.40 PM.png](/images/Screenshot2025-11-25at6.32.40PM.png)
 
-    In the popup, click `Calculations` on top followed by `+ Add new calculation`. Enter a **Name** or label and choose the **Type**, which can be:
+    In the popup, click `Calculations` on top followed by `+ Add new calculation`.
+
+    <img
+      src="/images/Screenshot-2026-04-13-at-5.09.06-PM-1.png"
+      alt="Screenshot 2026 04 13 At 5 09 06 PM"
+      title="Screenshot 2026 04 13 At 5 09 06 PM"
+      style={{ width:"48%" }}
+    />
+
+     
+
+    Enter a **Name** or label and choose the **Type**, which can be:
 
     - **Number** - for numerical results like price or score
     - **Text** - for dynamic text based on responses
     - **Duration** - for intervals between dates, like age or term
-
-    <img
-      src="/images/image.png"
-      alt="image.png"
-      title="image.png"
-      style={{ width:"81%" }}
-    />
 
     For example, let's compute the price for multiple orders of our mozarella sticks dish. This would use the `number` type.
   </Step>
@@ -47,7 +55,6 @@ icon: "calculator-simple"
     Click `+ New rule` to determine how the initial value will change. A rule is made up of 3 main parts:
 
     - **Condition** - a parameter, than when true, performs the calculation
-
       (e.g. add x amount when a respondents selects "yes" to a previous question)
     - **Operation** - what to do to the calculation (e.g. add, subtract, multiply, divide)
     - **Operation value** - the value used with the operation (e.g. add x amount to your initial value)
@@ -115,13 +122,15 @@ Much like how fields are [pre-filled](/prefill-fields) elsewhere in Fillout, you
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card color="#FFC738" icon="wand-magic-sparkles" iconType="regular" href="/answer-piping" title="Answer piping">
+  <Card title="Answer piping" color="#FFC738" icon="wand-magic-sparkles" iconType="regular" href="/answer-piping">
     Insert previous answers into upcoming questions or fields.
   </Card>
-  <Card color="#FFC738" icon="fill" iconType="solid" href="/prefill-fields" title="Pre-fill fields">
+
+  <Card title="Pre-fill fields" color="#FFC738" icon="fill" iconType="solid" href="/prefill-fields">
     Pre-populate fields based on previous inputs and more.
   </Card>
-  <Card color="#FFC738" icon="gear-complex" iconType="regular" href="/conditional-integration" title="Integration logic">
+
+  <Card title="Integration logic" color="#FFC738" icon="gear-complex" iconType="regular" href="/conditional-integration">
     Perform an integration only when a certain condition is met.
   </Card>
 </CardGroup>

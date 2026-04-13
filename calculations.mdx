@@ -9,6 +9,24 @@ icon: "calculator-simple"
 
 <iframe width="720" height="420" src="https://www.youtube.com/embed/51JXFjaZF6k" title="How to add calculations to your form" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
+## How it works
+
+Calculations in Fillout forms lets you compute values and respondent input, and display them. They are built using step-by-step rules rather than a single formula. Each rule performs one operation, and the result is passed to the next rule in sequence.
+
+For example, instead of writing "A \+ B x C" in one line, you would break it down into separate rules:
+
+- Rule 1: Start with A (initial value = @FieldA) and Add @FieldB
+- Rule 2: Take the total from Rule 1 and multiply by @FieldC
+
+Each step is processed in order, which ensures the final result is calculated correctly.
+
+When the result is shown in the form, it follows a fixed display format:
+
+- Values are shown up to 2 decimal places
+- Trailing zeros are not displayed (e.g. `10.2` not `10.20`)
+- No currency symbols or thousands separators are added
+- Rounding to whole numbers isn’t supported directly in the form
+
 ## Add a calculation
 
 By opening the Logic modal, you can create calculations to compute values dynamically based on static values or previous respondent input.
@@ -91,7 +109,7 @@ After adding a [payment page](https://www.fillout.com/help/payment-page), type *
 
 **Display dynamic calculation in your form**
 
-Anywhere in Fillout, you can type **@** and click <Icon icon="calculator" /> to [reference previous answers or calculations](/answer-piping).
+On a heading or paragraph field, you can type **@** and click <Icon icon="calculator" /> to [reference previous answers or calculations](/answer-piping).
 
 <img
   src="/images/Screenshot-2026-04-13-at-5.31.50-PM.png"

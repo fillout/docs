@@ -90,7 +90,8 @@
                   "zite/plan-mode",
                   "zite/chat-mode"
                 ]
-              }
+              },
+              "zite/qr-codes"
             ]
           },
           {

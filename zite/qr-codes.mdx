@@ -1,0 +1,64 @@
+---
+title: "QR codes in Zite"
+description: "Learn common ways to use QR codes in Zite, from app links and contact cards to maps, calendar events, payment links, and inventory workflows."
+sidebarTitle: "QR Codes"
+icon: "qrcode"
+---
+
+## Overview
+
+QR codes are a simple way to take someone from the physical world to the right place in your app. In Zite, they’re most commonly used to open a URL, but they can also point to contact details, maps, events, payment links, and other structured information.
+
+When someone scans a QR code, their device opens the encoded destination immediately. That makes them useful for posters, packaging, receipts, kiosks, event check-ins, and internal operations.
+
+<Info>
+  If your Zite app requires authentication, people who scan the QR code will still need to sign in before they can access the app.
+</Info>
+
+## Common ways to use QR codes
+
+- **URLs** — The most common use case. Link people to a live Zite app, a specific page, or any website.
+- **Contact info** — Encode a name, phone number, and email in vCard format so scanning adds the contact to the device.
+- **Geographic coordinates** — Open a specific location in Apple Maps, Google Maps, or another map app.
+- **Calendar events** — Let someone scan a code and add an event directly to their calendar.
+- **Payment info** — Send people to bank details, invoice instructions, or a Stripe payment link.
+
+## Generating QR codes
+
+QR codes in Zite are generated for free and on demand through your app logic. They are not stored in your database.
+
+Simply tell the Agent how you’d like a QR code to work, and let Zite create the logic for you.
+
+<img
+  src="/images/zite/qr-code-prompt.png"
+  alt="Prompt for generating QR codes in Zite"
+  style={{ width:"70%" }}
+/>
+
+## Example: inventory management
+
+QR codes also work well for operational workflows.
+
+For example, an employee could scan a QR code attached to a shelf, bin, or product and instantly pull up the matching stock information in Zite. From there, they could check inventory levels, confirm item details, log updates, or start a reorder workflow without searching for the record manually.
+
+This kind of setup is especially useful for warehouses, retail backrooms, equipment rooms, and field teams who need fast access to the right record while moving around.
+
+<img
+  src="/images/zite/qr-code.png"
+  alt="QR code example in Zite"
+  style={{ width:"70%" }}
+/>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card color="#FFC738" icon="globe" iconType="regular" href="/zite/access/share-to-web" title="Share to Web">
+    Make your Zite app publicly accessible before sharing it more widely.
+  </Card>
+  <Card color="#4FD1C5" icon="link" iconType="regular" href="/zite/customize-links" title="Customize Links">
+    Personalize your app link and domain before turning it into a QR code.
+  </Card>
+  <Card color="#A78BFA" icon="lock" iconType="regular" href="/zite/access/authentication" title="Authentication">
+    Require sign-in for apps that are shared through a QR code.
+  </Card>
+</CardGroup>

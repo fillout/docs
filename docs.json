@@ -142,7 +142,8 @@
           {
             "group": "API Reference",
             "pages": [
-              "zite/api/create-zite"
+              "zite/api/create-zite",
+              "zite/api/secrets"
             ]
           },
           {

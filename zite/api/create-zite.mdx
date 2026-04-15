@@ -1,6 +1,7 @@
 ---
-title: Create Zite via API
-description: Programmatically create Zites from a prompt using the REST API.
+title: "Create Zite via API"
+description: "Programmatically create Zites from a prompt using the REST API."
+icon: "cloud-binary"
 ---
 
 The Create Zite API lets you programmatically generate a Zite from a text prompt, optionally including files, a theme, and a name. The Zite is created instantly and a **claim URL** is returned so a user can take ownership of it.
@@ -32,14 +33,14 @@ No authentication is required to call this endpoint.
 
 ### Endpoint
 
-```
+```text
 POST /v1/api/zite/create
 ```
 
 ### Request body
 
 | Field | Type | Required | Description |
-|-------|------|----------|-------------|
+| --- | --- | --- | --- |
 | `prompt` | string | Yes | The prompt to generate the Zite from. 1–10,000 characters, trimmed. |
 | `files` | array | No | Files to include. Max 10 items. |
 | `files[].url` | string | Yes (within `files`) | A valid URL pointing to the file. |
@@ -50,7 +51,7 @@ POST /v1/api/zite/create
 ### Response body
 
 | Field | Type | Description |
-|-------|------|-------------|
+| --- | --- | --- |
 | `flowPublicIdentifier` | string | Unique identifier for the created Zite. |
 | `claimUrl` | string | URL the user can visit to claim and own the Zite. |
 | `appName` | string | The resolved app name (provided or auto-generated). |

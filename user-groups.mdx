@@ -5,49 +5,76 @@ sidebarTitle: "User Groups"
 icon: "users"
 ---
 
+## Overview
+
 User Groups let admins bundle team members together and grant them workspace or form access all at once. Instead of assigning permissions to each member individually, you can manage access for an entire group in one place.
 
 <Warning>
-  User Groups are available on the **Team** and **Enterprise** plans. Learn more about the [Team plan](/team-plan).
+  Only **admins** can create User Groups on the **Team** and **Enterprise** plans. Learn more about the [Team plan](/team-plan).
 </Warning>
 
 ## Create a group
 
 <Steps>
   <Step title="Open group settings">
-    From your dashboard, click your `Account name` in the upper left corner and select `Settings`. Then, switch to the **Groups** tab.
+    From your dashboard, click your `Account name` in the upper left corner and select `Settings`. Then, switch to the [**Groups** tab](https://build.fillout.com/home/settings/groups).
   </Step>
   <Step title="Create a new group">
-    Click `+ New group` and give the group a name.
+    Click `Create group` and give the group a name.
+
+    <img
+      src="/images/Screenshot-2026-04-15-at-6.43.42-PM.png"
+      alt="Screenshot 2026 04 15 At 6 43 42 PM"
+      title="Screenshot 2026 04 15 At 6 43 42 PM"
+      style={{ width:"79%" }}
+    />
   </Step>
   <Step title="Add members & change permissions">
+    `Add` the emails of users you'd like to include in the group. Then, click `Save` at the bottom.
+
+    <img
+      src="/images/Screenshot-2026-04-15-at-6.47.46-PM.png"
+      alt="Screenshot 2026 04 15 At 6 47 46 PM"
+      title="Screenshot 2026 04 15 At 6 47 46 PM"
+      style={{ width:"34%" }}
+    />
+
     Using the dropdown menu on a group you can manage members or change the permissions of this group.
   </Step>
 </Steps>
 
 ## Assign permissions to a group
 
-Groups can have **Use** or **Edit** permissions on workspaces or individual forms, apps, or databases within a workspace.
+Groups can have **Use** or **Edit** permissions on workspaces or individual forms, apps, or databases within a workspace. Navigate to `Access` to assign.
 
-- **Use** – Members can view forms and their results and use apps but aren't able to edit them.
-- **Edit** – Members can edit and remove forms, apps, and databases.
+- **Use** – members can view forms and their results and use apps but aren't able to edit them
+- **Edit** – members can edit and remove forms, apps, and databases
+
+<img
+  src="/images/Screenshot-2026-04-15-at-6.56.22-PM.png"
+  alt="Screenshot 2026 04 15 At 6 56 22 PM"
+  title="Screenshot 2026 04 15 At 6 56 22 PM"
+  style={{ width:"39%" }}
+/>
 
 If a user has permissions from multiple sources (e.g., directly and via a group), the highest permission always wins. For example, if a group grants **Use** access but the user was individually granted **Edit** access, they'll have **Edit** access.
 
-<Info>
+<Warning>
   **Use** permissions are currently not implemented on databases. If a user only has **Use** permissions for a database, it will not show up for them.
-</Info>
+</Warning>
 
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Granular Permissions" icon="universal-access" iconType="regular" color="#FFC738" href="/granular-permissions">
+  <Card title="Granular Permissions" color="#FFC738" icon="universal-access" iconType="regular" href="/granular-permissions">
     Set member access levels and restrict integration accounts.
   </Card>
-  <Card title="Manage Members" icon="user-gear" iconType="regular" color="#FFC738" href="/manage-members">
+
+  <Card title="Manage Members" color="#FFC738" icon="user-gear" iconType="regular" href="/manage-members">
     Add, remove, and update team members.
   </Card>
-  <Card title="Workspaces" icon="folders" iconType="regular" color="#FFC738" href="/workspaces">
+
+  <Card title="Workspaces" color="#FFC738" icon="folders" iconType="regular" href="/workspaces">
     Organize forms in folders and control user access.
   </Card>
 </CardGroup>

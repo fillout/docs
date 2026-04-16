@@ -201,7 +201,8 @@
               "database/make-database",
               "database/import-data",
               "database/ai-fields",
-              "database/formulas"
+              "database/formulas",
+              "database/duplicate"
             ]
           },
           {

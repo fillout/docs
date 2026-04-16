@@ -131,7 +131,8 @@
               "zite/guides/notify-with-email",
               "zite/guides/twilio",
               "zite/guides/google-calendar",
-              "zite/guides/excel"
+              "zite/guides/excel",
+              "zite/guides/hubspot"
             ]
           },
           {

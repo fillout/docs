@@ -91,7 +91,8 @@
                   "zite/chat-mode"
                 ]
               },
-              "zite/qr-codes"
+              "zite/qr-codes",
+              "zite/duplicate"
             ]
           },
           {

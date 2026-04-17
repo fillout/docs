@@ -13,7 +13,7 @@ icon: "calculator-simple"
 
 Calculations in Fillout forms lets you compute values and respondent input, and display them. They are built using step-by-step rules rather than a single formula. Each rule performs one operation, and the result is passed to the next rule in sequence.
 
-For example, instead of writing "A \+ B x C" in one line, you would break it down into separate rules:
+For example, instead of writing "(A \+ B) x C" in one line, you would break it down into separate rules:
 
 - Rule 1: Start with A (initial value = @FieldA) and Add @FieldB
 - Rule 2: Take the total from Rule 1 and multiply by @FieldC
@@ -94,6 +94,15 @@ By opening the Logic modal, you can create calculations to compute values dynami
   </Step>
 </Steps>
 
+### Rule hierarchy for results
+
+To resolve conflicts between rules, results follow a clear priority order. Higher-priority rules always take precedence over lower-priority ones.
+
+- **A always wins (Highest priority):** All A rules take precedence over every other rule.
+- **B always wins after A:** Applies after A. B rules are overridden when they conflict with A.
+- **C always wins after B:** Applies after A and B. C rules are overridden when they conflict with A or B.
+- **D only wins when the others don't (Lowest priority):** Only applies when none of the higher-priority rules (A, B, or C) apply.
+
 ## Dynamic calculation
 
 **Make the price dynamic**
@@ -122,7 +131,7 @@ You can [style this text](/themes) by highlighting it and changing the font size
 
 **Pre-fill fields with calculations**
 
-To pipe calculations as input, open the field's settings <Icon icon="gear-complex" iconType="solid" />. Under **Default value**, click <Icon icon="square-plus" iconType="solid" /> followed by <Icon icon="calculator" /> to reference a calculation. 
+To pipe calculations as input, open the field's settings <Icon icon="gear-complex" iconType="solid" />. Under **Default value**, click <Icon icon="square-plus" iconType="solid" /> followed by <Icon icon="calculator" /> to reference a calculation.
 
 <img
   src="/images/Screenshot-2026-04-17-at-7.28.32-PM.png"

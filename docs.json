@@ -104,7 +104,8 @@
               "zite/access/sso",
               "zite/access/user-sync",
               "zite/import-and-export-apps",
-              "zite/working-with-clients"
+              "zite/working-with-clients",
+              "zite/access/us"
             ]
           },
           {

@@ -8,13 +8,13 @@ mode: "center"
   ## Generate QR codes, organize access, and keep secrets safe
 
   <p style={{ fontSize: "16px" }}>
-    We’re adding three new useful features to Zite: QR codes for business workflows, Groups for managing access at scale, and Secrets for storing private integration values securely.
+    We’re adding three useful new features to Zite: the ability to generate and scan QR codes, Groups for managing access at scale, and Secrets for storing private integration values securely.
   </p>
 
   #### 🔗 Generate QR codes in your app
 
   <p style={{ fontSize: "16px" }}>
-    Tell the Agent how you’d like a QR code to work, and Zite will generate it for you on demand through your app logic. QR codes are free to create and are not stored in your database.
+    Tell the Zite Agent how you’d like QR codes to work. Zite can scan and generate QR codes, for example to manage inventory or easily open links.
   </p>
 
   <Frame>
@@ -27,7 +27,7 @@ mode: "center"
   #### 👥 Manage access with Groups
 
   <p style={{ fontSize: "16px" }}>
-    Organizations can grant top-level Use or Edit access to a department or a group of people at once, without updating each person individually. Groups are available from `Settings` -> `Groups`.
+    Organizations can grant top-level Use or Edit access to a department or a group of people at once, without updating each person individually. Groups are available from `Settings` -> `Groups` on the Team and Enterprise plans.
   </p>
 
   <Frame>
@@ -40,10 +40,18 @@ mode: "center"
   #### 🔐 Store secrets securely in your app
 
   <p style={{ fontSize: "16px" }}>
-    Securely store sensitive information like external API keys so your Zite app can use them safely behind the scenes.
+    Securely store sensitive information like external API keys that your Zite app can use in app workflows.
   </p>
 
-  <CardGroup cols={3}>
+  <Frame>
+    <img
+      src="/images/zite/secrets.webp"
+      alt="Secrets settings in Zite"
+    />
+  </Frame>
+
+  <div style={{ marginTop: "28px" }}>
+    <CardGroup cols={3}>
     <Card title="Generate QR codes in your app" color="#FFC738" icon="qrcode" iconType="regular" href="https://www.fillout.com/help/zite/qr-codes">
       Learn how QR codes work in Zite and what they’re best for.
     </Card>
@@ -55,7 +63,8 @@ mode: "center"
     <Card title="Store secrets securely in your app" color="#A78BFA" icon="key" iconType="regular" href="https://www.fillout.com/help/zite/api/secrets">
       Store private values securely for use in your app.
     </Card>
-  </CardGroup>
+    </CardGroup>
+  </div>
 </Update>
 
 <Update label="April 2026" tags={["Zite"]}>

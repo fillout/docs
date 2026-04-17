@@ -27,6 +27,10 @@ First, [configure your single sign-on provider](/saml-sso) with Fillout. Next, a
   ![](/images/advanced/image-12.png)
 </Frame>
 
+<Note>
+  In order to log in via SSO, users must be granted access to Fillout in your SAML provider.
+</Note>
+
 That’s it - your form is now secured with your single sign-on provider. When a user submits a form, the results page will automatically show you which user submitted the form.
 
 ## Pre-filling fields and conditional logic
@@ -46,13 +50,15 @@ You can also pull in **custom attributes** from your SSO provider — like depar
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="SSO custom attributes" icon="id-badge" iconType="regular" color="#FFC738" href="/sso-custom-attributes">
+  <Card title="SSO custom attributes" color="#FFC738" icon="id-badge" iconType="regular" href="/sso-custom-attributes">
     Use custom SSO attributes like department or role in your forms.
   </Card>
-  <Card title="Login page" icon="key" iconType="regular" color="#FFC738" href="/login-page">
+
+  <Card title="Login page" color="#FFC738" icon="key" iconType="regular" href="/login-page">
     Require respondents to verify their email, enter a password, or use Single Sign-On.
   </Card>
-  <Card title="SAML Single Sign On" icon="shield-keyhole" iconType="regular" color="#FFC738" href="/saml-sso">
+
+  <Card title="SAML Single Sign On" color="#FFC738" icon="shield-keyhole" iconType="regular" href="/saml-sso">
     Enable SSO through various providers like Okta, Azure AD, and all SAML providers.
   </Card>
 </CardGroup>

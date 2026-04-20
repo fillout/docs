@@ -326,6 +326,7 @@
           },
           {
             "group": "Getting Started",
+            "expanded": true,
             "pages": [
               "getting-started",
               "make-a-form",

@@ -133,6 +133,7 @@
               "zite/guides/notify-with-email",
               "zite/guides/twilio",
               "zite/guides/google-calendar",
+              "zite/guides/google-maps",
               "zite/guides/excel",
               "zite/guides/hubspot"
             ]

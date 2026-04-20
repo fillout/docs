@@ -1,0 +1,71 @@
+---
+title: "Integrate maps with Google Maps"
+icon: "map-location-dot"
+sidebarTitle: "Add Google Maps"
+description: "Insert interactive maps, enable geocoding, and location search bars to your Zite app."
+---
+
+## How it works
+
+Connecting your Zite app to Google Maps lets you build an app where location and maps work together to display places, and enable users to search and interact with locations in real time. By connecting Google Maps, you can:
+
+- Display interactive maps with pinned locations
+- Add search bars that show exact locations
+- Filter and sort places by distance or area
+- Use Google Places autocomplete in your forms so respondents can verify addresses
+- Show routes from a starting point to a destination, including directions and ETA
+
+## How to add Google Maps to your app
+
+<Steps>
+  <Step title="Connect to Google Maps">
+    In the chat box, ask Zite to connect to Google Maps or click the `integrations icon` <Icon icon="rectangle-list" />.
+
+    <img
+      src="/images/Screenshot2026-03-31at12.47.23PM.png"
+      alt="Screenshot 2026 03 31 At 12 47 23 PM"
+      title="Screenshot 2026 03 31 At 12 47 23 PM"
+      style={{ width:"36%" }}
+    />
+  </Step>
+  <Step title="Paste your API Key">
+    Copy your **Google Maps API Key** [here](https://console.cloud.google.com/google/maps-apis/credentials). If you don't have one yet, click `+ Create credentials` on top followed by `API Key`.
+
+    ![Screenshot 2026 04 20 At 1 22 58 PM](/images/Screenshot-2026-04-20-at-1.22.58-PM-1.png)
+
+    Then, go back to the Zite editor and **paste the key** there.
+  </Step>
+  <Step title="Enter your use case">
+    Describe how you'd like to use Google Maps in your app. For example, let's add a location search bar and an interactive map in each of the listings.
+
+    ![Screenshot 2026 04 20 At 1 38 34 PM](/images/Screenshot-2026-04-20-at-1.38.34-PM.png)
+  </Step>
+  <Step title="Deploy and share">
+    That's it! Users can now search, filter, and search locations in the Zite app.
+
+    ![Screenshot 2026 04 20 At 2 26 05 PM](/images/Screenshot-2026-04-20-at-2.26.05-PM.png)
+
+    They can also view interactive maps on listing pages.
+
+    ![Screenshot 2026 04 20 At 2 13 47 PM](/images/Screenshot-2026-04-20-at-2.13.47-PM.png)
+
+    Click `Publish` in the upper right corner and [**share**](https://www.fillout.com/help/zite/access/share-to-web) your Zite app.
+  </Step>
+</Steps>
+
+## Use address autocomplete
+
+If your Zite app has a form with an address field, you can enable autocomplete so users can easily find and validate the address they enter. Just [enable the Places API](https://console.cloud.google.com/google/maps-apis/api-list) in your Google Cloud Console, then follow the same steps above.
+
+However, if your form was built with Fillout and address autocomplete is already enabled for the address field, there’s no need to set up the Places API separately.
+
+## Common use cases
+
+With a Google Maps connection, you create apps like:
+
+- **Property or Rental Directories:** Let users browse listings and view exact locations on a map
+- **Delivery Trackers:** Let customers track deliveries in real time
+- **Store Locators:** Help users find nearby branches and get directions easily
+- **Event Maps:** Show event venues and help attendees navigate locations
+- **Service Area Maps:** Let users check availability based on their location
+- **Travel or Tour Guides:** Highlight points of interest and suggested routes

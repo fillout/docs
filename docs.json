@@ -226,8 +226,7 @@
           {
             "group": "Access & Sharing",
             "pages": [
-              "database/access",
-              "export"
+              "database/access"
             ]
           },
           {

@@ -551,7 +551,8 @@
                   "integration-static-values",
                   "pre-fetch-data",
                   "conditional-integration",
-                  "record-pickers"
+                  "record-pickers",
+                  "multiple-linked-records"
                 ]
               }
             ]

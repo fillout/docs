@@ -33,7 +33,6 @@ In the left-hand panel, you can add more restrictions such as:
 
 - **Restrict domains** – allow only specific email domains, such as your company’s domain
 - **Limit to 1 submission** – restrict each respondent to a single form submission
-- **Connect to a database** – allow only users listed in a specific database to log in, and retrieve their records for use in the form
 
 ### **Password login**
 
@@ -47,6 +46,17 @@ Remember to `Publish` your form after entering or changing the password, otherwi
 
 You can also opt for `SSO`. Add Microsoft, OneLogin, Google Workspaces, Okta and other types of SSO login to your form. Learn more [here](/sso-form-login).
 
+## Connect to a database
+
+Limit logins to users listed in a specific database to log in, and retrieve their records for use in the form. On the left-hand panel, toggle `Connect to database` and choose your **Base** and **Users table**.
+
+<img
+  src="/images/Screenshot-2026-04-22-at-6.19.27-PM.png"
+  alt="Screenshot 2026 04 22 At 6 19 27 PM"
+  title="Screenshot 2026 04 22 At 6 19 27 PM"
+  style={{ width:"30%" }}
+/>
+
 ## Allow respondents to edit past submissions
 
 Some forms may need to be updated or edited after submitting them. Under **Basics** in the left-hand panel, toggle the `Can edit existing responses` switch.
@@ -56,13 +66,15 @@ Some forms may need to be updated or edited after submitting them. Under **Basic
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Partial submissions" icon="circle-half-stroke" iconType="solid" color="#FFC738" href="/partial-submissions">
+  <Card title="Partial submissions" color="#FFC738" icon="circle-half-stroke" iconType="solid" href="/partial-submissions">
     Auto-save progress so respondents can resume later.
   </Card>
-  <Card title="Let respondents edit their submissions" icon="file-pen" iconType="regular" color="#FFC738" href="/edit-form-submissions">
+
+  <Card title="Let respondents edit their submissions" color="#FFC738" icon="file-pen" iconType="regular" href="/edit-form-submissions">
     Keep form responses updated.
   </Card>
-  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738" href="/airtable">
+
+  <Card title="Create an Airtable form" color="#FFC738" icon="table-layout" iconType="regular" href="/airtable">
     Use a form to create or update Airtable bases.
   </Card>
 </CardGroup>

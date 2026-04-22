@@ -544,7 +544,7 @@
                   "manage-integrations",
                   "linked-record-update",
                   "fetch-dynamic-data",
-                  "login-data",
+                  "logged-in-data",
                   "webhook",
                   "additional-integration-mappings",
                   "update-forms",

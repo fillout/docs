@@ -6,7 +6,7 @@ icon: "circle-user"
 
 ## How it works
 
-If your form includes a [**login page**](https://www.fillout.com/help/login-page) **connected to a database**, you can use data from the logged-in respondent throughout your form.
+If your form includes a [**login page**](https://www.fillout.com/help/login-page) **connected to a database**, you can use data from the logged-in respondent or user throughout your form.
 
 Once a respondent logs in, all of their data from the connected table becomes available for use. This allows you to create more personalized, dynamic, and controlled form experiences.
 
@@ -22,22 +22,40 @@ You can use logged-in user data in:
 
 ## How to use logged-in data
 
-Depending on your setup, the reference menu may appear automatically. If not, type **@** or click the `plus icon` <Icon icon="square-plus" iconType="solid" />. Then click the `database icon` <Icon icon="database" iconType="solid" /> to see available fields and select the one you want.
+<Steps>
+  <Step title="Connect to a database">
+    Navigate to your **login page**. On the left-hand panel, toggle [Connect to database](https://www.fillout.com/help/login-page#connect-to-a-database).
+  </Step>
+  <Step title="Set your form to update mode">
+    On the  `Integrate` page, click your **database**, then choose `Update record`.
 
-<img
-  src="/images/Screenshot-2026-04-22-at-5.31.16-PM.png"
-  alt="Screenshot 2026 04 22 At 5 31 16 PM"
-  title="Screenshot 2026 04 22 At 5 31 16 PM"
-  style={{ width:"55%" }}
-/>
+    ![Screenshot 2026 04 22 At 6 38 09 PM](/images/Screenshot-2026-04-22-at-6.38.09-PM.png)
+  </Step>
+  <Step title="Open reference menu">
+    Depending on your setup, the reference menu may appear automatically. If not, type **@** or click the `plus icon` <Icon icon="square-plus" iconType="solid" />.
 
-Follow these steps to complete the common use cases below.
+    <img
+      src="/images/Screenshot-2026-04-22-at-6.34.01-PM.png"
+      alt="Screenshot 2026 04 22 At 6 34 01 PM"
+      title="Screenshot 2026 04 22 At 6 34 01 PM"
+      style={{ width:"69%" }}
+    />
 
-<Note>
-  Make sure your form is set to [**update an existing record**](https://www.fillout.com/help/airtable-update-form#how-it-works) in your integration in order to use logged-in data.
-</Note>
+    Then, click **User**.
+  </Step>
+  <Step title="Select field">
+    Click the **field** you'd like to insert or use. In this example, we'll choose "Department".
 
-Displaying logged-in data helps personalize the form-filling experience. More info [here](https://www.fillout.com/help/answer-piping#reference-integration-records).
+    <img
+      src="/images/Screenshot-2026-04-22-at-6.30.43-PM.png"
+      alt="Screenshot 2026 04 22 At 6 30 43 PM"
+      title="Screenshot 2026 04 22 At 6 30 43 PM"
+      style={{ width:"73%" }}
+    />
+  </Step>
+</Steps>
+
+Displaying logged-in data helps personalize the form-filling experience. Follow these steps to complete the common use cases below.
 
 ## Prefill known information
 
@@ -47,22 +65,50 @@ Avoid asking respondents to re-enter data you already have. For example, auto-fi
 
 Control what users see based on their role or attributes using [page logic](https://www.fillout.com/help/page-logic). For example, if a logged-in user is a student, skip pages meant only for teachers.
 
+<Note>
+  Make sure your form is set to [**update an existing record**](https://www.fillout.com/help/airtable-update-form#how-it-works) in your integration in order to use logged-in data.
+</Note>
+
 ## Use logged-in data in workflows and integrations
 
 Pass user data directly into automations. For example, [send notifications that include the user’s name](https://www.fillout.com/help/custom-emails#how-to-send-a-custom-email) or role. You can also map logged-in user data directly into Airtable, Notion, etc.
 
 ## Restrict record picker choices
 
-Limit what respondents can see and select in the [record picker dropdown](https://www.fillout.com/help/record-pickers#how-it-works) based on their own data by adding **filters**. This helps avoid long lists and reduces the chance of selecting the wrong option. 
+Limit what respondents can see and select in the [record picker dropdown](https://www.fillout.com/help/record-pickers#how-it-works) based on their own data by adding **filters**. This helps avoid long lists and reduces the chance of selecting the wrong option.
 
 <Steps>
   <Step title="Open field settings">
-    Click your **record picker** followed by its `gear icon`  <Icon icon="gear-complex" iconType="solid" />. 
+    Click your **record picker** followed by its `gear icon`  <Icon icon="gear-complex" iconType="solid" />.
   </Step>
   <Step title="Add filters">
     In the right-hand panel, scroll down to **Advanced** and `+ Add filters`.
+
+    <img
+      src="/images/Screenshot-2026-04-22-at-6.47.03-PM.png"
+      alt="Screenshot 2026 04 22 At 6 47 03 PM"
+      title="Screenshot 2026 04 22 At 6 47 03 PM"
+      style={{ width:"75%" }}
+    />
   </Step>
   <Step title="Set condition">
-    For example, we'll let store managers view and select employees only from their branch.
+    Click `+ Add condition`. For example, we'll let store managers view and select employees only from their branch.
+
+    - **Left dropdown:** Database field to filter by (e.g. location, department, or restock level)
+    - **Center dropdown:** Condition operators (like equals, does not equal, contains, less than, etc.)
+    - **Right dropdown:** Value to match against (Click User first followed by the field associated with them)
+
+    <img
+      src="/images/Screenshot-2026-04-22-at-6.50.33-PM.png"
+      alt="Screenshot 2026 04 22 At 6 50 33 PM"
+      title="Screenshot 2026 04 22 At 6 50 33 PM"
+      style={{ width:"82%" }}
+    />
+
+    You can add **multiple filters** to refine your results. For example, match Location (left dropdown) to User Location (right) AND Availability to "In Stock".
+
+    <Info>
+      Filters currently only support **AND logic**. **OR condition** and** does not contain** can't be applied.
+    </Info>
   </Step>
 </Steps>

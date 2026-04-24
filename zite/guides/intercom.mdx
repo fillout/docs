@@ -7,19 +7,19 @@ icon: "intercom"
 
 ## How it works
 
-Enable your Zite app to track and manage projects with Linear. This enables it to create issues, update statuses, show kanban boards, all without users needing Linear access. By connecting Linear, you can:
+Build custom support apps on Zite with Intercom. This enables your app to create tailored support tools, manage conversations, route tickets, and automate customer support workflows. By connecting Intercom, you can:
 
-- Display projects in custom views like kanban boards
-- Create and update issues from your app
-- Add comments from the app
-- Create approval workflows
-- Trigger in-app notifications when changes are made
+- Access Intercom customer profiles, conversations, and attributes
+- Send messages from your app to Intercom
+- Build escalation and ticket routing workflows
+- Create support dashboards powered by Intercom data
+- Look up Intercom customers with full activity context from your app
 
-## How to integrate Linear into your app
+## How to integrate Intercom into your app
 
 <Steps>
-  <Step title="Connect to Liner">
-    In the chat box, request your app to be integrated with Linear or click the `plug icon` <Icon icon="plug" />.
+  <Step title="Connect to Intercom">
+    In the chat box, request your app to be integrated with Intercom or click the `plug icon` <Icon icon="plug" />.
 
     <img
       src="/images/Screenshot-2026-04-24-at-2.44.43-PM.png"
@@ -28,17 +28,35 @@ Enable your Zite app to track and manage projects with Linear. This enables it t
       style={{ width:"40%" }}
     />
 
-    Then, sign in to your Linear account.
+    Then, sign in to your Intercom account.
   </Step>
   <Step title="Enter use case">
-    Tell Zite how you want to use Linear in your app. For example, we'll sync new and updated cards to our Linear board.
+    Tell Zite how you want to use Intercom in your app. For example, we'll enable creation of new tickets to sync to Intercom and for updates there to reflect on our app.
 
-    ![Screenshot 2026 04 24 At 5 37 39 PM](/images/Screenshot-2026-04-24-at-5.37.39-PM.png)
+    ![Screenshot 2026 04 24 At 6 52 27 PM](/images/Screenshot-2026-04-24-at-6.52.27-PM-1.png)
+
+    <Note>
+      To trigger Intercom updates as in-app Zite notifications, point a webhook to your app’s `/api/intercomWebhook` and subscribe to conversation updates.
+    </Note>
+
+     
   </Step>
   <Step title="Deploy and share">
     Use the chat box or the respective buttons in your app to ensure everything's working properly.
 
-    ![Screenshot 2026 04 24 At 5 07 39 PM](/images/Screenshot-2026-04-24-at-5.07.39-PM.png)
+    <img
+      src="/images/Screenshot-2026-04-24-at-7.01.57-PM.png"
+      alt="Screenshot 2026 04 24 At 7 01 57 PM"
+      title="Screenshot 2026 04 24 At 7 01 57 PM"
+      style={{ width:"54%" }}
+    />
+
+    <img
+      src="/images/Screenshot-2026-04-24-at-8.05.16-PM.png"
+      alt="Screenshot 2026 04 24 At 8 05 16 PM"
+      title="Screenshot 2026 04 24 At 8 05 16 PM"
+      style={{ width:"67%" }}
+    />
 
     Click `Publish` in the upper right corner and [**share**](https://www.fillout.com/help/zite/access/share-to-web) your app.
 
@@ -48,10 +66,11 @@ Enable your Zite app to track and manage projects with Linear. This enables it t
 
 ## Common use cases
 
-With a Linear connection, you can create apps like:
+With an Intercom connection, you can create apps like:
 
-- **Project Managers:** Let users view, organize, and manage Linear projects in your app
-- **Issue Tracking Tools:** Let users create, update, and track issues directly from your app
-- **Sprint Dashboards:** Let users track sprint progress, priorities, and issue status
-- **Workflow Automation:** Trigger actions and notifications based on app events
-- **Collaboration Tools:** Let users comment on issues and keep project discussions in sync
+- **Support Dashboards:** Let users monitor conversations, response times, and resolution metrics in real time
+- **Customer Health Trackers:** Let users combine Intercom data with other sources to identify at-risk accounts and track engagement health
+- **Lookup Tools:** Let users search and view full customer profiles, including conversations 
+- **Support Workflow Automation:** Trigger routing, escalations, and follow-ups based on customer activity or messages
+- **Messaging Tools:** Let users send onboarding, outreach, and event-based messages directly from your app
+- **Customer Insight Tools:** Let users analyze support interactions to uncover trends and improve response quality

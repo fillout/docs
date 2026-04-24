@@ -20,27 +20,13 @@
       "name": "Authorization"
     }
   },
-  "openapi": ["/openapi.json", "/database/openapi.json"],
+  "openapi": [
+    "/openapi.json"
+  ],
   "redirects": [
-    {
-      "source": "/zite/database/:path*",
-      "destination": "/database/:path*"
-    },
-    {
-      "source": "/zite/guides/import-data",
-      "destination": "/database/import-data"
-    },
     {
       "source": "/update-smartsuite",
       "destination": "/smartsuite-update"
-    },
-    {
-      "source": "/zite/sharing",
-      "destination": "/zite/access/share-to-web"
-    },
-    {
-      "source": "/zite/add-user-login",
-      "destination": "/zite/access/authentication"
     },
     {
       "source": "/",
@@ -49,273 +35,6 @@
   ],
   "navigation": {
     "tabs": [
-      {
-        "tab": "Zite",
-        "icon": "cube",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "zite/overview"
-            ]
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "zite/getting-started/overview",
-              "zite/getting-started",
-              "zite/design",
-              "zite/brand-kit",
-              "zite/integrations",
-              "zite/analytics",
-              "zite/credits",
-              "zite/integration-credits",
-              "zite/faq"
-            ]
-          },
-          {
-            "group": "Basics",
-            "pages": [
-              "zite/selective-edits",
-              "zite/embedding",
-              "zite/customize-links",
-              "zite/history",
-              "zite/model-selection",
-              {
-                "group": "Editor Modes",
-                "icon": "toggle-on",
-                "pages": [
-                  "zite/editor-modes",
-                  "zite/build-mode",
-                  "zite/plan-mode",
-                  "zite/chat-mode"
-                ]
-              },
-              "zite/qr-codes",
-              "zite/duplicate"
-            ]
-          },
-          {
-            "group": "Access & Sharing",
-            "pages": [
-              "zite/access/overview",
-              "zite/access/share-to-web",
-              "zite/access/authentication",
-              "zite/access/sso",
-              "zite/access/user-sync",
-              "zite/import-and-export-apps",
-              "zite/working-with-clients",
-              "zite/access/user-groups"
-            ]
-          },
-          {
-            "group": "Workflows",
-            "pages": [
-              "zite/workflows",
-              "zite/workflow-run-history"
-            ]
-          },
-          {
-            "group": "Marketplace",
-            "pages": [
-              "zite/marketplace/create-templates",
-              "zite/marketplace/clone-templates"
-            ]
-          },
-          {
-            "group": "Guides",
-            "pages": [
-              "zite/guides/google-sheets",
-              "zite/guides/airtable",
-              "zite/guides/fillout",
-              "zite/guides/slack",
-              "zite/guides/openai",
-              "zite/guides/anthropic",
-              "zite/guides/gemini",
-              "zite/guides/notify-with-email",
-              "zite/guides/twilio",
-              "zite/guides/google-calendar",
-              "zite/guides/google-maps",
-              "zite/guides/excel",
-              "zite/guides/hubspot"
-            ]
-          },
-          {
-            "group": "Tips",
-            "pages": [
-              "zite/tips/troubleshooting",
-              "zite/tips/credit-efficiency"
-            ]
-          },
-          {
-            "group": "API Reference",
-            "pages": [
-              "zite/api/create-zite",
-              "zite/api/secrets"
-            ]
-          },
-          {
-            "group": "Account",
-            "pages": [
-              "zite/subscription",
-              "affiliate-program",
-              "zite/cancel-account",
-              "zite/billing",
-              "zite/refund-policy"
-            ]
-          },
-          {
-            "group": "Security & Legal",
-            "pages": [
-              "security-and-legal",
-              "security",
-              {
-                "group": "Legal",
-                "icon": "scale-balanced",
-                "pages": [
-                  "privacy-policy",
-                  "terms-of-service",
-                  "fair-use-policy"
-                ]
-              },
-              {
-                "group": "Data & Infrastructure",
-                "icon": "server",
-                "pages": [
-                  "subprocessors"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Database",
-        "icon": "database",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "database/overview"
-            ]
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "database/guides/overview",
-              "database/make-database",
-              "database/import-data",
-              "database/ai-fields",
-              "database/formulas",
-              "database/duplicate"
-            ]
-          },
-          {
-            "group": "Guides",
-            "pages": [
-              "database/build-apps",
-              "database/sync-form-results",
-              "database/guides/auto-generate-ids",
-              "database/link-records",
-              "database/map-fields",
-              "database/update-with-forms",
-              "database/use-login-forms",
-              "database/pre-fetch-data",
-              "database/record-pickers"
-            ]
-          },
-          {
-            "group": "Access & Sharing",
-            "pages": [
-              "database/access"
-            ]
-          },
-          {
-            "group": "Automations",
-            "pages": [
-              "database/automations",
-              "database/zapier",
-              "database/relay",
-              "database/n8n"
-            ]
-          },
-          {
-            "group": "Zite MCP",
-            "pages": [
-              "database/mcp/mcp-overview",
-              {
-                "group": "Connecting to Zite MCP",
-                "icon": "plug",
-                "pages": [
-                  "database/mcp/connection-overview",
-                  "database/mcp/claude",
-                  "database/mcp/claude-code",
-                  "database/mcp/chatgpt",
-                  "database/mcp/cursor",
-                  "database/mcp/other-ai-tools"
-                ]
-              },
-              "database/mcp/mcp-tools"
-            ]
-          },
-          {
-            "group": "API Reference",
-            "pages": [
-              "database/api",
-              "database/field-types",
-              {
-                "group": "Records",
-                "icon": "code-simple",
-                "pages": [
-                  "database/create-record",
-                  "database/get-record-by-id",
-                  "database/update-record",
-                  "database/list-records",
-                  "database/delete-record"
-                ]
-              },
-              {
-                "group": "Fields",
-                "icon": "code-simple",
-                "pages": [
-                  "database/create-field",
-                  "database/update-field",
-                  "database/delete-field"
-                ]
-              },
-              {
-                "group": "Tables",
-                "icon": "code-simple",
-                "pages": [
-                  "database/create-table",
-                  "database/update-table",
-                  "database/delete-table"
-                ]
-              },
-              {
-                "group": "Databases",
-                "icon": "code-simple",
-                "pages": [
-                  "database/create-database",
-                  "database/get-databases",
-                  "database/get-database-by-id",
-                  "database/delete-database"
-                ]
-              },
-              {
-                "group": "Webhooks",
-                "icon": "code-simple",
-                "pages": [
-                  "database/webhooks",
-                  "database/create-webhook",
-                  "database/list-webhooks",
-                  "database/delete-webhook"
-                ]
-              }
-            ]
-          }
-        ]
-      },
       {
         "tab": "Fillout",
         "icon": "book",
@@ -867,14 +586,7 @@
       {
         "tab": "What's New",
         "icon": "list-timeline",
-        "groups": [
-          {
-            "group": " ",
-            "pages": [
-              "whats-new"
-            ]
-          }
-        ]
+        "href": "https://zite.com/help/whats-new"
       }
     ]
   },
@@ -896,7 +608,10 @@
     }
   },
   "contextual": {
-    "options": ["chatgpt", "claude"]
+    "options": [
+      "chatgpt",
+      "claude"
+    ]
   },
   "footer": {
     "links": [
@@ -1047,15 +762,6 @@
     }
   },
   "fonts": {
-    "heading": {
-      "family": "Your Heading Font",
-      "source": "https://static.fillout.com/fillout-fonts/BLMelody-Bold.woff2",
-      "format": "woff2"
-    },
-    "body": {
-      "family": "Your Body Font",
-      "source": "https://static.fillout.com/fillout-fonts/BLMelody-Regular.woff2",
-      "format": "woff2"
-    }
+    "family": "Geist"
   }
 }

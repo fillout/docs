@@ -131,6 +131,7 @@
               "zite/guides/slack",
               "zite/guides/openai",
               "zite/guides/anthropic",
+              "zite/guides/gemini",
               "zite/guides/notify-with-email",
               "zite/guides/twilio",
               "zite/guides/google-calendar",

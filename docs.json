@@ -132,6 +132,8 @@
               "zite/guides/openai",
               "zite/guides/anthropic",
               "zite/guides/gemini",
+              "zite/guides/linear",
+              "zite/guides/intercom",
               "zite/guides/notify-with-email",
               "zite/guides/twilio",
               "zite/guides/google-calendar",

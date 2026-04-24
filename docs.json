@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Zite Help Center",
+  "name": "Fillout Help Center",
   "colors": {
     "primary": "#211C20",
     "light": "#FFC738",
     "dark": "#071003"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.ico",
   "api": {
     "baseUrl": [
       "https://api.fillout.com/v1/api",
@@ -756,9 +756,9 @@
   "seo": {
     "indexing": "all",
     "metatags": {
-      "og:site_name": "Zite Help Center",
-      "og:title": "Zite | Help Center",
-      "og:description": "Browse help articles and customer support for Zite. Build business software in minutes."
+      "og:site_name": "Fillout Help Center",
+      "og:title": "Fillout | Help Center",
+      "og:description": "Browse help articles and customer support for Fillout. Build forms, surveys, and quizzes in minutes."
     }
   },
   "fonts": {

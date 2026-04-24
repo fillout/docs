@@ -21,6 +21,15 @@ h2.flex.whitespace-pre-wrap.group.font-semibold {
     font-size: 14px !important;
 }
 
+nav a,
+nav a span,
+aside a,
+aside a span,
+#sidebar a,
+#sidebar a span {
+    font-size: 14px !important;
+}
+
 .update-container .cursor-pointer.px-2.py-1.rounded-lg.text-sm.flex.items-center.flex-grow-0.justify-center.font-medium.bg-primary\/10.text-primary.dark\:text-primary-light {
 
     color: #C89000 !important;

@@ -591,8 +591,8 @@
     ]
   },
   "logo": {
-    "light": "/images/logo/light.png",
-    "dark": "/images/logo/dark.png",
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
     "href": "https://fillout.com"
   },
   "integrations": {

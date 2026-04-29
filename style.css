@@ -3,6 +3,11 @@ p {
     font-size: 16px !important;
 }
 
+a,
+a span {
+    font-size: 14px !important;
+}
+
 h4.flex.whitespace-pre-wrap.group.font-semibold {
     font-size: 17px !important;
 }
@@ -18,6 +23,22 @@ h2.flex.whitespace-pre-wrap.group.font-semibold {
 
 #navbar a span {
     color: #FFC738 !important;
+    font-size: 14px !important;
+}
+
+nav a,
+nav a span,
+nav button,
+nav button span,
+aside a,
+aside a span,
+aside button,
+aside button span,
+#sidebar a,
+#sidebar a span,
+#sidebar button,
+#sidebar button span {
+    font-size: 14px !important;
 }
 
 .update-container .cursor-pointer.px-2.py-1.rounded-lg.text-sm.flex.items-center.flex-grow-0.justify-center.font-medium.bg-primary\/10.text-primary.dark\:text-primary-light {

@@ -3,6 +3,11 @@ p {
     font-size: 16px !important;
 }
 
+a,
+a span {
+    font-size: 14px !important;
+}
+
 h4.flex.whitespace-pre-wrap.group.font-semibold {
     font-size: 17px !important;
 }
@@ -23,10 +28,16 @@ h2.flex.whitespace-pre-wrap.group.font-semibold {
 
 nav a,
 nav a span,
+nav button,
+nav button span,
 aside a,
 aside a span,
+aside button,
+aside button span,
 #sidebar a,
-#sidebar a span {
+#sidebar a span,
+#sidebar button,
+#sidebar button span {
     font-size: 14px !important;
 }
 

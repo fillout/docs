@@ -29,6 +29,30 @@
       "destination": "/smartsuite-update"
     },
     {
+      "source": "/database/sync-form-results",
+      "destination": "/guides/sync-form-results"
+    },
+    {
+      "source": "/database/map-fields",
+      "destination": "/guides/map-fields"
+    },
+    {
+      "source": "/database/update-with-forms",
+      "destination": "/guides/update-with-forms"
+    },
+    {
+      "source": "/database/use-login-forms",
+      "destination": "/guides/use-login-forms"
+    },
+    {
+      "source": "/database/pre-fetch-data",
+      "destination": "/guides/pre-fetch-data"
+    },
+    {
+      "source": "/database/record-pickers",
+      "destination": "/guides/record-pickers"
+    },
+    {
       "source": "/",
       "destination": "/fillout"
     }
@@ -441,6 +465,12 @@
             "group": "Guides",
             "pages": [
               "guides",
+              "guides/sync-form-results",
+              "guides/map-fields",
+              "guides/update-with-forms",
+              "guides/use-login-forms",
+              "guides/pre-fetch-data",
+              "guides/record-pickers",
               {
                 "group": "Quizzes",
                 "icon": "pencil",

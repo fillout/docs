@@ -987,7 +987,7 @@
           "autonumber",
           "source"
         ],
-        "description": "Field type - see [Field Types Reference](/database/field-types) for complete list of available types and their configurations"
+        "description": "Field type - see [Field Types Reference](/help/database/field-types) for complete list of available types and their configurations"
       },
       "Database": {
         "type": "object",
@@ -1453,7 +1453,7 @@
           "filter": {
             "type": "object",
             "additionalProperties": true,
-            "description": "Filter condition to query records. Supports nested AND/OR logic. Each condition requires `field` (field ID or name) and one operator (`equals`, `does_not_equal`, `contains`, `greater_than`, `in`, etc.). See [Filtering documentation](/database/list-records#filtering) for details.",
+            "description": "Filter condition to query records. Supports nested AND/OR logic. Each condition requires `field` (field ID or name) and one operator (`equals`, `does_not_equal`, `contains`, `greater_than`, `in`, etc.). See [Filtering documentation](/help/database/list-records#filtering) for details.",
             "example": {
               "field": "Status",
               "equals": "Active"

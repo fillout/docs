@@ -1,0 +1,94 @@
+---
+title: "Audit log event types"
+description: "A complete reference of every event tracked in Fillout audit logs, including descriptions and payload fields."
+sidebarTitle: "Event types"
+icon: "list-check"
+---
+
+This page lists every event type captured by Fillout audit logs. Each event includes a **timestamp**, **actor**, **outcome**, and an **event-specific payload** with additional details.
+
+Events marked with a <Icon icon="shield-halved" size={16} /> are considered **security-critical** — actions that could affect account security or data integrity.
+
+## Authentication
+
+| Event | Description | |
+|---|---|---|
+| `auth.login.success` | User logged in successfully. Payload includes the login method (`password`, `google`, `microsoft`, `sso`). | <Icon icon="shield-halved" size={16} /> |
+| `auth.login.failure` | Login attempt failed. Payload includes the attempted email and failure reason. | <Icon icon="shield-halved" size={16} /> |
+| `auth.logout` | User logged out. | |
+| `auth.impersonate` | A super-user logged in as another user. Payload includes the target user. | <Icon icon="shield-halved" size={16} /> |
+
+## Passwords & MFA
+
+| Event | Description | |
+|---|---|---|
+| `auth.password.resetRequest` | A password reset email was requested for an account. | |
+| `auth.password.resetComplete` | A password was successfully reset via the reset link. | <Icon icon="shield-halved" size={16} /> |
+| `auth.password.selfChange` | A user changed their own password from settings. | |
+| `auth.password.adminChange` | An admin changed another user's password. | <Icon icon="shield-halved" size={16} /> |
+| `auth.mfa.enable` | MFA was enabled for a user account. | |
+| `auth.mfa.disable` | MFA was disabled for a user account. | <Icon icon="shield-halved" size={16} /> |
+
+## Sessions & SSO
+
+| Event | Description | |
+|---|---|---|
+| `auth.sso.deprovision` | A user was deprovisioned via SSO (WorkOS webhook). | <Icon icon="shield-halved" size={16} /> |
+| `auth.session.deleteAll` | All sessions were invalidated for a user. | <Icon icon="shield-halved" size={16} /> |
+
+## API keys
+
+| Event | Description | |
+|---|---|---|
+| `api.key.enable` | API access was enabled for the organization. | |
+| `api.key.regenerate` | The organization's API key was regenerated. The old key stops working immediately. | <Icon icon="shield-halved" size={16} /> |
+
+## Developer apps (OAuth)
+
+| Event | Description | |
+|---|---|---|
+| `developer.app.create` | A new OAuth application was created. | |
+| `developer.app.delete` | An OAuth application was deleted. | |
+| `developer.app.resetSecret` | An OAuth application's client secret was regenerated. | <Icon icon="shield-halved" size={16} /> |
+
+## User management
+
+| Event | Description | |
+|---|---|---|
+| `user.invite` | A user was invited to the organization. Payload includes the invited email and role. | |
+| `user.invite.resend` | An invitation email was resent. | |
+| `user.invite.revoke` | A pending invitation was revoked. | |
+| `user.disable` | A user account was disabled. | <Icon icon="shield-halved" size={16} /> |
+| `user.roleChange` | A user's role was changed (e.g., member → admin). Payload includes the new role. | <Icon icon="shield-halved" size={16} /> |
+| `user.accessChange` | A user's workspace or resource access was updated. Payload includes the changes. | |
+
+## Organization
+
+| Event | Description | |
+|---|---|---|
+| `org.requireMfa` | The organization-wide MFA requirement was toggled. Payload includes whether it was enabled or disabled. | <Icon icon="shield-halved" size={16} /> |
+| `org.changeName` | The organization's name was changed. Payload includes the new name. | |
+| `org.delete` | The organization was deleted. | <Icon icon="shield-halved" size={16} /> |
+
+## Groups
+
+| Event | Description | |
+|---|---|---|
+| `group.create` | A new user group was created. | |
+| `group.rename` | A group was renamed. Payload includes the old and new names. | |
+| `group.delete` | A group was deleted. | |
+| `group.membersChange` | Members were added or removed from a group. Payload includes the count of additions and removals. | |
+| `group.accessChange` | A group's workspace or resource access was updated. | |
+
+## Event payload
+
+Every event includes a JSON payload in the detail view with event-specific data. Common payload fields include:
+
+| Field | Description |
+|---|---|
+| `target.type` | The type of resource affected (e.g., `user`, `organization`, `group`) |
+| `target.id` | The ID of the affected resource |
+| `target.name` | The display name of the affected resource at the time of the event |
+| `email` | The email address involved (for auth and invite events) |
+| `from` / `to` | The old and new values (for rename and role change events) |
+| `changes` | The full set of changes applied (for update events) |

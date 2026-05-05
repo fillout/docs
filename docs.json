@@ -452,6 +452,14 @@
                 ]
               },
               {
+                "group": "Audit Logs",
+                "icon": "list-timeline",
+                "pages": [
+                  "audit-logs",
+                  "audit-log-events"
+                ]
+              },
+              {
                 "group": "Partners",
                 "icon": "handshake",
                 "pages": [

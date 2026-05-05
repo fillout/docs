@@ -22,6 +22,7 @@ Check out this tutorial on using Fillout to create or update an Airtable base.
     <Note>
       If you already have your base created in Airtable, you can skip this step.
     </Note>
+
     Log in to [Airtable](https://airtable.com/), and click `Create`  on the lower left corner of your dashboard.
 
     <img
@@ -61,6 +62,7 @@ Check out this tutorial on using Fillout to create or update an Airtable base.
     <Note>
       After connecting, you can switch to use [personal access tokens](https://support.airtable.com/docs/creating-and-using-api-keys-and-access-tokens) via the Integrations page.
     </Note>
+
     After making the selections, click `+ Create form`.
 
     ![Screenshot of the Airtable base creation page](/images/Screenshot2025-02-11at1.38.54PM.png)
@@ -73,6 +75,10 @@ Check out this tutorial on using Fillout to create or update an Airtable base.
     Fillout pulls questions and answer options from your Airtable base. Your `Airtable fields` now appear in the left sidebar. Simply drag & drop to build your form.
 
     ![Screenshot 2025-12-16 at 5.58.13 PM.png](/images/Screenshot2025-12-16at5.58.13PM.png)
+
+    <Warning>
+      When mapping a [ranking field](https://www.fillout.com/help/ranking) from Fillout to a long text field in Airtable, we do not recommend enabling rich text formatting as this causes integration errors.
+    </Warning>
 
     To connect a new question to your Airtable database, or check an existing connection, open the right-hand panel or go to mappings. Check out [this quick guide](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually).
 
@@ -94,13 +100,15 @@ You can run your integration only when a specific condition is met. Check out th
 ## Airtable specific guides
 
 <CardGroup cols={3}>
-  <Card title="Update Airtable records" icon="arrow-rotate-right" iconType="regular" color="#FFC738" href="/airtable-update-form">
+  <Card title="Update Airtable records" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/airtable-update-form">
     Edit existing records and pre-fill fields.
   </Card>
-  <Card title="Create new linked Airtable records" icon="files-medical" iconType="regular" color="#FFC738" href="/create-new-linked-records">
+
+  <Card title="Create new linked Airtable records" color="#FFC738" icon="files-medical" iconType="regular" href="/create-new-linked-records">
     Let respondents create records from your form.
   </Card>
-  <Card title="Prevent duplicates" icon="brake-warning" iconType="regular" color="#FFC738" href="/prevent-duplicate-submissions">
+
+  <Card title="Prevent duplicates" color="#FFC738" icon="brake-warning" iconType="regular" href="/prevent-duplicate-submissions">
     Stop duplicate entries from being saved to your Airtable bases.
   </Card>
 </CardGroup>

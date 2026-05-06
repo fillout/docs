@@ -1,0 +1,78 @@
+---
+title: "Audit logs"
+description: "Track activity across your Fillout organization. Monitor logins, permission changes, and security events."
+sidebarTitle: "Audit logs"
+icon: "list-timeline"
+---
+
+Audit logs give you a detailed record of activity in your Fillout organization. Use them to monitor who did what and when — for security reviews, compliance, and troubleshooting.
+
+<Note>
+  Audit logs are available on **Enterprise** plans. Contact us to enable audit logs for your organization.
+</Note>
+
+## What's tracked
+
+Audit logs capture **security-related events** and **administrative changes**, including:
+
+- **Authentication** — successful and failed logins, logouts, and session management
+- **Passwords & MFA** — password resets, changes, MFA setup and removal
+- **API keys** — enabling, regenerating, and revoking API access
+- **User management** — inviting, disabling, and changing roles for team members
+- **Groups** — creating, renaming, and modifying group membership and access
+- **Organization settings** — name changes, MFA requirements, and org deletion
+- **OAuth apps** — creating, deleting, and resetting secrets for developer apps
+
+Each event includes the **timestamp**, **who performed the action**, the **resource affected**, **IP address**, **user agent**, and a **detailed payload** with the specifics of what changed.
+
+## Viewing audit logs
+
+Go to **Settings → Audit logs** in the left sidebar.
+
+You'll see a table of recent events with:
+- **Time** — hover for the exact timestamp
+- **Actor** — who performed the action and their role
+- **Action** — the event type (e.g., `auth.login.success`, `user.invite`)
+- **Resource** — what was affected
+- **Outcome** — whether it succeeded or failed
+
+Click any row to open the **detail drawer** with the full event information, including request metadata and the raw event payload.
+
+## Filtering
+
+Use the filter bar at the top of the page to narrow events by:
+
+- **Date range** — select a start and end date
+- **Actor type** — filter by Org Members, API Keys, or Unknown actors
+- **Resource type** — filter by Users, Groups, or Organization
+
+Filters apply immediately. Click **Load more** at the bottom to page through results.
+
+## Event categories
+
+Events are organized into these categories:
+
+| Category | Description |
+|---|---|
+| `auth` | Logins, logouts, password changes, MFA, SSO, sessions |
+| `api` | API key management |
+| `developer` | OAuth application management |
+| `user` | Invitations, role changes, access changes |
+| `org` | Organization-level settings |
+| `group` | Group creation, membership, and access |
+
+For a complete list of every event type and what data is captured, see the [event types reference](/audit-log-events).
+
+## Retention
+
+Audit log events are retained for **30 days**. Events older than 30 days are automatically removed.
+
+## Actor types
+
+Each event records who performed the action:
+
+| Actor type | Description |
+|---|---|
+| **Org Members** | A logged-in user in your organization |
+| **API Keys** | An action performed via the Fillout API with a Bearer token |
+| **Unknown** | An unauthenticated action (e.g., a failed login attempt) |

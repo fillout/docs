@@ -180,6 +180,11 @@
                 "icon": "plug",
                 "pages": [
                   {
+                    "group": "Zite Database",
+                    "icon": "table-cells-large",
+                    "pages": []
+                  },
+                  {
                     "group": "Airtable",
                     "icon": "table-layout",
                     "pages": [

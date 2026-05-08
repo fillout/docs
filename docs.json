@@ -180,11 +180,6 @@
                 "icon": "plug",
                 "pages": [
                   {
-                    "group": "Zite Database",
-                    "icon": "table-cells-large",
-                    "pages": []
-                  },
-                  {
                     "group": "Airtable",
                     "icon": "table-layout",
                     "pages": [
@@ -478,6 +473,11 @@
             "group": "Guides",
             "pages": [
               "guides",
+              {
+                "group": "Zite Database",
+                "icon": "table-cells-large",
+                "pages": []
+              },
               "guides/sync-form-results",
               "guides/map-fields",
               "guides/update-with-forms",

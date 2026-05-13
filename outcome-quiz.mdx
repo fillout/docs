@@ -1,0 +1,127 @@
+---
+title: "Make an outcome quiz with Fillout"
+icon: "split"
+sidebarTitle: "Make an Outcome Quiz"
+description: "Create personality quizzes, type quizzes, and other outcome-based quizzes with different endings depending on the answers chosen."
+---
+
+## How it works
+
+Typically, quizzes have one or more correct answers per question. Choosing the correct answer gives the participant 1 point, and the ending page shows their total score.
+
+But what if you'd like to create a quiz where the ending isn't based on how many correct answers they got, but instead on what type of person, category, or result they fall under?
+
+This is done by assigning different weights or point values to answers. Each answer contributes to a score, category, or outcome, and the final result depends on the participant's overall answers.
+
+There are two quiz result types:
+
+1. **Answer-Based Mapping:** If answers are mostly A, go to Result A. If answers are mostly B, go to Result B, and so on.
+2. **Score Range Results:** If their total score falls within a certain range, they get a matching result type. Example: scores from 1–10 = Type A, 11–20 = Type B.
+
+### Common use cases
+
+- **Personality Quizzes:** Reveal a personality type based on patterns in answers, score ranges, or dominant choices.
+- **Preference Matching:** Recommend categories, styles, or experiences based on answer combinations.
+- **Weighted Trivia Quizzes:** Different answers contribute different point values instead of simply being correct or incorrect.
+
+## How to create a which type are you quiz
+
+There are two ways to do this. You can either show results based on whether their answers are mostly A, B, or C OR display different results depending on their total score.
+
+### Display results based on most frequent answer
+
+<Steps>
+  <Step title="Add ending pages">
+    By default, you'll have one ending page after [creating your quiz](https://www.fillout.com/help/make-a-free-quiz#how-to-create-a-quiz-in-fillout). Edit the elements here to show the result ending for mostly As, for example. [Add different ending pages](https://www.fillout.com/help/ending-page) for mostly Bs, Cs, and so on.
+
+    ![Screenshot 2026 05 13 At 4 21 52 PM](/images/Screenshot-2026-05-13-at-4.21.52-PM.png)
+  </Step>
+  <Step title="Open calculations">
+    Click `Logic` at the bottom right, then click `Calculations` on top. We'll make one calculation per result. Let's start with "Mostly As".
+
+    <img
+      src="/images/Screenshot-2026-05-13-at-5.49.24-PM.png"
+      alt="Screenshot 2026 05 13 At 5 49 24 PM"
+      title="Screenshot 2026 05 13 At 5 49 24 PM"
+      style={{ width:"63%" }}
+    />
+  </Step>
+  <Step title="Set rules">
+    In the **Initial value**, put **0**. First, we’ll treat all answers as neutral and assign 1 point to each selected option. Click `+ New rule` to `Set conditional logic`.
+
+    <img
+      src="/images/Screenshot-2026-05-13-at-5.28.13-PM-1.png"
+      alt="Screenshot 2026 05 13 At 5 28 13 PM"
+      title="Screenshot 2026 05 13 At 5 28 13 PM"
+      style={{ width:"59%" }}
+    />
+
+    In the left dropdown, select a question. Then, choose option A, then enter **1** next to `add`. Repeat this by adding a new rule for each question.
+
+    Next, create a separate calculation for "Mostly Bs". Follow the same steps as above, but this time select option B in the right dropdown instead.
+  </Step>
+  <Step title="Map results to most frequent answer calculations">
+    Click `Page logic` on top. `+ Add branch` to `Set condition`. For the Mostly As result page, drag the `connector` <Icon icon="circle-plus" iconType="solid" /> to its page.
+
+    <img
+      src="/images/Screenshot-2026-05-13-at-5.39.14-PM.png"
+      alt="Screenshot 2026 05 13 At 5 39 14 PM"
+      title="Screenshot 2026 05 13 At 5 39 14 PM"
+      style={{ width:"74%" }}
+    />
+
+    For the Mostly As result page, drag the connector to its page. In the left dropdown, choose the "Mostly As" calculation we made recently, and set it to be greater than "Mostly Bs" and "Mostly Cs".
+
+    Do the same for the Mostly Bs result page, except set the "Mostly B’s" calculation in the left dropdown and compare it against the other two calculations.
+  </Step>
+</Steps>
+
+### Assign results based on total score
+
+<Steps>
+  <Step title="Assign different points to each answer">
+    Click a question followed by the `graduation cap icon` <Icon icon="graduation-cap" iconType="solid" />. In the popup, **tick** **✓** **all the answers** and assign points for each.
+
+    <img
+      src="/images/Screenshot-2026-05-13-at-4.50.32-PM.png"
+      alt="Screenshot 2026 05 13 At 4 50 32 PM"
+      title="Screenshot 2026 05 13 At 4 50 32 PM"
+      style={{ width:"93%" }}
+    />
+
+    Do the same for the other questions.
+  </Step>
+  <Step title="Create different ending pages">
+    Edit the elements on your ending page to display one result type. [Add more ending pages](https://www.fillout.com/help/ending-page) as needed to show the other types. In our example, we have "Adventurer", "Social Butterfly", and "Creative".
+
+    ![Screenshot 2026 05 13 At 4 21 52 PM](/images/Screenshot-2026-05-13-at-4.21.52-PM.png)
+  </Step>
+  <Step title="Map ending pages to scores">
+    Open `Logic` from the bottom right. `+ Add branch` to `+ Set condition`.
+
+    <img
+      src="/images/Screenshot-2026-05-13-at-4.36.31-PM.png"
+      alt="Screenshot 2026 05 13 At 4 36 31 PM"
+      title="Screenshot 2026 05 13 At 4 36 31 PM"
+      style={{ width:"79%" }}
+    />
+
+    On the left dropdown, click the `graduation cap icon` <Icon icon="graduation-cap" iconType="solid" /> followed by `Score` and add a value in the right dropdown. Then drag its `connector` <Icon icon="circle-plus" iconType="solid" /> to the relevant ending page.
+
+    Follow the same steps for the other ending pages. Check [this guide](https://www.fillout.com/help/page-logic#edit-page-branching) for more info on how page logic works.
+  </Step>
+</Steps>
+
+## Relevant articles
+
+<CardGroup cols={3}>
+  <Card title="Quizzes" icon="comments-question-check" iconType="regular" color="#FFC738">
+    Use different question types, calculate scores, and more. 
+  </Card>
+  <Card title="Calculations" color="#FFC738" icon="calculator-simple" iconType="regular" href="/calculations">
+    Calculate prices for order forms, compute quiz scores, and more.
+  </Card>
+  <Card title="Page logic" icon="diagram-project" iconType="regular" color="#FFC738" href="/page-logic">
+    Hide or show pages or custom endings based on respondent input.
+  </Card>
+</CardGroup>

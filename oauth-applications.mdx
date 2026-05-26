@@ -1,13 +1,21 @@
 ---
 title: "Create Fillout 3rd Party Apps"
-description: "Create applications to connect Fillout to 3rd party platforms or tools. Add webhooks to listen for form responses, retrieve forms, etc."
+description: "Create direct integrations between Fillout and other tools or platforms. Add webhooks to listen for form responses, retrieve forms, etc."
 icon: "grid-2-plus"
 sidebarTitle: "Fillout 3rd Party Apps"
 ---
 
 ## Overview
 
-3rd party applications built in Fillout can be used to allow you or your users to access their Fillout responses. To connect Fillout to your app, you’ll first start by creating an OAuth application in Fillout, which can later be submitted for approval to be listed publicly for Fillout users.
+3rd party applications in Fillout can be used to create direct integrations with other tools or platforms and allow you or your users to access Fillout forms and responses. You can use a Fillout app to:
+
+- Connect Fillout with external platforms or internal tools
+- Retrieve forms and form responses
+- Listen for new submissions using webhooks
+- Build custom workflows and automations
+- Create integrations for shared or public use
+
+To connect Fillout to your app, you’ll first start by creating an OAuth application in Fillout. Requests for direct integrations, partnership integrations, or public OAuth apps may require review and approval from the Fillout team before they can be used by other users.
 
 ## Creating an OAuth app
 
@@ -43,7 +51,6 @@ sidebarTitle: "Fillout 3rd Party Apps"
     - **Redirect URIs** - endpoints you’d like to get sent to during the OAuth token exchange process to receive the token (more info below)
     - **Client ID** - the public ID of your application
     - **Client secret** - must be generated to get started.
-
       <Warning>
         Make sure to save this token, it will only be shown once.
       </Warning>

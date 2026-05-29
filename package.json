@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "mintlify dev",
+    "validate": "mintlify validate"
+  },
+  "devDependencies": {
+    "mintlify": "^4.2.585"
+  }
+}

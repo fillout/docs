@@ -9,6 +9,9 @@
   },
   "favicon": "/favicon.ico",
   "api": {
+    "openapi": [
+      "openapi.json"
+    ],
     "baseUrl": [
       "https://api.fillout.com/v1/api",
       "https://eu-api.fillout.com/v1/api",
@@ -20,9 +23,6 @@
       "name": "Authorization"
     }
   },
-  "openapi": [
-    "/openapi.json"
-  ],
   "redirects": [
     {
       "source": "/update-smartsuite",
@@ -796,9 +796,7 @@
   "seo": {
     "indexing": "all",
     "metatags": {
-      "og:site_name": "Fillout Help Center",
-      "og:title": "Fillout | Help Center",
-      "og:description": "Browse help articles and customer support for Fillout. Build forms, surveys, and quizzes in minutes."
+      "og:site_name": "Fillout Help Center"
     }
   },
   "fonts": {

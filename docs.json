@@ -318,6 +318,14 @@
             ]
           },
           {
+            "group": "AI Builders",
+            "pages": [
+              "ai-forms",
+              "ai-surveys",
+              "ai-quizzes"
+            ]
+          },
+          {
             "group": "Sharing & Embedding",
             "pages": [
               "distribute",
@@ -494,15 +502,6 @@
                 "icon": "book",
                 "pages": [
                   "partner-made-resources"
-                ]
-              },
-              {
-                "group": "AI Builders",
-                "icon": "hat-wizard",
-                "pages": [
-                  "ai-forms",
-                  "ai-surveys",
-                  "ai-quizzes"
                 ]
               },
               {

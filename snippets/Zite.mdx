@@ -1,0 +1,16 @@
+export const Zite = ({ id, height = 700 }) => {
+  if (!id) return null;
+ 
+  React.useEffect(() => {
+    const scriptId = 'zite-embed-script';
+    document.getElementById(scriptId)?.remove();
+    const script = document.createElement('script');
+    script.id = scriptId;
+    script.src = 'https://server.fillout.com/embed/v2-zite/';
+    document.body.appendChild(script);
+  }, []);
+
+  return (
+    <div style={{ width: '100%', height: `${height}px` }} data-zite-id={id} data-zite-embed-type="standard" data-zite-inherit-parameters></div>
+  );
+};

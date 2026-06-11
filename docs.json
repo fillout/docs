@@ -180,6 +180,18 @@
                 "icon": "plug",
                 "pages": [
                   {
+                    "group": "Zite Database",
+                    "icon": "table-cells-large",
+                    "pages": [
+                      "guides/sync-form-results",
+                      "guides/map-fields",
+                      "guides/update-with-forms",
+                      "guides/pre-fetch-data",
+                      "guides/record-pickers",
+                      "guides/use-login-forms"
+                    ]
+                  },
+                  {
                     "group": "Airtable",
                     "icon": "table-layout",
                     "pages": [
@@ -297,7 +309,8 @@
                   "pre-fetch-data",
                   "conditional-integration",
                   "record-pickers",
-                  "multiple-linked-records"
+                  "multiple-linked-records",
+                  "other-option"
                 ]
               }
             ]
@@ -321,6 +334,7 @@
             "group": "AI Builders",
             "pages": [
               "ai-forms",
+              "form-agent",
               "ai-surveys",
               "ai-quizzes",
               "zite-apps"
@@ -483,12 +497,6 @@
             "group": "Guides",
             "pages": [
               "guides",
-              "guides/sync-form-results",
-              "guides/map-fields",
-              "guides/update-with-forms",
-              "guides/use-login-forms",
-              "guides/pre-fetch-data",
-              "guides/record-pickers",
               {
                 "group": "Quizzes",
                 "icon": "pencil",

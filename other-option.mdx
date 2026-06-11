@@ -1,0 +1,46 @@
+---
+title: "Let respondents add new options (Other choice)"
+icon: "circle-ellipsis"
+sidebarTitle: "Other Option"
+description: "Use the Other option to enable respondents to create new options in your connected database."
+---
+
+## How it works
+
+Choice fields let form editors include option called "Other", which respondents select when their answer or preference isn't listed in the available options. When selected, respondents can manually type a value.
+
+If you’re using a choice field connected to an external database, you may notice that values entered through the "Other" option start appearing as options in your database field. For example, the form asks about a respondent’s preferred contact method, and while most users select from predefined options like email or phone, someone enters "WhatsApp via the Other option, which may then added to the list of available choices in your form depending on the behavior of the database connected.
+
+## How to enable Other option
+
+After [mapping](https://www.fillout.com/help/additional-integration-mappings), click a **form field** followed by its `settings icon` <Icon icon="gear-complex" iconType="solid" />. On the right-hand panel, toggle `Other`.
+
+<Frame>
+  ![Screenshot 2026 06 11 At 3 05 05 PM](/images/Screenshot-2026-06-11-at-3.05.05-PM.png)
+</Frame>
+
+Be sure to `Publish` your form to reflect the changes.
+
+#### Other responses in Airtable
+
+In Airtable integrations, values entered via "Other" are **saved as database options and also used as form options**. When the form syncs, these values may appear as selectable options for future respondents.
+
+#### Other responses in Zite Database
+
+In Zite database integrations, the behavior is different. When a respondent enters a custom value via "Other", it is **saved to the database field options, but not added as a form option**. As a result, the form options remain unchanged for respondents.
+
+## Managing Other responses
+
+In some cases, you want to ensure respondents can only see predefined choices (across all integrations). This is especially useful when you want to:
+
+- Avoid user-generated values influencing your form options
+- Ensure consistency across reporting and analytics
+- Prevent unexpected option growth (especially with Airtable)
+
+Click a form field followed by its `settings icon` <Icon icon="gear-complex" iconType="solid" /> and untoggle the `Other` option.
+
+On the right-hand panel, navigate to **Advanced** and toggle `Limit options to show`, then select only the predefined options you want visible.
+
+<Frame>
+  ![Screenshot 2026 06 11 At 3 10 15 PM](/images/Screenshot-2026-06-11-at-3.10.15-PM.png)
+</Frame>

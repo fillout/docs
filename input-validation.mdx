@@ -33,14 +33,14 @@ Choose `Regex` to validate a response with a pattern or formula used to check te
 
 See [here](https://digitalfortress.tech/tips/top-15-commonly-used-regex/) for a list of popular regular expressions. Here are some examples:
 
-| Purpose                    | Regex                                                                                     |
-| -------------------------- | ----------------------------------------------------------------------------------------- |
-| Whole numbers              | ^\\d+\$                                                                                   |
-| Alphanumeric without space | ^[a-zA-Z0-9]\*\$                                                                          |
-| Alphanumeric with space    | ^[a-zA-Z0-9 ]\*\$                                                                         |
-| URL                        | https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]\\.[a-z]\\b([-a-zA-Z0-9@:%_\\+.~#()?&//=]\*) |
-| Decimal numbers            | ^\\d\*\\.\\d+\$                                                                           |
-| Whole and decimal numbers  | ^\\d\*(\\.\\d+)?\$                                                                        |
+| Purpose | Regex |
+| --- | --- |
+| Whole numbers | ^\\d\+\$ |
+| Alphanumeric without space | ^\[a-zA-Z0-9\]\*\$ |
+| Alphanumeric with space | ^\[a-zA-Z0-9 \]\*\$ |
+| URL | https?:\\/\\/(www\\.)?\[-a-zA-Z0-9@:%._\\\+~#=\]\\.\[a-z\]\\b(\[-a-zA-Z0-9@:%_\\\+.~#()?&//=\]\*) |
+| Decimal numbers | ^\\d\*\\.\\d\+\$ |
+| Whole and decimal numbers | ^\\d\*(\\.\\d\+)?\$ |
 
 Copy and paste your **Regex**. For example, for an "Account ID" with no spaces or special characters, use `^[a-zA-Z0-9]*$` to allow only letters and numbers.
 
@@ -50,6 +50,10 @@ Copy and paste your **Regex**. For example, for an "Account ID" with no spaces o
   title="Screenshot 2025-11-27 at 4.45.15 PM.png"
   style={{ width:"79%" }}
 />
+
+<Note>
+  Regex can help make conditions case insensitive. To do this, create your own Regex.
+</Note>
 
 ### Condition
 

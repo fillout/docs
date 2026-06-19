@@ -27,7 +27,6 @@ If you choose `and`, all conditions set must be true to show (default) or hide a
 For example, the "Would you like to join our newsletter?" question above will only `Show when` the respondent:
 
 1. Answers "Yes, please" to "Do you like to get updates on our discounts and promotions?"
-
    AND
 2. Is "18 years old and above"
 
@@ -46,7 +45,6 @@ Now, let's use `or`. With this, as long as one condition is true, a question or 
 For example, we'll the "How can we improve?" field will `Show when` a customer:
 
 - Rates "less than 5 stars" on "How would you rate our service?"
-
   OR
 - Rates "less than 5 stars" on "How was your shopping experience?"
 
@@ -64,24 +62,27 @@ You can also create a condition group using both `and` and `or` functions.
 For example, we'll make the "Would you like to further discuss in a call?" `Show when` a customer:
 
 1. Rates "less than 2 stars" on "How would you rate our service?"
-
    OR
-
    Rates "less than 2 stars" on "How was your shopping experience?"
-
    AND
 2. Opted to "be contacted"
+
+<Check>
+  You can copy and paste conditional logic across pages. If you copy a field with conditions set or duplicate it, its existing conditions get carried over.
+</Check>
 
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Hide fields" icon="eye-slash" iconType="regular" color="#FFC738" href="/conditional-hiding">
+  <Card title="Hide fields" color="#FFC738" icon="eye-slash" iconType="regular" href="/conditional-hiding">
     Hide or show fields based on answers, URL parameters or data.
   </Card>
-  <Card title="Calculations" icon="calculator-simple" iconType="regular" color="#FFC738" href="/calculations">
+
+  <Card title="Calculations" color="#FFC738" icon="calculator-simple" iconType="regular" href="/calculations">
     Calculate prices for order forms, compute quiz scores, and more.
   </Card>
-  <Card title="Integration logic" icon="gear-complex" iconType="regular" color="#FFC738" href="/conditional-integration">
+
+  <Card title="Integration logic" color="#FFC738" icon="gear-complex" iconType="regular" href="/conditional-integration">
     Perform an integration only when a certain condition is met.
   </Card>
 </CardGroup>

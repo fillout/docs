@@ -7,6 +7,10 @@ sidebarTitle: "Allow Record Editing"
 
 ## How to enable update mode
 
+<Warning>
+  **Only allow editing for records whose full data those respondents should be able to see.** Editing a linked record acts as a key to the entire record: respondents who can open it can view every field on that record, even fields that don't appear as questions in the subform. This is what lets the subform use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+</Warning>
+
 <Steps>
   <Step title="Connect to your database">
     On your Fillout form, navigate to `Integrate` in the top menu to connect to your preferred database. In this example, we'll choose Airtable.

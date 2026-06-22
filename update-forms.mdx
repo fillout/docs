@@ -11,6 +11,12 @@ icon: "square-pen"
 
 Each platform has its own interface and terminology, so we’ve created a separate guide for updating forms in Airtable, Notion, and SmartSuite. Pick the guide that matches the platform you’re using.
 
+<Warning>
+  **Only share each update link with people who should see all of that record's fields.** An update link acts as a key to the entire record: anyone who opens it can view every field on the record, even fields that don't appear as questions on the form. This is what lets update forms use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain fields private, store them in a separate table so they aren't part of the record being updated.
+</Warning>
+
 ## Airtable guide
 
 <Card color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/airtable-update-form" title="Update existing Airtable records with a form">

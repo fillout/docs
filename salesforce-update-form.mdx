@@ -7,6 +7,12 @@ icon: "arrow-rotate-right"
 
 ## How it works
 
+<Warning>
+  **Only share each update link with people who should see all of that record's fields.** An update link acts as a key to the entire record: anyone who opens it can view every field on the record, even fields that don't appear as questions on the form. This is what lets update forms use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain fields private, store them in a separate object so they aren't part of the record being updated.
+</Warning>
+
 <Steps>
   <Step title="Set your form to update mode">
     Open your [Salesforce-connected form](https://www.fillout.com/help/salesforce) and navigate to the `Integrate` tab and select `Salesforce`.

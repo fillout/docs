@@ -13,6 +13,12 @@ You can have others update your Zite database without giving them direct access 
   Before you start, make sure your Fillout form is connected to your Zite database. More info [here](https://www.fillout.com/help/guides/sync-form-results).
 </Note>
 
+<Warning>
+  **Only share each update link with people who should see all of that record's fields.** An update link acts as a key to the entire record: anyone who opens it can view every field on the record, even fields that don't appear as questions on the form. This is what lets update forms use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain fields private, store them in a separate table so they aren't part of the record being updated.
+</Warning>
+
 ### Common Use Cases
 
 - **Contact Information:** Let clients or employees update their address, contact number, etc.

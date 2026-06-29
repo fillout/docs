@@ -33,11 +33,13 @@ Drag and drop the `Phone number` field to your form or click it if you already h
 
 If your form is connected to [Twilio](https://build.fillout.com/home/integrations/new/twilio), our SMS verification feature will send messages using your Twilio account.
 
-<Warning>
-  This feature is currently only available for US mobile numbers. However, you may request for your country to be added by emailing us at [support@fillout.com](mailto:support@fillout.com).
-</Warning>
+### For phone numbers outside the US
 
-## OTP credit limits
+To send SMS verification codes internationally, you'll need to connect your own Twilio account.
+
+Before enabling SMS verification, make sure your Twilio account is fully set up for SMS delivery in the countries you want to support. Once connected, Fillout will use your Twilio number to send verification codes to international phone numbers. Learn more [here](https://www.twilio.com/docs/messaging/guides/sms-geo-permissions).
+
+### OTP credit limits
 
 | OTP type | Limit |
 | --- | --- |

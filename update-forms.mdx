@@ -19,19 +19,64 @@ Each platform has its own interface and terminology, so we’ve created a separa
 
 ## Airtable guide
 
-<Card color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/airtable-update-form" title="Update existing Airtable records with a form">
+<Card title="Update existing Airtable records with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/airtable-update-form">
   Edit existing records in Airtable and pre-fill fields with data from the record.
 </Card>
 
 ## Notion guide
 
-<Card color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/notion-update-form" title="Update existing Notion pages with a form">
+<Card title="Update existing Notion pages with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/notion-update-form">
   Edit existing Notion pages and pre-fill fields with data from the page.
 </Card>
 
 ## SmartSuite guide
 
-<Card color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/smartsuite-update" title="Update existing SmartSuite records with a form">
+<Card title="Update existing SmartSuite records with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/smartsuite-update">
+  Edit existing records in SmartSuite upon new form submissions.
+</Card>
+
+<Note>
+  Updating Zite database with Fillout form records is coming soon.
+</Note>
+
+## Restrict prefilled data
+
+By default, an update form loads the entire record it's editing, so any field can be used to pre-fill questions, [pipe answers](/answer-piping), drive [logic](/conditional-hiding), or run [calculations](/calculations) — even fields that aren't shown as questions. If a record contains fields you don't want respondents to see, turn on **Restrict prefilled data** so the form only loads the fields you've mapped to questions.
+
+<Steps>
+  <Step title="Open your integration settings">
+    In your form, click `Integrate` and select the integration your update form uses (e.g. Airtable, Notion, Salesforce).
+  </Step>
+  <Step title="Turn on Restrict prefilled data">
+    Expand the `Advanced` section and toggle on `Restrict prefilled data`. Click `Enable` to confirm.
+
+    ![Restrict prefilled data setting](/images/guides/restrict-prefilled-data.png)
+  </Step>
+</Steps>
+
+Now only the fields mapped to questions in your form are loaded. Every other field on the record stays hidden from the respondent.
+
+<Warning>
+  **Only share each update link with people who should see all of that record's fields.** An update link acts as a key to the entire record: anyone who opens it can view every field on the record, even fields that don't appear as questions on the form. This is what lets update forms use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain fields private, store them in a separate table so they aren't part of the record being updated, or [restrict prefilled data](#restrict-prefilled-data) so the form only loads fields mapped to questions.
+</Warning>
+
+## Airtable guide
+
+<Card title="Update existing Airtable records with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/airtable-update-form">
+  Edit existing records in Airtable and pre-fill fields with data from the record.
+</Card>
+
+## Notion guide
+
+<Card title="Update existing Notion pages with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/notion-update-form">
+  Edit existing Notion pages and pre-fill fields with data from the page.
+</Card>
+
+## SmartSuite guide
+
+<Card title="Update existing SmartSuite records with a form" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/smartsuite-update">
   Edit existing records in SmartSuite upon new form submissions.
 </Card>
 
@@ -57,7 +102,7 @@ By default, an update form loads the entire record it's editing, so any field ca
 Now only the fields mapped to questions in your form are loaded. Every other field on the record stays hidden from the respondent.
 
 <Note>
-  When this setting is on, the form only loads fields that are mapped to a question — so any field that isn't mapped can't be used elsewhere in the form, including [answer piping](/answer-piping), show/hide [logic](/conditional-hiding) and [validation](/input-validation), [calculations](/calculations), and pre-filling [default values](/prefill-fields) on other questions.
+  When this setting is on, the form only loads fields that are mapped to a question — so any field that isn't mapped can't be used elsewhere in the form, including [answer piping](/answer-piping), show/hide [logic](/conditional-hiding) and [validation](/input-validation), [calculations](/calculations), and pre-filling [default values](/prefill-fields) on other questionsWhen this setting is on, the form only loads fields that are mapped to a question — so any field that isn't mapped can't be used elsewhere in the form, including [answer piping](/answer-piping), show/hide [logic](/conditional-hiding) and [validation](/input-validation), [calculations](/calculations), and pre-filling [default values](/prefill-fields) on other questions.
 </Note>
 
 ## Editing Fillout submissions
@@ -65,10 +110,11 @@ Now only the fields mapped to questions in your form are loaded. Every other fie
 Or, to edit submissions stored in Fillout, use these approaches:
 
 <CardGroup cols={2}>
-  <Card color="#FFC738" icon="file-pen" iconType="regular" href="/edit-form-submissions" title="Let respondents edit their submissions">
+  <Card title="Let respondents edit their submissions" color="#FFC738" icon="file-pen" iconType="regular" href="/edit-form-submissions">
     Enable response editing to ensure you have the most updated information.
   </Card>
-  <Card color="#FFC738" icon="pen-to-square" iconType="regular" href="/edit-submissions" title="Edit form submissions">
+
+  <Card title="Edit form submissions" color="#FFC738" icon="pen-to-square" iconType="regular" href="/edit-submissions">
     Update responses directly and rerun integrations.
   </Card>
 </CardGroup>

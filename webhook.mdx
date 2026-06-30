@@ -37,7 +37,7 @@ Toggle the `Advanced view` switch to set up your webhook with any of the paramet
 
 ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-10at12.52.00PM.png)
 
-For these examples, let's assume your URL is something like: https://hooks.zapier.com/hooks/catch/12475312/abc/
+For these examples, let's assume your URL is something like: [https://hooks.zapier.com/hooks/catch/12475312/abc/](https://hooks.zapier.com/hooks/catch/12475312/abc/)
 
 Each of the sections in the Webhook integration do the following:
 
@@ -50,16 +50,15 @@ Each of the sections in the Webhook integration do the following:
 
 - These get added to the URL at the end.
 - The left-hand side is the **key**, and the right-hand side is the **value** from your form or from anything else you can reference in Fillout.
-- For example, if you add, on the left hand side, **source**, and then on the right hand side,**reference**  the field or question about this in your form, then your webhook will send:
+- For example, if you add, on the left hand side, **source**, and then on the right hand side, **reference**  the field or question about this in your form, then your webhook will send:
   - [https://hooks.zapier.com/hooks/catch/12475312/abc/?source=answer](https://hooks.zapier.com/hooks/catch/12475312/abc/?source=%3Canswer) to the short answer
-  - So if someone answered Facebook in the form, you will send: https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook
+  - So if someone answered Facebook in the form, you will send: [https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook](https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook)
 
 **Headers (optional)**
 
 - Most users will not need to use this section. This is typically if you have an advanced webhook setup which requires sending extra headers
 - The most typical use case for headers is if you have some verification required for your endpoint, and you have a special key you want to send, which will look something like:
-
-  Authorization --\> Bearer \<secret_token\>
+  Authorization --\> Bearer \<secret\_token\>
 
 **Cookies (optional)**
 
@@ -68,10 +67,11 @@ Each of the sections in the Webhook integration do the following:
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Automate with Zapier" icon="bolt" iconType="regular" color="#FFC738" href="/zapier">
+  <Card title="Automate with Zapier" color="#FFC738" icon="bolt" iconType="regular" href="/zapier">
     Connect your Fillout form to hundreds of apps.
   </Card>
-  <Card title="Populate dropdowns with a webhook" icon="list-dropdown" iconType="regular" color="#FFC738" href="/dynamic-form-dropdowns">
+
+  <Card title="Populate dropdowns with a webhook" color="#FFC738" icon="list-dropdown" iconType="regular" href="/dynamic-form-dropdowns">
     Load options from a REST API.
   </Card>
 </CardGroup>

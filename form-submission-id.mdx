@@ -9,6 +9,8 @@ icon: "id-card"
 
 A unique **Submission ID** is generated whenever someone begins to complete your form. Submission ID's are randomly generated, like 6bcedd3a-fe26-4bcb-9ce9-d3850e38d42c.
 
+Once the submission is complete, you can reference the Submission ID in workflows such as confirmation or thank-you emails. However, you can't reference it within the form it originates from. For example, you can't display it on the Ending Page because the Ending Page is shown before the submission is finalized, so the Submission ID isn't available yet.
+
 ## Send the submission ID to your integration
 
 <Steps>
@@ -51,13 +53,15 @@ Hover and click <Icon icon="arrow-up-right-and-arrow-down-left-from-center" size
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Create an Airtable form" icon="table-layout" iconType="regular" color="#FFC738" href="/airtable">
+  <Card title="Create an Airtable form" color="#FFC738" icon="table-layout" iconType="regular" href="/airtable">
     Use a form to create or update Airtable bases.
   </Card>
-  <Card title="Create a Notion form" icon="notion" iconType="regular" color="#FFC738" href="/notion">
+
+  <Card title="Create a Notion form" color="#FFC738" icon="notion" iconType="regular" href="/notion">
     Use a form to create or update Notion databases.
   </Card>
-  <Card title="View responses" icon="chart-tree-map" iconType="regular" color="#FFC738" href="/view-responses">
+
+  <Card title="View responses" color="#FFC738" icon="chart-tree-map" iconType="regular" href="/view-responses">
     View all submissions to your form. Filter, sort, or export to CSV.
   </Card>
 </CardGroup>

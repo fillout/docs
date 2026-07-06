@@ -27,24 +27,27 @@ A **custom domain** is a unique web address to replace your web form's default U
     />
   </Step>
   <Step title="Add domain">
-    Navigate to `Custom domain` and enter a **domain** that you own. You can also use a **subdomain** like [forms.mydomainname.com](http://forms.mydomainname.com) or [surveys.mydomainname.com](http://surveys.mydomainname.com).
+    Navigate to `Custom domain` and click `Add domain`.
+
+    ![Screenshot 2026 07 06 At 5 50 46 PM](/images/Screenshot-2026-07-06-at-5.50.46-PM.png)
+
+    Choose `For forms` and enter a domain you own.
 
     <img
-      src="/images/Screenshot2025-12-01at4.24.52PM.png"
-      alt="Screenshot 2025-12-01 at 4.24.52 PM.png"
-      title="Screenshot 2025-12-01 at 4.24.52 PM.png"
-      style={{ width:"75%" }}
+      src="/images/Screenshot-2026-07-06-at-5.52.18-PM.png"
+      alt="Screenshot 2026 07 06 At 5 52 18 PM"
+      title="Screenshot 2026 07 06 At 5 52 18 PM"
+      style={{ width:"52%" }}
     />
   </Step>
   <Step title="Set up DNS record">
-    <Card title="How to add the DNS record:" icon="plus" iconType="solid" color="#000000">
+    <Card title="How to add the DNS record:" color="#000000" icon="plus" iconType="solid">
       1. Log in to your domain provider.
       2. Add the CNAME record as instructed in the Fillout dashboard.
       3. Wait until the DNS records are verified (this can take anywhere from a few seconds to a few hours). Click Refresh in Fillout to check if your domain has been connected.
     </Card>
-    You'll know the setup is complete once you see a green checkmark icon <Icon icon="circle-check" iconType="regular" color="#27e82a" />.
 
-    ![image.png](/images/image.png)
+    You'll know the setup is complete once the **Pending** status is gone.
 
     That's it! Now, all your form links will begin with your **domain name**. You can see this in the `Share` page.
 
@@ -59,13 +62,15 @@ You can also change the slug. Check out this quick guide.
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Custom form links" icon="message-image" iconType="regular" color="#FFC738" href="/custom-link">
+  <Card title="Custom form links" color="#FFC738" icon="message-image" iconType="regular" href="/custom-link">
     Customize your form's share link, subdomain and URL ending.
   </Card>
-  <Card title="Custom favicon" icon="icons" iconType="regular" color="#FFC738" href="/favicon">
+
+  <Card title="Custom favicon" color="#FFC738" icon="icons" iconType="regular" href="/favicon">
     Add your logo or icon to a browser tab and in link previews.
   </Card>
-  <Card title="Remove Fillout branding" icon="delete-right" iconType="regular" color="#FFC738" href="/remove-fillout-branding">
+
+  <Card title="Remove Fillout branding" color="#FFC738" icon="delete-right" iconType="regular" href="/remove-fillout-branding">
     Remove Fillout buttons on form pages.
   </Card>
 </CardGroup>

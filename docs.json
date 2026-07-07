@@ -184,7 +184,7 @@
                     "icon": "table-cells-large",
                     "pages": [
                       "sync-form-results",
-                      "map-fields",
+                      "map-columns",
                       "update-with-forms",
                       "pre-fetch-records",
                       "database-record-pickers",

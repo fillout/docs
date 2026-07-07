@@ -184,11 +184,11 @@
                     "icon": "table-cells-large",
                     "pages": [
                       "sync-form-results",
-                      "guides/map-fields",
+                      "map-fields",
                       "update-with-forms",
-                      "guides/pre-fetch-data",
-                      "guides/record-pickers",
-                      "guides/use-login-forms"
+                      "pre-fetch-records",
+                      "database-record-pickers",
+                      "use-login-forms"
                     ]
                   },
                   {

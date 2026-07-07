@@ -183,9 +183,9 @@
                     "group": "Zite Database",
                     "icon": "table-cells-large",
                     "pages": [
-                      "guides/sync-form-results",
+                      "sync-form-results",
                       "guides/map-fields",
-                      "guides/update-with-forms",
+                      "update-with-forms",
                       "guides/pre-fetch-data",
                       "guides/record-pickers",
                       "guides/use-login-forms"

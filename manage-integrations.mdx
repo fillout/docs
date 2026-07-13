@@ -15,9 +15,17 @@ description: "Update or remove integrations your organization is connected to."
     [Here](https://build.fillout.com/home/settings/integrations), you’ll see a full list of all apps and services connected to your forms, apps, and databases.
   </Step>
   <Step title="View connection details">
-    Click any **connection** to see its name, the user who connected it, its status, and which forms and/or apps it’s used in.
+    Click any **connection** to see its name or display label, the user who connected it, its status, and which forms and/or apps it’s used in.
 
-    ![Screenshot2026 02 20at4 39 16PM](/images/Screenshot2026-02-20at4.39.16PM.png)
+    ![Screenshot2026 02 20at4 39 16PM Png Copy](/images/Screenshot2026-02-20at4.39.16PM.png-copy.png)
+
+    **Understanding the status**
+
+    This indicates the current state of your integration connection:
+
+    - **Connected**: The integration is successfully connected, and we were able to verify its connection with the external service in real time.
+    - **Configured**: The integration has been  authenticated and is ready to use. For some integrations, we aren't currently able to verify the connection in real time, so the status displays **Configured** instead of **Connected**. This does **not** indicate a problem—the integration should still work as expected.
+    - **Disconnected**: The connection is no longer valid, usually because the authorization has expired or was removed. Reconnecting the integration should restore functionality.
   </Step>
   <Step title="Edit connection">
     If you have multiple connections for the same integration, it helps to `Rename` them so you can easily tell them apart.
@@ -110,7 +118,7 @@ You can restrict connections to certain workspaces only. This is helpful if you 
 ## Related article
 
 <Columns cols={3}>
-  <Card color="#FFC738" icon="universal-access" iconType="regular" href="/granular-permissions" title="Granular permissions">
+  <Card title="Granular permissions" color="#FFC738" icon="universal-access" iconType="regular" href="/granular-permissions">
     Set member access to view only, and manage existing permissions.
   </Card>
 </Columns>

@@ -5,34 +5,53 @@ icon: "circle-info"
 description: "Turn forms into powerful automations. Reclaim your team's time with Fillout's built-in form and scheduling workflows."
 ---
 
-import { Arcade } from '/snippets/Arcade.mdx';
+## What is a workflow?
 
-## Overview
-
-[Fillout Workflows](https://www.fillout.com/workflows) is the fastest way to build multi-step automations that trigger based on your Fillout forms and [schedulers](/fillout-scheduling-intro).
-
-Common use cases include automatic meeting reminders, follow-up emails, 3rd party app calls and more.
+A workflow is a series of automated steps that run after something happens, such as when someone submits your form or books a meeting.
 
 ## Interactive demo
 
-<Arcade src="peaJwpcRLdnRhNBQwWhs" /> 
+## How it works
+
+Typically, completing tasks manually requires you to perform each step yourself, such as sending emails, updating records, or notifying your team. With [Fillout Workflows](https://www.fillout.com/workflows), you can automate these steps by setting up a trigger and a series of actions that run automatically.
+
+For example, when someone submits a form, a workflow can automatically:
+
+- Send a confirmation email to the user
+- Notify your team about a new submission
+- Update a record in another app
+- Trigger a follow-up action
+
+Once a workflow is set up, it runs in the background and completes these tasks for you. This helps reduce repetitive work, keep processes consistent, and make sure important actions happen at the right time.
+
+### Common use cases
+
+- **Automatic meeting reminders:** Send reminders to attendees before scheduled meetings
+- **Follow-up emails:** Send automated emails after a form submission or booking
+- **Third-party app integrations:** Create records, update data, and trigger actions in other apps
+- **Team notifications:** Alert your team when new submissions or events occur
+- **Lead and customer follow-ups:** Automatically engage users and guide them through next steps
 
 ## Workflow types
 
 <CardGroup cols={2}>
-  <Card title="Notifications" icon="envelope-open-text" iconType="regular" color="#FFC738" href="/custom-emails">
+  <Card title="Notifications" color="#FFC738" icon="envelope-open-text" iconType="regular" href="/custom-emails">
     Automate email sending, pipe previous answers, and style your email.
   </Card>
-  <Card title="Approvals" icon="badge-check" iconType="regular" color="#FFC738" href="/approval-workflows">
+
+  <Card title="Approvals" color="#FFC738" icon="badge-check" iconType="regular" href="/approval-workflows">
     Automate project approvals, HR requests, job applications, and others.
   </Card>
-  <Card title="Scheduling" icon="circle-calendar" iconType="regular" color="#FFC738" href="/scheduling-workflows">
+
+  <Card title="Scheduling" color="#FFC738" icon="circle-calendar" iconType="regular" href="/scheduling-workflows">
     Allow respondents to book a time slot on your calendar.
   </Card>
-  <Card title="AI" icon="robot" iconType="regular" color="#FFC738" href="/ai-workflows">
+
+  <Card title="AI" color="#FFC738" icon="robot" iconType="regular" href="/ai-workflows">
     Use AI to summarize, classify or extract insights from submissions.
   </Card>
-  <Card title="Conversion Kit" icon="arrow-trend-up" iconType="regular" color="#FFC738" href="/conversion-kit-workflows">
+
+  <Card title="Conversion Kit" color="#FFC738" icon="arrow-trend-up" iconType="regular" href="/conversion-kit-workflows">
     Enrich emails, require, route leads based on company size, and more.
   </Card>
 </CardGroup>
@@ -40,10 +59,11 @@ Common use cases include automatic meeting reminders, follow-up emails, 3rd part
 ## Workflow actions
 
 <CardGroup cols={2}>
-  <Card title="Filter and Branch" icon="filter" iconType="regular" color="#FFC738" href="/filter-branch-workflows">
+  <Card title="Filter and Branch" color="#FFC738" icon="filter" iconType="regular" href="/filter-branch-workflows">
     Trigger different actions based on specific conditions.
   </Card>
-  <Card title='Delay ("wait 4 hours")' icon="clock" iconType="regular" color="#FFC738" href="/delay-workflows">
+
+  <Card title='Delay ("wait 4 hours")' color="#FFC738" icon="clock" iconType="regular" href="/delay-workflows">
     Pause workflows for minutes, hours, or even days.
   </Card>
 </CardGroup>

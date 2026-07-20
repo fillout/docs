@@ -537,7 +537,8 @@
                   "embed-fillout-softr",
                   "embed-pdfs",
                   "skip-logic",
-                  "cookie-banner"
+                  "cookie-banner",
+                  "delete-and-restore-forms"
                 ]
               }
             ]

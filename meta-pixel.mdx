@@ -36,15 +36,15 @@ A [**Meta Pixel**](https://www.facebook.com/business/help/742478679120153?id=120
 
 On Meta Business Suite, if you click on one of the generated **Fillout events** (**Fillout.FormPageViewed** or **Fillout.FormSubmitted**) you will be able to `View details`.
 
-![Screenshot of the Fillout form creation page](/images/eventdetails.png)
+![Eventdetails Png](/images/eventdetails.png.avif)
 
 In **Recent Activities**, you can see parameters that were passed to the pixel.
 
-- **content_category** - the form's unique ID
-- **value** - the page ID that the user saw found at the end of the URL (e.g., https://app.fillout.com/editor/85jZPR1kPsus/edit/85jZPR1kPsus)
+- **content\_category** - the form's unique ID
+- **value** - the number of the page or step in the form that the user viewed (e.g., if the user was on the 6th page of the form, the value sent would be "6")
 
 <Note>
-  It can take up between 2 to 5 minutes for new events to show up in your Events Manager.
+  It can take between 2 to 5 minutes for new events to show up in your Events Manager.
 </Note>
 
 If you need to be GDPR compliant, you will want to [display a cookie banner](https://www.fillout.com/help/cookie-consent) on the form, which can be toggled in the form settings.
@@ -52,10 +52,11 @@ If you need to be GDPR compliant, you will want to [display a cookie banner](htt
 ## Other similar integrations
 
 <CardGroup cols={3}>
-  <Card title="Track conversion data in Google Ads" icon="google-plus-g" iconType="regular" color="#FFC738" href="/google-ads-conversions">
+  <Card title="Track conversion data in Google Ads" color="#FFC738" icon="google-plus-g" iconType="regular" href="/google-ads-conversions">
     Use email, GCLID, address, and more.
   </Card>
-  <Card title="Track data with Google Tag Manager" icon="tags" iconType="regular" color="#FFC738" href="/google-tag-manager">
+
+  <Card title="Track data with Google Tag Manager" color="#FFC738" icon="tags" iconType="regular" href="/google-tag-manager">
     Check conversions and ROI through responses.
   </Card>
 </CardGroup>

@@ -7,6 +7,12 @@ icon: "arrow-rotate-right"
 
 ## How it works
 
+<Warning>
+  **Only share each update link with people who should see all of that record's fields.** An update link acts as a key to the entire record: anyone who opens it can view every field on the record, even fields that don't appear as questions on the form. This is what lets update forms use any record field for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain fields private, store them in a separate table so they aren't part of the record being updated, or [restrict prefilled data](/update-forms#restrict-prefilled-data) so the form only loads fields mapped to questions.
+</Warning>
+
 <Steps>
   <Step title="Switch your form to update mode">
     Open your [SmartSuite-connected form](https://www.fillout.com/help/smartsuite). Click `Integrate` followed by `SmartSuite`.
@@ -20,7 +26,7 @@ icon: "arrow-rotate-right"
   <Step title="Paste the provided formula">
     You'll now get a formula that defines a **unique link** for every record in your table.
 
-    In SmartSuite, create a new `formula`field and paste the formula Fillout provides.
+    In SmartSuite, create a new `formula` field and paste the formula Fillout provides.
 
     <img
       src="/images/ScreenShot2023-10-19at5.51.27PM.png"

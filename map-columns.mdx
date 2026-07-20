@@ -15,7 +15,7 @@ If you’ve already created columns in your Zite database and fields in Fillout 
 
 ![Screenshot 2026 03 27 At 6 22 10 PM](/images/Screenshot2026-03-27at6.22.10PM.png)
 
-If no match is found, **check**  the column and `Select field` in the dropdown. Then, `Continue`.
+If no match is found, **check** the column and `Select field` in the dropdown. Then, `Continue`.
 
 If you haven't added form fields prior to connecting, Zite will pull in any columns or fields from your database and turn them into form fields. These **connected fields appear in the left-hand panel**, ready to be dragged and dropped into your form.
 
@@ -23,12 +23,16 @@ If you haven't added form fields prior to connecting, Zite will pull in any colu
 
 ## Map columns or fields manually
 
-To map fields or columns added after the connection was made, follow the steps [here](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually). You can even [change existing mapping and update options](https://www.fillout.com/help/additional-integration-mappings#updating-fields-and-options).
+If you've added fields or columns after connecting your form and database, you can [map them manually](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually) or [update existing mappings](https://www.fillout.com/help/additional-integration-mappings#updating-fields-and-options).
 
-## Related articles
+Only form and database fields are mapped automatically. Submission metadata (such as Last updated, Created date, and Link to submission) and submission details (such as Submission Started, Current Page, Browser, Operating System, and Network ID) aren't supported.
 
-<CardGroup cols={3}>
-  <Card title="Map fields" color="#FFC738" icon="right-left" iconType="regular" href="/additional-integration-mappings">
-    Configure form fields and values to send to integrations.
-  </Card>
-</CardGroup>
+### Map form submission ID to your database
+
+Submission ID isn't mapped automatically, but you can map it manually.
+
+`+ Add field` in your Zite database. Then, go back to Fillout, and map the new field to `Submission ID`.
+
+![Screenshot 2026 07 07 At 4 25 18 PM](/images/Screenshot-2026-07-07-at-4.25.18-PM.png)
+
+If the field doesn't appear, click the `refresh icon` <Icon icon="arrow-rotate-right" /> on the upper-right corner.

@@ -7,6 +7,12 @@ icon: "arrow-rotate-right"
 
 ## How it works
 
+<Warning>
+  **Only share each update link with people who should see all of that page's properties.** An update link acts as a key to the entire page: anyone who opens it can view every property on the page, even properties that don't appear as questions on the form. This is what lets update forms use any page property for pre-filling, [answer piping](/answer-piping), show/hide [logic](/conditional-hiding), and [calculations](/calculations).
+
+  To keep certain properties private, store them in a separate database so they aren't part of the page being updated, or [restrict prefilled data](/update-forms#restrict-prefilled-data) so the form only loads properties mapped to questions.
+</Warning>
+
 <Steps>
   <Step title="Switch your form to update mode">
     Open your [Notion-connected form](https://www.fillout.com/help/notion). Click `Integrate` on the top menu followed by `Notion`.
@@ -20,7 +26,7 @@ icon: "arrow-rotate-right"
     You'll now get a formula in Fillout that defines a **unique link** for every page in your table.
   </Step>
   <Step title="Paste the provided formula">
-    Create + a new `formula`property in Notion and paste the formula from Fillout.
+    Create a new `formula` property in Notion and paste the formula from Fillout.
 
     ![Screenshot of the Form designer tab of a form](/images/notionupdate2.png)
 
@@ -29,7 +35,7 @@ icon: "arrow-rotate-right"
     </Note>
   </Step>
   <Step title="Publish and share">
-    That's it!  Click `Update` on the upper right corner and `Publish` your form.
+    That's it! Click `Update` on the upper right corner and `Publish` your form.
 
     To update a Notion page, click `Preview` and select a **Record to update** or click one of the unique links from your Notion formula column.
 

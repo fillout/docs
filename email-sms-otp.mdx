@@ -33,17 +33,27 @@ Drag and drop the `Phone number` field to your form or click it if you already h
 
 If your form is connected to [Twilio](https://build.fillout.com/home/integrations/new/twilio), our SMS verification feature will send messages using your Twilio account.
 
-<Warning>
-  This feature is currently only available for US mobile numbers. However, you may request for your country to be added by emailing us at [support@fillout.com](mailto:support@fillout.com).
-</Warning>
+### For phone numbers outside the US
+
+To send SMS verification codes internationally, you'll need to connect your own Twilio account.
+
+Before enabling SMS verification, make sure your Twilio account is fully set up for SMS delivery in the countries you want to support. Once connected, Fillout will use your Twilio number to send verification codes to international phone numbers. Learn more [here](https://www.twilio.com/docs/messaging/guides/sms-geo-permissions).
+
+### OTP credit limits
+
+| OTP type | Limit |
+| --- | --- |
+| Email | 50/hr for unverified orgs or 250/hr for verified orgs <br />\*Shared with all other transactional emails from that org, no monthly cap |
+| SMS/Phone | Subject only to Twilio account-level limits if any |
 
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Email validation" icon="envelope-circle-check" iconType="regular" color="#FFC738" href="/email-validation">
+  <Card title="Email validation" color="#FFC738" icon="envelope-circle-check" iconType="regular" href="/email-validation">
     Validate emails and disallow free email accounts.
   </Card>
-  <Card title="Send messages with Twilio" icon="message-sms" iconType="regular" color="#FFC738" href="/twilio">
+
+  <Card title="Send messages with Twilio" color="#FFC738" icon="message-sms" iconType="regular" href="/twilio">
     Automate SMS updates to customers.
   </Card>
 </CardGroup>

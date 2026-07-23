@@ -1,0 +1,28 @@
+export const SupportBanner = () => {
+  const titleId = React.useId();
+
+  return (
+    <div className="support-banner" role="region" aria-labelledby={titleId}>
+      <span className="support-banner__ring support-banner__ring--outer" aria-hidden="true" />
+      <span className="support-banner__ring support-banner__ring--middle" aria-hidden="true" />
+      <span className="support-banner__ring support-banner__ring--inner" aria-hidden="true" />
+      <span className="support-banner__ring support-banner__ring--center" aria-hidden="true" />
+
+      <div className="support-banner__content">
+        <div className="support-banner__title" id={titleId} role="heading" aria-level="2">Still have questions?</div>
+
+        <div className="support-banner__copy">
+          <span className="support-banner__line">Our team is happy to help. Start a live chat using the</span>
+          <span className="support-banner__line">
+            chat bubble <span className="support-banner__chat-icon" aria-hidden="true" /> in the bottom right, or email us at
+          </span>
+          <span className="support-banner__line">
+            <a href="mailto:support@fillout.com">support{'@'}fillout.com</a>
+          </span>
+        </div>
+
+        <a className="support-banner__cta" href="mailto:support@fillout.com">Contact us</a>
+      </div>
+    </div>
+  );
+};

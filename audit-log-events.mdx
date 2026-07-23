@@ -5,6 +5,8 @@ sidebarTitle: "Event types"
 icon: "list-check"
 ---
 
+import { SupportBanner } from "/snippets/SupportBanner.mdx";
+
 This page lists every event type captured by Fillout audit logs. Each event includes a **timestamp**, **actor**, **outcome**, and an **event-specific payload** with additional details.
 
 Events marked with a <Icon icon="shield-halved" size={16} /> are considered **security-critical** — actions that could affect account security or data integrity.
@@ -92,3 +94,5 @@ Every event includes a JSON payload in the detail view with event-specific data.
 | `email` | The email address involved (for auth and invite events) |
 | `from` / `to` | The old and new values (for rename and role change events) |
 | `changes` | The full set of changes applied (for update events) |
+
+<SupportBanner />

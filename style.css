@@ -161,18 +161,18 @@ div.px-1.flex.flex-wrap.gap-2.text-secondary span.inline-block.rounded-lg.text-s
     position: absolute;
     z-index: 1;
     inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
 .support-banner__title {
-    position: absolute;
-    top: 26%;
-    left: 50%;
     display: flex;
     width: 100%;
     margin: 0;
     justify-content: center;
-    transform: translateX(-50%);
     color: #000;
     font-size: clamp(28px, 5.07cqi, 72px) !important;
     font-weight: 600;
@@ -181,12 +181,8 @@ div.px-1.flex.flex-wrap.gap-2.text-secondary span.inline-block.rounded-lg.text-s
 }
 
 .support-banner__copy {
-    position: absolute;
-    top: 48%;
-    left: 50%;
     width: 100%;
-    margin: 0;
-    transform: translateX(-50%);
+    margin: clamp(20px, 3.38cqi, 48px) 0 0;
     color: #000;
     font-size: clamp(16px, 2.11cqi, 30px) !important;
     font-weight: 400;
@@ -242,15 +238,12 @@ div.px-1.flex.flex-wrap.gap-2.text-secondary span.inline-block.rounded-lg.text-s
 
 .support-banner__cta,
 .support-banner__cta:hover {
-    position: absolute;
-    top: 72%;
-    left: 50%;
     display: inline-flex;
     width: max(14.23cqi, 116px);
     height: max(4.01cqi, 38px);
+    margin-top: clamp(18px, 2.68cqi, 38px);
     align-items: center;
     justify-content: center;
-    transform: translateX(-50%);
     border-radius: max(1.27cqi, 14px);
     background: #0D151A;
     color: #FFFBFB !important;

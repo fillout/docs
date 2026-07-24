@@ -34,10 +34,20 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
     ![Screenshot of the Google Sheets form creation page](/images/Screenshot2025-02-14at2.35.10PM.png)
 
     <Warning>
-      If you disconnect and later reconnect Google Sheets, new entries will go to a completely new sheet, not the original one.
+      If you disconnect and later reconnect Google Sheets, new entries will go to a completely new sheet, not the original one. Currently, it doesn't support connecting to existing sheets. 
     </Warning>
 
-    Every question or field in your form will automatically become a column in your sheet.
+    **If you connected a blank Fillout form**
+
+    The connected sheet will only have submission Id and submission time columns. 
+
+    **If you connected an existing Fillout form**
+
+    Every question or field added prior to the connection will automatically become a column in your sheet.
+
+    **To add new form field as sheet columns**
+
+    Submit your form once with the new fields filled in. 
 
     ![Screenshot of the Google Sheets form creation page](/images/sheetstodo.png)
 

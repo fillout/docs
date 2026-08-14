@@ -12,7 +12,7 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
 **URL parameters**, also known as "hidden fields", can be used to customize your form with information you already know when you're sharing it with respondents. For example:
 
 - Pre-filling fields with the email of the respondent
-- Recording where your form was shared via a **utm_source** parameter (e.g., Facebook, Google, Instagram, etc.)
+- Recording where your form was shared via a **utm\_source** parameter (e.g., Facebook, Google, Instagram, etc.)
 - Displaying the respondent's name in the form to welcome them
 
 ## Video tutorial
@@ -53,21 +53,24 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
     />
   </Step>
   <Step title="Share your form link">
-    To make the URL parameter active in your form, you need to set its value in the form link. Here, we have a parameter called **name** registered, the default share link would look like: https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx
+    To make the URL parameter active in your form, you need to set its value in the form link. Here, we have a parameter called **name** registered, the default share link would look like: [https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx](https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx)
 
-    Say we know that the respondent's name that we're sending our form to is Jane. We'll type her name at the end of the link like this: https://forms.fillout.com/t/9ofaEF4d54us?name=jane
+    Say we know that the respondent's name that we're sending our form to is Jane. We'll type her name at the end of the link like this: [https://forms.fillout.com/t/9ofaEF4d54us?name=jane](https://forms.fillout.com/t/9ofaEF4d54us?name=jane)
 
     <img
       src="/images/advanced/image-7.png"
-      alt=""
       style={{ width:"86%" }}
     />
 
     <Warning>
-      When you have multiple URL parameters for one form, you'll need to separate them using an ampersand (&), like so: https://forms.fillout.com/t/your_form_id?email=jane@gmail.com&name=jane
+      When you have multiple URL parameters for one form, you'll need to separate them using an ampersand (&), like so: [https://forms.fillout.com/t/your\_form\_id?email=jane@gmail.com&name=jane](https://forms.fillout.com/t/your_form_id?email=jane@gmail.com&name=jane)
     </Warning>
   </Step>
 </Steps>
+
+## Configure URL parameters with AI
+
+Need to set up URL parameters quickly? You can ask **Form Agent** to help you add and manage URL parameters or hidden fields. for your form. Learn more [here](https://www.fillout.com/help/form-agent).
 
 ## Record URL parameters in submissions
 
@@ -79,7 +82,6 @@ a. Create a Fillout field, set its **Default value** using a URL parameter, and 
 
 <img
   src="/images/advanced/image-8.png"
-  alt=""
   style={{ width:"89%" }}
 />
 
@@ -100,13 +102,15 @@ This removes the need for users to re-enter information. For example, you can:
 ## Other advanced features
 
 <CardGroup cols={3}>
-  <Card title="Form parameters" icon="file-brackets-curly" iconType="regular" color="#FFC738" href="/url-parameters-between-forms">
+  <Card title="Form parameters" color="#FFC738" icon="file-brackets-curly" iconType="regular" href="/url-parameters-between-forms">
     Share data between forms with URL parameters.
   </Card>
-  <Card title="Pre-fill fields" icon="fill" iconType="solid" color="#FFC738" href="/prefill-fields">
+
+  <Card title="Pre-fill fields" color="#FFC738" icon="fill" iconType="solid" href="/prefill-fields">
     Pre-populate fields based on previous inputs and more.
   </Card>
-  <Card title="Answer piping" icon="wand-magic-sparkles" iconType="regular" color="#FFC738" href="/answer-piping">
+
+  <Card title="Answer piping" color="#FFC738" icon="wand-magic-sparkles" iconType="regular" href="/answer-piping">
     Insert previous answers into upcoming questions or fields.
   </Card>
 </CardGroup>

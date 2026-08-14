@@ -603,6 +603,7 @@
                 "icon": "shield",
                 "pages": [
                   "security",
+                  "disable-ai",
                   "encrypted-forms",
                   "saml-sso",
                   "sso-form-login",

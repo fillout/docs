@@ -1,0 +1,65 @@
+---
+title: "Turn off AI features"
+description: "Disable AI across your entire Fillout organization with a single switch in Security settings."
+sidebarTitle: "Turn off AI"
+icon: "sparkles"
+---
+
+import { SupportBanner } from "/snippets/SupportBanner.mdx";
+
+Admins can turn off AI features for everyone in the organization from **Settings → Security**. This is useful if your AI use needs to clear an internal review before your team can start using it.
+
+<Info>
+  This feature is available on the **Enterprise** plan. [Contact us](https://www.fillout.com/enterprise) to enable it for your organization.
+</Info>
+
+## Turn off AI
+
+<Steps>
+  <Step title="Open security settings">
+    Click your `Account name` in the upper left corner, then `Settings`, then `Security`. Scroll to the **AI features** section at the bottom of the page.
+  </Step>
+  <Step title="Toggle Disable all AI features">
+    A confirmation dialog lists exactly what your organization will lose.
+  </Step>
+  <Step title="Confirm">
+    Click `Turn off AI`. The change applies to everyone in your organization right away.
+  </Step>
+</Steps>
+
+An organization admin can turn AI back on at any time from the same switch.
+
+## What gets turned off
+
+- The Fillout form builder's AI assistant
+- AI steps in Fillout form workflows
+- AI fields and AI formulas in databases
+- Generating themes and brand kits with AI
+- Mapping form fields to documents with AI
+- Transcribing audio answers to form questions
+
+These controls stay visible in the product, but appear greyed out with a tooltip explaining that AI is turned off for your organization.
+
+## What keeps working
+
+**AI you've already set up keeps running.** Existing AI fields, AI steps in live workflows, and anything else already configured continues to work as before. Turning off AI only prevents new AI use going forward, so nothing your team already built will break.
+
+**Building apps with Zite is not disabled**, since Zite apps require AI to be built. To control who can build apps, use [creation permissions](/granular-permissions).
+
+## Audit logging
+
+Turning the switch on or off is recorded in your [audit logs](/audit-logs) as a critical `org.aiFeaturesDisabled` event, with the admin who made the change and the timestamp.
+
+## Related articles
+
+<CardGroup cols={2}>
+  <Card title="Audit logs" icon="list-timeline" iconType="regular" color="#FFC738" href="/audit-logs">
+    Track security and administrative activity across your organization.
+  </Card>
+
+  <Card title="Granular permissions" icon="users-line" iconType="regular" color="#FFC738" href="/granular-permissions">
+    Control what each member of your organization can access and create.
+  </Card>
+</CardGroup>
+
+<SupportBanner />

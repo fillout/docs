@@ -1,19 +1,28 @@
 ---
 title: "URL Parameters/Hidden fields"
-description: "Pass information to a Fillout form to support pre-filling and personalize form filling experience."
+description: "Pass information to a Fillout form using hidden fields and personalize form filling experience."
 sidebarTitle: "URL Parameters"
 icon: "brackets-curly"
 ---
 
 import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
-## Overview
+## What are URL parameters
 
-**URL parameters**, also known as "hidden fields", can be used to customize your form with information you already know when you're sharing it with respondents. For example:
+**URL parameters** are information added to the end of a link. They start with a question mark `?` and use key-value pairs in the format `key=value`. Multiple parameters are separated by an ampersand `&`.
 
-- Pre-filling fields with the email of the respondent
-- Recording where your form was shared via a **utm\_source** parameter (e.g., Facebook, Google, Instagram, etc.)
-- Displaying the respondent's name in the form to welcome them
+For example: `https://form.fillout.com/abc123?name=Jane&email=jane@example.com`
+
+Here, `name=Jane` and `email=jane@example.com` are URL parameters.
+
+### How URL parameters work
+
+With URL parameters, you can pass information you already know to a Fillout form, such as a respondent's name, email, or where they came from. This information is stored in hidden fields. You can use it to:
+
+- Pre-fill fields with the email of the respondent
+- Track where your form was shared via a **utm\_source** parameter (e.g., Facebook, Google, Instagram, etc.)
+- Displaying a respondent's name to welcome them
+- [Write to any integration](https://www.fillout.com/help/integration-static-values#how-to-add-static-values-recommended-approach) with mappings
 
 ## Video tutorial
 
@@ -23,48 +32,52 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
 <Steps>
   <Step title="Open form settings">
-    Click <Icon icon="gear-complex" /> followed by `URL parameters`.
+    Click the  `gear icon` <Icon icon="gear-complex" /> on the top right.
 
-    ![Screenshot 2025-10-10 at 3.15.52 PM.png](/images/Screenshot2025-10-10at3.15.52PM.png)
+    <Frame>
+      <img
+        src="/images/form-settings-1.png"
+        alt="Form Settings 1"
+        title="Form Settings 1"
+        style={{ width:"46%" }}
+      />
+    </Frame>
   </Step>
   <Step title="Register a new parameter">
-    `+ Add new` and enter a name for your parameter. In this example, we'll choose "name".
+    Click `URL parameters` followed by `+ Add new`, then enter a name for your parameter. In this example, we'll choose "name".
 
-    <img
-      src="/images/Screenshot2025-10-10at3.16.35PM.png"
-      alt="Screenshot 2025-10-10 at 3.16.35 PM.png"
-      title="Screenshot 2025-10-10 at 3.16.35 PM.png"
-      style={{ width:"72%" }}
-    />
+    <Frame>
+      ![Screenshot 2026 08 17 At 3 44 33 PM](/images/Screenshot-2026-08-17-at-3.44.33-PM.png "Screenshot 2026 08 17 At 3 44 33 PM")
+    </Frame>
 
     You can optionally provide a sample value for the parameter, if you'd like to see what your form looks like with that value being used (e.g. if you have some [hide/show logic](/conditional-hiding) based on it).
   </Step>
   <Step title="Reference the parameter in your form">
-    You're all set! We can now use it to:
+    There are many ways you can use URL parameters. Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter. In this example, we'll show a respondent's name on the form.
 
-    - [Pre-fill a field](/prefill-fields), by referencing a value
-    - [Write to any integration](/integration-static-values), by mapping this URL Parameter to some field like in Airtable or Notion
-    - Display in plaintext in the form by typing **@** and choosing your <Icon icon="link" iconType="solid" /> parameter.
-
-    <img
-      src="/images/advanced/image-6.png"
-      alt={true}
-      style={{ width:"81%" }}
-    />
+    <Frame>
+      <img
+        src="/images/advanced/image-6.png"
+        alt={true}
+        style={{ width:"81%" }}
+      />
+    </Frame>
   </Step>
   <Step title="Share your form link">
     To make the URL parameter active in your form, you need to set its value in the form link. Here, we have a parameter called **name** registered, the default share link would look like: [https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx](https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx)
 
     Say we know that the respondent's name that we're sending our form to is Jane. We'll type her name at the end of the link like this: [https://forms.fillout.com/t/9ofaEF4d54us?name=jane](https://forms.fillout.com/t/9ofaEF4d54us?name=jane)
 
-    <img
-      src="/images/advanced/image-7.png"
-      style={{ width:"86%" }}
-    />
+    <Frame>
+      <img
+        src="/images/advanced/image-7.png"
+        style={{ width:"86%" }}
+      />
+    </Frame>
 
-    <Warning>
+    <Note>
       When you have multiple URL parameters for one form, you'll need to separate them using an ampersand (&), like so: [https://forms.fillout.com/t/your\_form\_id?email=jane@gmail.com&name=jane](https://forms.fillout.com/t/your_form_id?email=jane@gmail.com&name=jane)
-    </Warning>
+    </Note>
   </Step>
 </Steps>
 
@@ -76,16 +89,27 @@ Need to set up URL parameters quickly? You can ask **Form Agent** to help you ad
 
 You may want to track URL parameters in form submissions, like links shared on Facebook, Instagram, or LinkedIn to compare traffic. Fillout stores these by default on the Results page.
 
-If you're using an integration, and want to write your URL parameters there as well, you can either:
+If you're using an integration, and want to write your URL parameters there as well, you can:
 
-a. Create a Fillout field, set its **Default value** using a URL parameter, and `Hide always`. If it's linked to an integration, it will send the data without being shown to the respondent.
+<Tabs>
+  <Tab title="Set it as a default value">
+    Set a form field's **Default value** to a URL parameter, and `Hide always`.
 
-<img
-  src="/images/advanced/image-8.png"
-  style={{ width:"89%" }}
-/>
+    <Frame>
+      <img
+        src="/images/advanced/image-8.png"
+        style={{ width:"89%" }}
+      />
+    </Frame>
 
-b. Head to your integration settings, and map the URL parameter directly. E.g. for Airtable, there is a **Mappings** section which you can use for this purpose. See [this article](/additional-integration-mappings) for more information.
+    #### Track the form language used in responses
+
+    In some cases, it can be useful to record which language a respondent used when answering your form. Follow the steps above to create a URL parameter called `lang`, then set `lang` as the field's **Default value**.
+  </Tab>
+  <Tab title="Map it to your integration field">
+    Head to your integration settings, and map the URL parameter directly. E.g. for Airtable, there is a **Mappings** section which you can use for this purpose. See [this article](https://www.fillout.com/help/integration-static-values#how-to-add-static-values-recommended-approach) for more information.
+  </Tab>
+</Tabs>
 
 ## Send data between forms
 

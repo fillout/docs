@@ -11,9 +11,9 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
 **URL parameters** are information added to the end of a link. They start with a question mark `?` and use key-value pairs in the format `key=value`. Multiple parameters are separated by an ampersand `&`.
 
-For example: https://form.fillout.com/abc123?name=Jane&email=jane@example.com
+For example: [https://form.fillout.com/abc123?name=Jane&email=jane@example.com](https://form.fillout.com/abc123?name=Jane&email=jane@example.com)
 
-Here, **name=Jane** and **email=jane@example.com** are URL parameters.
+Here, **name=Jane** and **email=[jane@example.com](mailto:jane@example.com)** are URL parameters.
 
 ### How URL parameters work
 
@@ -53,14 +53,12 @@ With URL parameters, you can pass information you already know to a Fillout form
     You can optionally provide a sample value for the parameter, if you'd like to see what your form looks like with that value being used (e.g. if you have some [hide/show logic](/conditional-hiding) based on it).
   </Step>
   <Step title="Reference the parameter in your form">
-    There are many [ways you can use URL parameters](/url-parameters#how-url-parameters-work). Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter. In this example, we'll show a respondent's name on the form.
+    There are many [ways you can use URL parameters](/url-parameters#how-url-parameters-work). In this example, we'll show a respondent's `name` at the beginning of the form.
+
+    Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter.
 
     <Frame>
-      <img
-        src="/images/advanced/image-6.png"
-        alt={true}
-        style={{ width:"81%" }}
-      />
+      ![Screenshot 2026 08 18 At 4 40 18 PM](/images/Screenshot-2026-08-18-at-4.40.18-PM.png "Screenshot 2026 08 18 At 4 40 18 PM")
     </Frame>
   </Step>
   <Step title="Share your form link">
@@ -69,10 +67,7 @@ With URL parameters, you can pass information you already know to a Fillout form
     Say we know that the respondent's name that we're sending our form to is Jane. We'll type her name at the end of the link like this: [https://forms.fillout.com/t/9ofaEF4d54us?name=jane](https://forms.fillout.com/t/9ofaEF4d54us?name=jane)
 
     <Frame>
-      <img
-        src="/images/advanced/image-7.png"
-        style={{ width:"86%" }}
-      />
+      ![Screenshot 2026 08 18 At 4 44 39 PM](/images/Screenshot-2026-08-18-at-4.44.39-PM.png "Screenshot 2026 08 18 At 4 44 39 PM")
     </Frame>
 
     <Note>
@@ -85,31 +80,42 @@ With URL parameters, you can pass information you already know to a Fillout form
 
 Need to set up URL parameters quickly? You can ask **Form Agent** to help you add and manage URL parameters or hidden fields. for your form. Learn more [here](https://www.fillout.com/help/form-agent).
 
-## Record URL parameters in submissions
+## Send URL parameters to integrations
 
-You may want to track URL parameters in form submissions, like links shared on Facebook, Instagram, or LinkedIn to compare traffic. Fillout stores these by default on the Results page.
+You may want to track URL parameters in form submissions, like links shared on Facebook, Instagram, or LinkedIn to compare traffic. Fillout stores these by default on the Results page. You can also write your URL parameters to your database other types of integrations.
 
-If you're using an integration, and want to write your URL parameters there as well, you can:
+<Steps>
+  <Step title="Register your URL parameter">
+    If you haven't already, create one first following the [steps above](/url-parameters#how-to-add-a-url-parameter-or-hidden-field). In this example, we'll record the language used. Label the parameter as `lang`.
 
-<Tabs>
-  <Tab title="Set it as a default value">
-    Set a form field's **Default value** to a URL parameter, and `Hide always`.
+    <Info>
+      Enabling language translations is available on the **Starter** **plan** **and above**. More info [here](https://www.fillout.com/pricing).
+    </Info>
+  </Step>
+  <Step title="Enable translations (only for the language parameter)">
+    In your** form settings**, add the languages you'd like the form to be available in.
 
     <Frame>
-      <img
-        src="/images/advanced/image-8.png"
-        style={{ width:"89%" }}
-      />
+      ![Screenshot 2026 08 18 At 5 29 19 PM](/images/Screenshot-2026-08-18-at-5.29.19-PM.png "Screenshot 2026 08 18 At 5 29 19 PM")
     </Frame>
 
-    #### Track the form language used in responses
+    <Note>
+      By default, respondents will see a language picker. This can be hidden using CSS if needed. More info [here](https://www.fillout.com/help/custom-css#css-classes-you-can-use).
+    </Note>
+  </Step>
+  <Step title="Map it to your integration">
+    If you haven't connected an integration yet, click `Integrate` on top to connect.
 
-    In some cases, it can be useful to record which language a respondent used when answering your form. Follow the [steps above](/url-parameters#how-to-add-a-url-parameter-or-hidden-field) to create a URL parameter called "lang", then set `lang` as the field's **Default value**.
-  </Tab>
-  <Tab title="Map it to your integration field">
-    Head to your integration settings, and map the URL parameter directly. E.g. for Airtable, there is a **Mappings** section which you can use for this purpose. See [this article](https://www.fillout.com/help/integration-static-values#how-to-add-static-values-recommended-approach) for more information.
-  </Tab>
-</Tabs>
+    Under **Mappings**, link your URL parameter, which can be found by clicking the `link icon` .
+  </Step>
+</Steps>
+
+#### Track the form language used in responses
+
+In some cases, it can be useful to record which language a respondent used when answering your form. Follow the steps above.
+
+<Expandable title="Supported languages">
+</Expandable>
 
 ## Send data between forms
 

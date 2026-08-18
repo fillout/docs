@@ -7,13 +7,13 @@ icon: "brackets-curly"
 
 import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
-## What are URL parameters
+## What are URL parameters?
 
 **URL parameters** are information added to the end of a link. They start with a question mark `?` and use key-value pairs in the format `key=value`. Multiple parameters are separated by an ampersand `&`.
 
 For example: https://form.fillout.com/abc123?name=Jane&email=jane@example.com
 
-Here, `name=Jane` and `email=jane@example.com` are URL parameters.
+Here, **name=Jane** and **email=jane@example.com** are URL parameters.
 
 ### How URL parameters work
 
@@ -53,7 +53,7 @@ With URL parameters, you can pass information you already know to a Fillout form
     You can optionally provide a sample value for the parameter, if you'd like to see what your form looks like with that value being used (e.g. if you have some [hide/show logic](/conditional-hiding) based on it).
   </Step>
   <Step title="Reference the parameter in your form">
-    There are many ways you can use URL parameters. Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter. In this example, we'll show a respondent's name on the form.
+    There are many [ways you can use URL parameters](/url-parameters#how-url-parameters-work). Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter. In this example, we'll show a respondent's name on the form.
 
     <Frame>
       <img
@@ -104,7 +104,7 @@ If you're using an integration, and want to write your URL parameters there as w
 
     #### Track the form language used in responses
 
-    In some cases, it can be useful to record which language a respondent used when answering your form. Follow the [steps above](/embedded-url-parameters#how-to-add-a-url-parameter-or-hidden-field) to create a URL parameter called `lang`, then set `lang` as the field's **Default value**.
+    In some cases, it can be useful to record which language a respondent used when answering your form. Follow the [steps above](/url-parameters#how-to-add-a-url-parameter-or-hidden-field) to create a URL parameter called "lang", then set `lang` as the field's **Default value**.
   </Tab>
   <Tab title="Map it to your integration field">
     Head to your integration settings, and map the URL parameter directly. E.g. for Airtable, there is a **Mappings** section which you can use for this purpose. See [this article](https://www.fillout.com/help/integration-static-values#how-to-add-static-values-recommended-approach) for more information.

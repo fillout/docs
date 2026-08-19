@@ -543,7 +543,9 @@
               },
               {
                 "group": "Troubleshooting",
-                "pages": [],
+                "pages": [
+                  "troubleshooting-for-respondents"
+                ],
                 "icon": "wrench"
               }
             ]

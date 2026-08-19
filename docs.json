@@ -544,6 +544,7 @@
               {
                 "group": "Troubleshooting",
                 "pages": [
+                  "missing-responses",
                   "troubleshooting-for-respondents"
                 ],
                 "icon": "wrench"

@@ -540,6 +540,10 @@
                   "cookie-banner",
                   "delete-and-restore-forms"
                 ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": []
               }
             ]
           },

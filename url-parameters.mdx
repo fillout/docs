@@ -5,28 +5,22 @@ sidebarTitle: "URL Parameters"
 icon: "brackets-curly"
 ---
 
-import { SupportBanner } from "/snippets/SupportBanner.mdx";
-
-## What are URL parameters?
-
 **URL parameters** are information added to the end of a link. They start with a question mark `?` and use key-value pairs in the format `key=value`. Multiple parameters are separated by an ampersand `&`.
 
-For example: [https://form.fillout.com/abc123?name=Jane&email=jane@example.com](https://form.fillout.com/abc123?name=Jane&email=jane@example.com)
+For example: [https://forms.fillout.com/t/9ofaEF4d54us?name=Jane\+Doe](https://forms.fillout.com/t/9ofaEF4d54us?name=Jane+Doe)
 
-Here, **name=Jane** and **email=[jane@example.com](mailto:jane@example.com)** are URL parameters.
-
-### How URL parameters work
-
-With URL parameters, you can pass information you already know to a Fillout form, such as a respondent's name, email, or where they came from. This information is stored in hidden fields. You can use it to:
-
-- Pre-fill fields with the email of the respondent
-- Track where your form was shared via a **utm\_source** parameter (e.g., Facebook, Google, Instagram, etc.)
-- Displaying a respondent's name to welcome them
-- [Write to any integration](/url-parameters#map-it-to-your-integration-field) with mappings
+Here, **name=Jane Doe** is the URL parameter.
 
 ## Video tutorial
 
 <iframe src="https://www.youtube.com/embed/3mK2AGcjzfk" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+
+With URL parameters, you can pass information to a Fillout form, such as a respondent's name, email, or where they came from. This information is stored in hidden fields. You can use it to:
+
+- Pre-fill fields with information you already know, like a respondent's email
+- Display information in the form, such as a respondent's name
+- Track where your form was shared via a **utm\_source** parameter (e.g., Facebook, Google, Instagram, etc.)
+- [Write data to any integration](/url-parameters#map-it-to-your-integration-field) with mappings
 
 ## How to add a URL parameter or hidden field
 
@@ -44,7 +38,7 @@ With URL parameters, you can pass information you already know to a Fillout form
     </Frame>
   </Step>
   <Step title="Register a new parameter">
-    Click `URL parameters` followed by `+ Add new`, then enter a name for your parameter. In this example, we'll choose "name".
+    Click `URL parameters` followed by `+ Add new`, then enter the parameter. In this example, we'll choose "name".
 
     <Frame>
       ![Screenshot 2026 08 17 At 3 44 33 PM](/images/Screenshot-2026-08-17-at-3.44.33-PM.png "Screenshot 2026 08 17 At 3 44 33 PM")
@@ -53,7 +47,7 @@ With URL parameters, you can pass information you already know to a Fillout form
     You can optionally provide a sample value for the parameter, if you'd like to see what your form looks like with that value being used (e.g. if you have some [hide/show logic](/conditional-hiding) based on it).
   </Step>
   <Step title="Reference the parameter in your form">
-    There are many [ways you can use URL parameters](/url-parameters#how-url-parameters-work). In this example, we'll show a respondent's `name` at the beginning of the form.
+    There are many ways you can use URL parameters as [listed above](/url-parameters#how-url-parameters-work). In this example, we'll show a respondent's `name` at the beginning of the form.
 
     Type **@** and click the `link icon` <Icon icon="link" />, then choose your parameter.
 
@@ -62,17 +56,16 @@ With URL parameters, you can pass information you already know to a Fillout form
     </Frame>
   </Step>
   <Step title="Share your form link">
-    To make the URL parameter active in your form, you need to set its value in the form link. Here, we have a parameter called **name** registered, the default share link would look like: [https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx](https://forms.fillout.com/t/9ofaEF4d54us?name=xxxxx)
-
-    Say we know that the respondent's name that we're sending our form to is Jane. We'll type her name at the end of the link like this: [https://forms.fillout.com/t/9ofaEF4d54us?name=jane](https://forms.fillout.com/t/9ofaEF4d54us?name=jane)
+    To activate a URL parameter, add its value to the form link. For example, if you have a name parameter, add the respondent's name at the end of the link: [https://forms.fillout.com/t/9ofaEF4d54us?name=jane](https://forms.fillout.com/t/9ofaEF4d54us?name=jane)
 
     <Frame>
       ![Screenshot 2026 08 18 At 4 44 39 PM](/images/Screenshot-2026-08-18-at-4.44.39-PM.png "Screenshot 2026 08 18 At 4 44 39 PM")
     </Frame>
 
-    <Note>
-      When you have multiple URL parameters for one form, you'll need to separate them using an ampersand (&), like so: [https://forms.fillout.com/t/your\_form\_id?email=jane@gmail.com&name=jane](https://forms.fillout.com/t/your_form_id?email=jane@gmail.com&name=jane)
-    </Note>
+    #### Format URL parameter values
+
+    - `+` - use a plus icon to space out values (e.g. Jane\+Doe)
+    - `&` - use an ampersand to separate different types of parameters (e.g email=[jane@gmail.com](mailto:jane@gmail.com)&name=Jane\+Doe)
   </Step>
 </Steps>
 
@@ -93,7 +86,7 @@ You may want to track URL parameters in form submissions, like links shared on F
     </Info>
   </Step>
   <Step title="Enable translations (only for the language parameter)">
-    In your** form settings**, add the languages you'd like the form to be available in.
+    In your **form settings**, add the languages you'd like the form to be available in.
 
     <Frame>
       ![Screenshot 2026 08 18 At 5 29 19 PM](/images/Screenshot-2026-08-18-at-5.29.19-PM.png "Screenshot 2026 08 18 At 5 29 19 PM")
@@ -144,5 +137,3 @@ This removes the need for users to re-enter information. For example, you can:
     Insert previous answers into upcoming questions or fields.
   </Card>
 </CardGroup>
-
-<SupportBanner />

@@ -96,15 +96,17 @@ Fillout stores URL parameters by default on the Results page. Aside from the nam
   />
 </Frame>
 
-You can also write these URL parameters to your database other types of integrations by mapping them.
+You can also write these URL parameters to your database other types of integrations by [mapping](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually) them. They are typically found when you click the `link icon` <Icon icon="link" /> in the picker.
 
-<Tabs>
-  <Tab title="Tab 1">
-    Click your connected integration
-  </Tab>
-  <Tab title="Tab 2">
-  </Tab>
-</Tabs>
+<Frame>
+  ![Screenshot 2026 08 19 At 3 20 59 PM](/images/Screenshot-2026-08-19-at-3.20.59-PM.png "Screenshot 2026 08 19 At 3 20 59 PM")
+</Frame>
+
+<Note>
+  In some cases, the URL parameter may not show up in the picker. A workaround is to create a hidden field and map that instead. See step 4 below.
+</Note>
+
+## Track the form language used in responses
 
 <Steps>
   <Step title="Register your URL parameter">
@@ -114,7 +116,7 @@ You can also write these URL parameters to your database other types of integrat
       Enabling language translations is available on the **Starter** **plan** **and above**. More info [here](https://www.fillout.com/pricing).
     </Info>
   </Step>
-  <Step title="Enable translations (only for the language parameter)">
+  <Step title="Enable translations">
     In your **form settings**, add the languages you'd like the form to be available in.
 
     <Frame>
@@ -128,7 +130,7 @@ You can also write these URL parameters to your database other types of integrat
   <Step title="Map it to your integration">
     If you haven't connected an integration yet, click `Integrate` on top to connect.
 
-    Under **Mappings**, link your URL parameter, which can be found by clicking the `link icon` .
+    Under **Mappings**, link your URL parameter, which can be found by clicking the `link icon` <Icon icon="link" />.
 
     <Frame>
       ![Screenshot 2026 08 19 At 3 20 59 PM](/images/Screenshot-2026-08-19-at-3.20.59-PM.png "Screenshot 2026 08 19 At 3 20 59 PM")
@@ -155,10 +157,6 @@ You can also write these URL parameters to your database other types of integrat
     </Warning>
   </Step>
 </Steps>
-
-**Track the form language used in responses**
-
-In some cases, it can be useful to record which language a respondent used when answering your form. Follow the [steps above](/url-parameters#send-url-parameters-to-integrations).
 
 <Expandable title="Supported languages and codes">
   | Language | Code | Language | Code |

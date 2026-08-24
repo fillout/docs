@@ -19,50 +19,6 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
 <iframe class="notion-asset-object-fit" src="https://www.loom.com/embed/b9fb55da189641c5b8bae8a2d60d80d6?hideEmbedTopBar=true" title="iframe video" frameborder="0" allowFullScreen loading="lazy" scrolling="auto" width="100%" height="420" />
 
-## How it works
-
-<Steps>
-  <Step title="Connect to your SmartSuite account">
-    Head to the `Integrate` tab from the top menu, and select `SmartSuite`.
-
-    ![Screenshot 2025-11-12 at 5.07.22 PM.png](/images/Screenshot2025-11-12at5.07.22PM.png)
-
-    Input your SmartSuite **API key** and **Workspace ID**. You can find your **API key** in your user profile.
-
-    <img
-      src="/images/smartsuiteapi.png"
-      alt="Screenshot of the SmartSuite form creation page"
-      style={{ width:"55%" }}
-    />
-
-    Your **workspace ID** is the first 8 characters after https://app.smartsuite.com when you’re logged in. Refer to the [SmartSuite help center](https://help.smartsuite.com/en/articles/6096587-retrieving-your-api-key-and-workspace-id) for more info on how to find these.
-
-    <img
-      src="/images/smartsuiteapi2.png"
-      alt="Screenshot of the SmartSuite form creation page"
-      style={{ width:"57%" }}
-    />
-
-    Then, pick a **Solution** and **App** you’d like records to be either created or updated in and `Finish setup`.
-
-    ![Screenshot of the SmartSuite form creation page](/images/Screenshot2025-02-17at10.23.08AM.png)
-  </Step>
-  <Step title="Map your fields">
-    SmartSuite fields will automatically appear on the left-hand panel. Drag and drop these into your form.
-
-    ![Screenshot of the SmartSuite form creation page](/images/Screenshot2025-02-17at10.34.14AM.png)
-
-    You can also [manually map fields](https://www.fillout.com/help/additional-integration-mappings) in the `Integrate` page.
-  </Step>
-  <Step title="Publish and share">
-    That's it! New submissions will be added as rows in your solution. Click `Publish` to make the changes reflect and share or embed your form.
-  </Step>
-</Steps>
-
-Fillout has many powerful features like [branching](/page-logic) and [conditional hide/appear logic](/conditional-hiding). No matter how complex your needs are, there’s a way to build it in Fillout.
-
-## SmartSuite feature roadmap
-
 The following SmartSuite fields are not yet supported in Fillout forms, but are on the roadmap:
 
 Date range, Signature, Checklist, Social network, Rich text area, Sub-items, Time tracking, User(s), Availability status, Color picker, Full name, Duration, and Cross-solution links
@@ -74,9 +30,7 @@ You can run your integration only when a specific condition is met. Check out th
 ## SmartSuite Specific Guide
 
 <CardGroup cols={3}>
-  <Card title="Update existing SmartSuite records" icon="arrow-rotate-right" iconType="regular" color="#FFC738" href="/smartsuite-update">
+  <Card title="Update existing SmartSuite records" color="#FFC738" icon="arrow-rotate-right" iconType="regular" href="/smartsuite-update">
     Auto-edit records with form submissions.
   </Card>
 </CardGroup>
-
-<SupportBanner />

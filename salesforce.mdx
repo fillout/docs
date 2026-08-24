@@ -15,6 +15,43 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
 <iframe class="notion-asset-object-fit" src="https://www.loom.com/embed/c9e1d9e4470446fb97501d31b843c472" title="iframe video" frameborder="0" allowFullScreen loading="lazy" scrolling="auto" width="100%" height="420" />
 
+## How it works
+
+<Steps>
+  <Step title="Connect your form to Salesforce">
+    On the form editor, click `Integrate` on the top menu followed by `Salesforce`.
+
+    ![Screenshot 2025-11-11 at 4.37.01 PM.png](/images/Screenshot2025-11-11at4.37.01PM.png)
+
+    Click `Connect to Salesforce` to sign in with your Salesforce account. Then, choose an **object** where you would like to store responses.
+
+  <Note>
+      A form can only **connect to one database and table at a time**. However, Google Sheets is an exception because each new connection creates a new sheet.
+    </Note>
+  </Step>
+  <Step title="Map your form fields">
+    After finishing the setup, Salesforce fields will automatically appear as Fillout fields on the form editor. Simply drag these to your form from the left-hand panel.
+
+    ![Screenshot 2025-11-11 at 4.51.19 PM.png](/images/Screenshot2025-11-11at4.51.19PM.png)
+
+    <Tip>
+      To [update your Fillout form](https://www.fillout.com/help/additional-integration-mappings#updating-fields-and-options) after editing your Salesforce object, click <Icon icon="arrows-rotate-reverse" size={12} /> on the left-hand panel.
+    </Tip>
+    Alternatively, you can go to the Salesforce connection in the `Integrate` page and [manually map](https://www.fillout.com/help/additional-integration-mappings#how-to-map-fields-manually) them. `+ Add new` Salesforce on the left and select the corresponding Fillout field on the right.
+
+    ![Screenshot 2025-11-11 at 4.53.55 PM.png](/images/Screenshot2025-11-11at4.53.55PM.png)
+  </Step>
+  <Step title="Publish and share">
+    That's it! Click `Publish` in the upper right corner and share your link. Form responses will now automatically populate inside your Salesforce database.
+  </Step>
+</Steps>
+
+<Info>
+  The Salesforce integration is available on the **Team** and **Enterprise** plans. Learn more about the [Team plan](/team-plan).
+</Info>
+
+## Connect to a Salesforce sandbox
+
 After selecting `Salesforce`, tick the `Connect to a sandbox organization` checkbox. Then, `Connect to Salesforce`.
 
 ![Screenshot of the Salesforce form creation page](/images/Screenshot2025-05-09at4.39.55PM.png)
@@ -23,7 +60,7 @@ After selecting `Salesforce`, tick the `Connect to a sandbox organization` check
 
 If your Salesforce organization restricts IP addresses for 3rd party app connections, you’ll want to whitelist the following IPs:
 
-```text
+```
 35.160.120.126
 44.233.151.27
 34.211.200.85
@@ -38,7 +75,9 @@ You can also create a form that pre-fills with Salesforce data and updates an ex
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Update Salesforce records" color="#FFC738" icon="arrow-rotate-right" iconType="solid" href="/salesforce-update-form">
+  <Card title="Update Salesforce records" icon="arrow-rotate-right" iconType="solid" color="#FFC738" href="/salesforce-update-form">
     Edit existing records and pre-fill fields.
   </Card>
 </CardGroup>
+
+<SupportBanner />

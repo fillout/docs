@@ -74,7 +74,7 @@ To initiate the OAuth process, you’ll start by sending users to the above endp
 
 - `client_id`: the client ID of your app, which you can find while configuring it (see above)
 - `redirect_uri`: the URL you expect to be redirected to, once access is granted for the token
-- `state:` any string you’d like to use to retain state when redirecting back to your app
+- `state`: any string you’d like to use to retain state when redirecting back to your app
 
 After authorization, the user’s browser will be redirected back to the redirect URI passed. Successful requests will forward the following query parameters to that URI:
 

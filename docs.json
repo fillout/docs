@@ -391,8 +391,8 @@
                 ]
               },
               {
-                "group": "Guides",
-                "icon": "book-open",
+                "group": "Manage Your Scheduler",
+                "icon": "calendar-pen",
                 "pages": [
                   "customize-fillout-scheduling",
                   "fillout-google-calendar",

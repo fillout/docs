@@ -310,7 +310,8 @@
                   "conditional-integration",
                   "record-pickers",
                   "multiple-linked-records",
-                  "other-option"
+                  "other-option",
+                  "multi-table-records"
                 ]
               }
             ]

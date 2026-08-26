@@ -1,0 +1,48 @@
+---
+title: "Create records in multiple tables"
+sidebarTitle: "Multi-Table Records"
+icon: "table-columns-add-after"
+description: "Sync form submissions to multiple tables or databases, such as Airtable, Notion, Monday.com, SmartSuite, Salesforce, Zite Database, Attio, and ClickUp."
+---
+
+## Overview
+
+A form can only be **connected to one database and table** at a time. For example, if your form is connected to Airtable, you cannot connect it to another table or database without disconnecting the current connection first.
+
+Google Sheets is an exception. You can connect it alongside a database, such as Airtable, because each connection creates a new sheet automatically.
+
+However, you can still use form submissions to create records in multiple tables or databases using the workarounds below.
+
+## Ways to create records across different tables
+
+### Combine multiple forms
+
+1. Create a separate form for each table you want to add records to.
+2. Connect each form to its corresponding table.
+3. [Link the second form to the **Ending Page** of the first form](https://www.fillout.com/help/combine-and-repeat-forms#auto-redirect-to-another-form) to redirect users to it after submission.
+
+### **Use subforms**
+
+1. Add a **Subform** field to your main form.
+2. [Connect the subform to a separate form](https://www.fillout.com/help/subforms) with its own database or table.
+
+When respondents submit the form, the subform creates a record in its connected table, while the main form creates a record in its own table.
+
+### Use Record Pickers with linked tables
+
+In this example, we'll connect our form to Airtable.
+
+1. Add a [**Record Picker**](https://www.fillout.com/help/record-pickers) for a linked record field in your form.
+2. Enable [**Create new records**](https://www.fillout.com/help/create-new-linked-records#create-new-linked-records) in the Record Picker settings.
+
+Respondents can then create new linked records directly from the main form. When they submit the form, both the main record and linked records are created and connected.
+
+This feature also supports SmartSuite, Zite Database, Salesforce, Notion, SmartSuite, and Monday.
+
+### Use webhooks and external automation
+
+1. Add a [**Webhook**](https://www.fillout.com/help/webhook) integration to your form.
+2. Connect the webhook to an automation tool like Zapier or Make.
+3. Set up the automation to create records in multiple tables or databases.
+
+This approach is flexible, but the records are created through the external automation tool rather than Fillout’s native integrations.

@@ -175,6 +175,7 @@
             "group": "Integrations",
             "pages": [
               "integrations",
+              "manage-integrations",
               {
                 "group": "All Integrations",
                 "icon": "plug",
@@ -294,10 +295,9 @@
                 ]
               },
               {
-                "group": "Guides",
-                "icon": "book-open",
+                "group": "Integration Features",
+                "icon": "square-star",
                 "pages": [
-                  "manage-integrations",
                   "linked-record-update",
                   "fetch-dynamic-data",
                   "logged-in-data",

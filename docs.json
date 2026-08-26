@@ -391,6 +391,7 @@
                   "group-meeting"
                 ]
               },
+              "multiple-calendars",
               {
                 "group": "Manage Your Scheduler",
                 "icon": "calendar-pen",

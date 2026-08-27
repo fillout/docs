@@ -21,16 +21,21 @@ However, you can still use form submissions to create records in multiple tables
 
 ### **Use subforms**
 
-Add a **Subform** field to your main form. Then, [connect the subform to a separate form](https://www.fillout.com/help/subforms) with its own database or table.
+Add a **Subform** field to your main form and connect that to a separate form with its own database or table. Check this [quick guide](https://www.fillout.com/help/subforms#how-to-use-a-subform-within-your-form).
+
+<Frame>
+  ![Screenshot 2026 08 27 At 5 20 37 PM](/images/Screenshot-2026-08-27-at-5.20.37-PM.png "Screenshot 2026 08 27 At 5 20 37 PM")
+</Frame>
 
 When respondents submit the form, the subform creates a record in its connected table, while the main form creates a record in its own table.
 
 ### Use Record Pickers with linked tables
 
-In this example, we'll connect our form to Airtable.
+In this example, we'll connect our form to Airtable. Add a [**Record Picker**](https://www.fillout.com/help/record-pickers), then enable [**create new records**](https://www.fillout.com/help/create-new-linked-records#create-new-linked-records) in the settings.
 
-1. Add a [**Record Picker**](https://www.fillout.com/help/record-pickers) for a linked record field in your form.
-2. Enable [**Create new records**](https://www.fillout.com/help/create-new-linked-records#create-new-linked-records) in the Record Picker settings.
+<Frame>
+  ![Multiple Linked Records](/images/Multiple-linked-records.gif)
+</Frame>
 
 Respondents can then create new linked records directly from the main form. When they submit the form, both the main record and linked records are created and connected.
 
@@ -38,9 +43,7 @@ This feature also supports SmartSuite, Zite Database, Salesforce, Notion, SmartS
 
 ### Use webhooks and external automation
 
-1. Add a [**Webhook**](https://www.fillout.com/help/webhook) integration to your form.
-2. Connect the webhook to an automation tool like Zapier or Make.
-3. Set up the automation to create records in multiple tables or databases.
+Add a **Webhook** to your form and connect it to an automation tool like Zapier or Make. Then, set up the automation to create records in multiple tables or databases. Learn more [here](https://www.fillout.com/help/webhook).
 
 This approach is flexible, but the records are created through the external automation tool rather than Fillout’s native integrations.
 

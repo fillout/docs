@@ -57,6 +57,19 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
   </Step>
 </Steps>
 
+### Resizing your embed
+
+Certain fields require a **600px minimum height** to display properly. If your form includes any of the fields below, the embed cannot be resized below 600px.
+
+- Date, Date-Time, or Date Range Picker
+- Color Picker
+- Visible Captcha (V2)
+- Submission Picker
+- Record Picker
+- Address
+- Signature
+- Subform
+
 ## Advanced: Filter records
 
 Watch Dan Leeman from [Automation Helpers](https://www.automationhelpers.com/templates/build-filtered-forms-with-softr-and-fillout) build a filtered Fillout form, embedded in Softr.
@@ -140,13 +153,15 @@ Fillout forms also automatically inherit URL parameters from your Softr pages. I
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Pick from linked records" icon="folder" iconType="regular" color="#FFC738" href="/select-linked-airtable-records">
+  <Card title="Pick from linked records" color="#FFC738" icon="folder" iconType="regular" href="/select-linked-airtable-records">
     Let respondents select linked records.
   </Card>
-  <Card title="Embed parameters" icon="brackets-square" iconType="regular" color="#FFC738" href="/embedded-url-parameters">
+
+  <Card title="Embed parameters" color="#FFC738" icon="brackets-square" iconType="regular" href="/embedded-url-parameters">
     Pass URL parameters to your embeds to track data.
   </Card>
-  <Card title="Answer piping" icon="wand-magic-sparkles" iconType="regular" color="#FFC738" href="/answer-piping">
+
+  <Card title="Answer piping" color="#FFC738" icon="wand-magic-sparkles" iconType="regular" href="/answer-piping">
     Insert previous answers into upcoming questions or fields.
   </Card>
 </CardGroup>

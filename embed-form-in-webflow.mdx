@@ -42,11 +42,24 @@ While [Webflow](https://webflow.com) has some built-in form features, they have 
     />
   </Step>
   <Step title="Publish and preview">
-    The Webflow visual editor doesn't display scripts, so you need to open the **Publish** menu in the upper right corner of the screen and click `Publish to selected domains`. 
+    The Webflow visual editor doesn't display scripts, so you need to open the **Publish** menu in the upper right corner of the screen and click `Publish to selected domains`.
 
     After publishing the changes, click <Icon icon="arrow-up-right-from-square" /> next to your site URL to confirm that the embed works as intended.
   </Step>
 </Steps>
+
+### Resizing your embed
+
+Certain fields require a **600px minimum height** to display properly. If your form includes any of the fields below, the embed cannot be resized below 600px.
+
+- Date, Date-Time, or Date Range Picker
+- Color Picker
+- Visible Captcha (V2)
+- Submission Picker
+- Record Picker
+- Address
+- Signature
+- Subform
 
 ## Troubleshooting common issues
 
@@ -71,7 +84,7 @@ Then, click on every `Slide` element on the page and select `Static` from the **
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Share & embed" icon="arrow-up-right-from-square" iconType="regular" color="#FFC738" href="/sharing">
+  <Card title="Share & embed" color="#FFC738" icon="arrow-up-right-from-square" iconType="regular" href="/sharing">
     Share your form by link or embed it on your website.
   </Card>
 </CardGroup>

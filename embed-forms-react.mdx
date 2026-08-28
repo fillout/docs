@@ -8,7 +8,7 @@ sidebarTitle: "React"
 import { SupportBanner } from "/snippets/SupportBanner.mdx";
 
 <CardGroup cols={1}>
-  <Card title="React" icon="react" iconType="regular" color="#FFC738" horizontal href="https://www.npmjs.com/package/@fillout/react">
+  <Card title="React" color="#FFC738" icon="react" iconType="regular" horizontal href="https://www.npmjs.com/package/@fillout/react">
     View the docs and get started here
   </Card>
 </CardGroup>
@@ -25,10 +25,23 @@ For example, embed a popup form using either a standard button or a custom one:
 
 ![Screenshot of the Share tab of a form](/images/sharing-and-embedding/image-46.png)
 
+### Resizing your embed
+
+Certain fields require a **600px minimum height** to display properly. If your form includes any of the fields below, the embed cannot be resized below 600px.
+
+- Date, Date-Time, or Date Range Picker
+- Color Picker
+- Visible Captcha (V2)
+- Submission Picker
+- Record Picker
+- Address
+- Signature
+- Subform
+
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Share & embed" icon="arrow-up-right-from-square" iconType="regular" color="#FFC738" href="/sharing">
+  <Card title="Share & embed" color="#FFC738" icon="arrow-up-right-from-square" iconType="regular" href="/sharing">
     Share your forms via link, embed, or QR code.
   </Card>
 </CardGroup>

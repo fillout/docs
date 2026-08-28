@@ -39,6 +39,19 @@ import { SupportBanner } from "/snippets/SupportBanner.mdx";
   </Step>
 </Steps>
 
+### Resizing your embed
+
+Certain fields require a **600px minimum height** to display properly. If your form includes any of the fields below, the embed cannot be resized below 600px.
+
+- Date, Date-Time, or Date Range Picker
+- Color Picker
+- Visible Captcha (V2)
+- Submission Picker
+- Record Picker
+- Address
+- Signature
+- Subform
+
 ## Add a lightbox
 
 To get around embed container limitations, use a lightbox. Although you can add custom code to create popup forms that render outside the bounds of an embed element’s borders, there’s an easier solution.
@@ -83,8 +96,8 @@ If you have a premium Wix account and your site is on a custom domain, you can u
 ## Related article
 
 <CardGroup cols={3}>
-  <Card title="Share & embed" icon="arrow-up-right-from-square" iconType="regular" color="#FFC738" href="/sharing">
-    Share your form by link or embed it on your website.  
+  <Card title="Share & embed" color="#FFC738" icon="arrow-up-right-from-square" iconType="regular" href="/sharing">
+    Share your form by link or embed it on your website.
   </Card>
 </CardGroup>
 

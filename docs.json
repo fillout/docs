@@ -456,9 +456,9 @@
                   "account",
                   "reset-password",
                   "delete-user-account",
-                  "cancel-plan",
                   "billing-and-payments",
                   "team-plan",
+                  "cancel-plan",
                   "pricing-discounts",
                   "2fa",
                   "refund-policy"

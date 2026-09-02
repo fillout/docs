@@ -27,7 +27,9 @@ First, [configure your single sign-on provider](/saml-sso) with Fillout. Next, a
   ![](/images/advanced/image-12.png)
 </Frame>
 
-Then, grant your users access to Fillout in your SAML provider. SAML access only allows users to sign in and access forms through SSO. It does not grant access to the Fillout organization or permissions to create or edit forms—only invited members have those permissions.
+Then, grant your users access to Fillout in your SAML provider. SAML access lets those users sign in and access your forms through SSO. It does not give them access to any workspace, or permission to create or edit forms. Only invited members have those permissions.
+
+By default, the same SAML access also lets someone create a Fillout account, as a member with no workspace access, the first time they sign in to the Fillout dashboard. If you would rather only invited people become members, turn on [Require an invitation to join](/saml-sso#require-an-invitation-to-join).
 
 That’s it - your form is now secured with your single sign-on provider. When a user submits a form, the results page will automatically show you which user submitted the form.
 

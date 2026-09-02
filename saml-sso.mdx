@@ -33,6 +33,35 @@ Once SSO is configured, your team members can log in by clicking on `Login with 
 
 Fillout does not currently auto-provision users when they are added to your SSO provider. Instead, an account in Fillout will be created when the user logs into Fillout for the first time, using the SSO login.
 
+### Require an invitation to join
+
+If you also use your SSO provider for a [form login page](/sso-form-login), everyone you grant access to in your provider can create a Fillout account by signing in to the Fillout dashboard. Admins can turn that off, so that only the people you invite become members of your organization.
+
+<Steps>
+  <Step title="Open security settings">
+    Click your `Account name` in the upper left corner, then `Settings`, then `Security`. In the **Single sign-on** section, expand **Advanced**.
+  </Step>
+  <Step title="Toggle Require an invitation to join">
+    A confirmation dialog explains what changes.
+  </Step>
+  <Step title="Confirm">
+    Click `Require invitation`. The change applies to your organization right away.
+  </Step>
+</Steps>
+
+While the setting is on:
+
+- Signing in with SSO no longer creates a Fillout account. Someone without an account who tries to sign in to the Fillout dashboard is asked to contact their organization admin.
+- **Access to your forms and apps is unchanged.** Respondents sign in with SSO exactly as before, including [pre-filled fields](/sso-form-login) and [custom attributes](/sso-custom-attributes).
+- **Existing members are unaffected**, and continue to sign in with SSO.
+- **Invitations still work.** Invite someone as usual and they can accept and sign in with SSO.
+
+Turning the setting on or off is recorded in your [audit logs](/audit-logs) as a critical `org.ssoRequireInvite` event.
+
+<Note>
+  Anyone who became a member before you turned this on keeps their account. You can [remove them](/manage-members) if they should not have one.
+</Note>
+
 **Enforcing SSO**
 
 Contact [support@fillout.com](mailto:support@fillout.com) if you would like to enforce SSO for all users on your account.
